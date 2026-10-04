@@ -30,6 +30,7 @@ Collapsible accordion cards keep the mobile interface compact. Trigger unit audi
 *   **visceral Death Layers**: Units with custom `death` and `deathFX` subdirectories automatically play one sound from each folder in parallel for maximum audio depth.
 *   ** Burrow/Unburrow Abilities**: Automatically scans, processes, and displays Burrow and Unburrow controls on Zerg units.
 *   **Scanned Extensible Abilities**: Any custom subdirectories (e.g., Artanis's `charge`, Stalker's `blink`, Goliath's `missiles`) are automatically compiled into a "Scanned Abilities" sub-menu on their cards!
+*   **SC1 / SC2 Sound Banks**: Units that also existed in the original StarCraft (Marine, Medic, Goliath, Siege Tank, Raynor, Hydralisk, Zergling, Kerrigan, Zealot, Zeratul) show an `SC1 | SC2` switch in their card header. SC1 selects the classic Brood War voice lines and weapon sounds; any action without an SC1 recording (e.g. burrow, death FX) silently falls back to the SC2 sound. The choice is remembered per unit on the device.
 
 ---
 
@@ -55,12 +56,16 @@ starcraft_tmg_sfx_companion/
 └── units/                           # Soundboard directories
     ├── terran/
     │   ├── marine/
-    │   │   ├── config.yaml           # Unit metadata, buttons, and sound-folder combinations
+    │       │   ├── config.yaml           # Unit metadata, buttons, and sound-folder combinations
     │   │   ├── deploy/
     │   │   ├── move/
     │   │   ├── attack/
     │   │   ├── death/
-    │   │   └── stimpack/            # Optional custom action subfolder
+    │   │   ├── stimpack/            # Optional custom action subfolder
+    │   │   └── sc1/                 # Optional StarCraft I bank, mirrors the action folders above
+    │   │       ├── deploy/
+    │   │       ├── move/
+    │   │       └── attack/
     │   └── ... (other terran units)
     ├── zerg/
     └── protoss/
@@ -92,6 +97,19 @@ additional_abilities:
     sound_sources: [unburrow]
 ```
 
+### StarCraft I Sound Bank (`sc1/` folders)
+
+A unit can carry an alternative StarCraft I bank in `units/<race>/<unit>/sc1/<action>/`. The action folder names are the same ones referenced by `sound_sources` in the unit's `config.yaml`; no config changes are needed. When a player switches a card to SC1, each action plays from `sc1/<action>/` if that folder has audio and from the regular `<action>/` folder otherwise, so partial banks are fine. The build warns about `sc1/` folders that no ability references.
+
+The SC1 assets for the current units are fetched by script instead of being extracted by hand:
+```powershell
+powershell -ExecutionPolicy Bypass -File .\fetch-sc1-sounds.ps1
+python convert-to-ogg.py
+```
+*   **Voice lines** come from the [StarCraft Wiki unit sound files](https://starcraft.fandom.com/wiki/Category:StarCraft_unit_sounds) through the MediaWiki API (already OGG). Heroes have no "Ready" line in SC1, so hand-picked quotes stand in for their deploy action.
+*   **Weapon fire/impact sounds** come from the StarCraft "Weapons" pack on [The Sounds Resource](https://sounds.spriters-resource.com/pc_computer/starcraft/) (WAV; the second command transcodes them). Chained multi-part quotes also need `ffmpeg` on the PATH.
+*   The script is idempotent: files that already exist are skipped, so it can be re-run after extending the mapping tables at the top of the file.
+
 After adding or changing unit sounds/configs, run these steps from the project root:
 
 #### Step 1: Transcode WAVs to OGG (Guarantees Mobile Web Compatibility)
@@ -107,7 +125,7 @@ Compile the audio index and unit definitions from sound folders and each unit's 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\generate-registry.ps1
 ```
-*   **What it does**: Recursively scans audio files inside `units/` and `ost/`, reads every unit's `config.yaml`, and writes both the audio index and unit definitions to `audio-registry.js`. The build stops with a clear error if a unit config is missing, a configured sound folder has no audio, or a multi-folder ability has no playback mode.
+*   **What it does**: Recursively scans audio files inside `units/` and `ost/` (including the optional `sc1/` banks), reads every unit's `config.yaml`, and writes the audio index, the SC1 index, and unit definitions to `audio-registry.js`. The build stops with a clear error if a unit config is missing, a configured sound folder has no audio, or a multi-folder ability has no playback mode.
 *   **Result**: The browser builds the unit cards, labels, button sizes, and simultaneous or sequential playback from the generated registry on next load.
 
 ---

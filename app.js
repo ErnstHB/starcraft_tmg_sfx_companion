@@ -14,6 +14,11 @@ let sfxVolume = 0.8;   // Default 80%
 let activeTab = 'ost';
 const roleFiltersByFaction = new Map();
 
+// Per-unit SFX bank selection (StarCraft I vs StarCraft II audio), persisted across reloads.
+const SFX_BANKS = { sc1: 'SC1', sc2: 'SC2' };
+const DEFAULT_SFX_BANK = 'sc2';
+const sfxBankStorageKey = (faction, unitKey) => `sfxBank:${faction}/${unitKey}`;
+
 // UI Elements Cache
 const elements = {
     body: document.body,
@@ -395,6 +400,54 @@ function playConfiguredAbility(ability, unitAudio, cardElement) {
     tracks.forEach(track => playSfx(track, cardElement));
 }
 
+/* ==========================================================================
+   SFX BANK (SC1 / SC2) SELECTION
+   ========================================================================== */
+function getSfxBank(faction, unitKey) {
+    try {
+        const stored = localStorage.getItem(sfxBankStorageKey(faction, unitKey));
+        return stored in SFX_BANKS ? stored : DEFAULT_SFX_BANK;
+    } catch (e) {
+        return DEFAULT_SFX_BANK;
+    }
+}
+
+function setSfxBank(faction, unitKey, bank) {
+    try {
+        localStorage.setItem(sfxBankStorageKey(faction, unitKey), bank);
+    } catch (e) {
+        console.warn('SFX bank preference could not be saved:', e);
+    }
+}
+
+// Returns the audio map used for playback: SC1 folders when selected and present, SC2 otherwise (per source key).
+function resolveUnitAudio(unitAudio, sc1Audio, bank) {
+    if (bank !== 'sc1' || !sc1Audio) return unitAudio;
+    const resolved = { ...unitAudio };
+    Object.keys(sc1Audio).forEach(source => {
+        if (sc1Audio[source] && sc1Audio[source].length > 0) resolved[source] = sc1Audio[source];
+    });
+    return resolved;
+}
+
+// Sound sources referenced by the unit config that have no SC1 files and therefore fall back to SC2.
+function getSc1FallbackSources(config, sc1Audio) {
+    const configured = [...Object.values(config.regular_abilities || {}), ...Object.values(config.additional_abilities || {})]
+        .flatMap(ability => ability.sound_sources || []);
+    return [...new Set(configured)].filter(source => !(sc1Audio[source] && sc1Audio[source].length > 0));
+}
+
+function renderBankToggle(faction, unitKey, bank, fallbackSources) {
+    const fallbackNote = fallbackSources.length > 0
+        ? `SC1 bank: SC2 sounds are used for ${fallbackSources.map(abilityLabel).join(', ')}`
+        : 'SC1 bank: complete StarCraft I audio';
+    const buttons = Object.keys(SFX_BANKS).map(key => {
+        const isActive = key === bank;
+        return `<button type="button" class="bank-toggle-btn${isActive ? ' active' : ''}" data-bank="${key}" aria-pressed="${isActive}">${SFX_BANKS[key]}</button>`;
+    }).join('');
+    return `<div class="bank-toggle" role="group" aria-label="Sound effects bank for ${escapeHtml(unitKey)}" title="${escapeHtml(fallbackNote)}" data-e2e-id="bank-toggle-${faction}-${unitKey}">${buttons}</div>`;
+}
+
 function stopAllSounds() {
     // Stop all SFX
     activeSfxAudios.forEach(audio => {
@@ -651,9 +704,10 @@ function bindUnitBtnEvents(unitKey, unitObj, cardElement, isStructure) {
 // and embedded in AUDIO_REGISTRY by generate-registry.ps1.
 function renderAllUnitBoards() {
     const registry = window.AUDIO_REGISTRY;
-    renderFactionUnits('terran', registry.units.terran, registry.unitConfigs.terran, elements.terranContainer);
-    renderFactionUnits('zerg', registry.units.zerg, registry.unitConfigs.zerg, elements.zergContainer);
-    renderFactionUnits('protoss', registry.units.protoss, registry.unitConfigs.protoss, elements.protossContainer);
+    const sc1 = registry.unitsSC1 || {};
+    renderFactionUnits('terran', registry.units.terran, registry.unitConfigs.terran, sc1.terran, elements.terranContainer);
+    renderFactionUnits('zerg', registry.units.zerg, registry.unitConfigs.zerg, sc1.zerg, elements.zergContainer);
+    renderFactionUnits('protoss', registry.units.protoss, registry.unitConfigs.protoss, sc1.protoss, elements.protossContainer);
 }
 
 function escapeHtml(value) {
@@ -666,7 +720,7 @@ function abilityLabel(key) {
     return key.replace(/_/g, ' ').toUpperCase();
 }
 
-function renderFactionUnits(factionName, factionUnits, factionConfigs, container) {
+function renderFactionUnits(factionName, factionUnits, factionConfigs, factionSc1Units, container) {
     container.innerHTML = '';
     if (!factionUnits || Object.keys(factionUnits).length === 0) {
         container.innerHTML = '<div class="no-results">SYSTEM FAILURE: FACTION DATA CORRUPT</div>';
@@ -677,6 +731,9 @@ function renderFactionUnits(factionName, factionUnits, factionConfigs, container
         const unitAudio = factionUnits[unitKey];
         const config = factionConfigs && factionConfigs[unitKey];
         if (!config || !config.unit) throw new Error(`Missing generated config for ${factionName}/${unitKey}`);
+        const sc1Audio = (factionSc1Units && factionSc1Units[unitKey]) || null;
+        const hasSc1Bank = !!sc1Audio && Object.keys(sc1Audio).length > 0;
+        let activeBank = hasSc1Bank ? getSfxBank(factionName, unitKey) : DEFAULT_SFX_BANK;
 
         const metadata = config.unit;
         const unitName = metadata.name || unitKey;
@@ -700,7 +757,10 @@ function renderFactionUnits(factionName, factionUnits, factionConfigs, container
                         <span class="unit-role">${escapeHtml(metadata.role || 'FIGHTER')}</span>
                     </div>
                 </div>
-                <span class="chevron-icon">▼</span>
+                <div class="unit-header-controls">
+                    ${hasSc1Bank ? renderBankToggle(factionName, unitKey, activeBank, getSc1FallbackSources(config, sc1Audio)) : ''}
+                    <span class="chevron-icon">▼</span>
+                </div>
             </div>
             <div class="unit-body">
                 <div style="font-size: 0.65rem; color: var(--hud-text-muted); margin-bottom: 15px; border-left: 2px solid var(--hud-border); padding-left: 8px;">
@@ -729,7 +789,23 @@ function renderFactionUnits(factionName, factionUnits, factionConfigs, container
                 : config.regular_abilities[button.dataset.abilityKey];
             button.addEventListener('click', event => {
                 event.stopPropagation();
-                playConfiguredAbility(ability, unitAudio, card);
+                playConfiguredAbility(ability, resolveUnitAudio(unitAudio, sc1Audio, activeBank), card);
+            });
+        });
+
+        card.querySelectorAll('.bank-toggle-btn').forEach(button => {
+            button.addEventListener('click', event => {
+                event.stopPropagation(); // Keep the accordion state untouched
+                const bank = button.dataset.bank;
+                if (bank === activeBank) return;
+                activeBank = bank;
+                setSfxBank(factionName, unitKey, bank);
+                card.querySelectorAll('.bank-toggle-btn').forEach(other => {
+                    const isActive = other.dataset.bank === bank;
+                    other.classList.toggle('active', isActive);
+                    other.setAttribute('aria-pressed', String(isActive));
+                });
+                showToast(`${unitName.toUpperCase()}: ${SFX_BANKS[bank]} sound bank active`);
             });
         });
     });

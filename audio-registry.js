@@ -923,6 +923,209 @@ window.AUDIO_REGISTRY = {
                                             }
                            }
               },
+    "unitsSC1":  {
+                     "protoss":  {
+                                     "zealot":  {
+                                                    "combat":  [
+                                                                   "units/protoss/zealot/sc1/combat/ProtossZealotAttack00SC1.ogg",
+                                                                   "units/protoss/zealot/sc1/combat/ProtossZealotAttack01SC1.ogg",
+                                                                   "units/protoss/zealot/sc1/combat/psiblade.ogg"
+                                                               ],
+                                                    "death":  [
+                                                                  "units/protoss/zealot/sc1/death/ProtossZealotDeath00SC1.ogg"
+                                                              ],
+                                                    "deploy":  [
+                                                                   "units/protoss/zealot/sc1/deploy/ProtossZealotReady00SC1.ogg"
+                                                               ],
+                                                    "move":  [
+                                                                 "units/protoss/zealot/sc1/move/ProtossZealotYes00SC1.ogg",
+                                                                 "units/protoss/zealot/sc1/move/ProtossZealotYes01SC1.ogg",
+                                                                 "units/protoss/zealot/sc1/move/ProtossZealotYes02SC1.ogg",
+                                                                 "units/protoss/zealot/sc1/move/ProtossZealotYes03SC1.ogg"
+                                                             ]
+                                                },
+                                     "zeratul":  {
+                                                     "attack":  [
+                                                                    "units/protoss/zeratul/sc1/attack/uzefir00.ogg"
+                                                                ],
+                                                     "death":  [
+                                                                   "units/protoss/zeratul/sc1/death/ProtossZeratulDeath00SC1.ogg"
+                                                               ],
+                                                     "deploy":  [
+                                                                    "units/protoss/zeratul/sc1/deploy/ProtossZeratulPissed02-03SC1.ogg",
+                                                                    "units/protoss/zeratul/sc1/deploy/ProtossZeratulWhat03SC1.ogg"
+                                                                ],
+                                                     "move":  [
+                                                                  "units/protoss/zeratul/sc1/move/ProtossZeratulYes00SC1.ogg",
+                                                                  "units/protoss/zeratul/sc1/move/ProtossZeratulYes01SC1.ogg",
+                                                                  "units/protoss/zeratul/sc1/move/ProtossZeratulYes02SC1.ogg",
+                                                                  "units/protoss/zeratul/sc1/move/ProtossZeratulYes03SC1.ogg"
+                                                              ]
+                                                 }
+                                 },
+                     "terran":  {
+                                    "goliath":  {
+                                                    "attack":  [
+                                                                   "units/terran/goliath/sc1/attack/tgofir00.ogg"
+                                                               ],
+                                                    "death":  [
+                                                                  "units/terran/goliath/sc1/death/TerranGoliathDeath00SC1.ogg"
+                                                              ],
+                                                    "deploy":  [
+                                                                   "units/terran/goliath/sc1/deploy/TerranGoliathReady00SC1.ogg"
+                                                               ],
+                                                    "missles":  [
+                                                                    "units/terran/goliath/sc1/missles/hkmissle.ogg",
+                                                                    "units/terran/goliath/sc1/missles/tgofi200.ogg"
+                                                                ],
+                                                    "move":  [
+                                                                 "units/terran/goliath/sc1/move/TerranGoliathYes00SC1.ogg",
+                                                                 "units/terran/goliath/sc1/move/TerranGoliathYes01SC1.ogg",
+                                                                 "units/terran/goliath/sc1/move/TerranGoliathYes02SC1.ogg",
+                                                                 "units/terran/goliath/sc1/move/TerranGoliathYes03SC1.ogg"
+                                                             ]
+                                                },
+                                    "marine":  {
+                                                   "attack":  [
+                                                                  "units/terran/marine/sc1/attack/tmafir00.ogg"
+                                                              ],
+                                                   "death":  [
+                                                                 "units/terran/marine/sc1/death/TerranMarineDeath00SC1.ogg",
+                                                                 "units/terran/marine/sc1/death/TerranMarineDeath01SC1.ogg"
+                                                             ],
+                                                   "deploy":  [
+                                                                  "units/terran/marine/sc1/deploy/TerranMarineReady00SC1.ogg"
+                                                              ],
+                                                   "move":  [
+                                                                "units/terran/marine/sc1/move/TerranMarineYes00SC1.ogg",
+                                                                "units/terran/marine/sc1/move/TerranMarineYes01SC1.ogg",
+                                                                "units/terran/marine/sc1/move/TerranMarineYes02SC1.ogg",
+                                                                "units/terran/marine/sc1/move/TerranMarineYes03SC1.ogg"
+                                                            ],
+                                                   "stimpackVO":  [
+                                                                      "units/terran/marine/sc1/stimpackVO/TerranMarineStimPack00SC1.ogg",
+                                                                      "units/terran/marine/sc1/stimpackVO/TerranMarineStimPack01SC1.ogg"
+                                                                  ]
+                                               },
+                                    "medic":  {
+                                                  "death":  [
+                                                                "units/terran/medic/sc1/death/TerranMedicDeath00SC1.ogg"
+                                                            ],
+                                                  "deploy":  [
+                                                                 "units/terran/medic/sc1/deploy/TerranMedicReady00SC1.ogg"
+                                                             ],
+                                                  "heal":  [
+                                                               "units/terran/medic/sc1/heal/TerranMedicHeal00SC1.ogg",
+                                                               "units/terran/medic/sc1/heal/TerranMedicHeal01SC1.ogg"
+                                                           ],
+                                                  "move":  [
+                                                               "units/terran/medic/sc1/move/TerranMedicYes00SC1.ogg",
+                                                               "units/terran/medic/sc1/move/TerranMedicYes01SC1.ogg",
+                                                               "units/terran/medic/sc1/move/TerranMedicYes02SC1.ogg",
+                                                               "units/terran/medic/sc1/move/TerranMedicYes03SC1.ogg"
+                                                           ]
+                                              },
+                                    "raynor":  {
+                                                   "attack":  [
+                                                                  "units/terran/raynor/sc1/attack/tmafir00.ogg"
+                                                              ],
+                                                   "death":  [
+                                                                 "units/terran/raynor/sc1/death/TerranRaynorMarineDeath00SC1.ogg",
+                                                                 "units/terran/raynor/sc1/death/TerranRaynorMarineDeath01SC1.ogg"
+                                                             ],
+                                                   "deploy":  [
+                                                                  "units/terran/raynor/sc1/deploy/TerranRaynorMarinePissed03SC1.ogg",
+                                                                  "units/terran/raynor/sc1/deploy/TerranRaynorMarineWhat00SC1.ogg",
+                                                                  "units/terran/raynor/sc1/deploy/TerranRaynorMarineWhat01SC1.ogg",
+                                                                  "units/terran/raynor/sc1/deploy/TerranRaynorMarineWhat02SC1.ogg"
+                                                              ],
+                                                   "move":  [
+                                                                "units/terran/raynor/sc1/move/TerranRaynorMarineYes00SC1.ogg",
+                                                                "units/terran/raynor/sc1/move/TerranRaynorMarineYes01SC1.ogg",
+                                                                "units/terran/raynor/sc1/move/TerranRaynorMarineYes02SC1.ogg",
+                                                                "units/terran/raynor/sc1/move/TerranRaynorMarineYes03SC1.ogg"
+                                                            ]
+                                               },
+                                    "tank":  {
+                                                 "attack_impact":  [
+                                                                       "units/terran/tank/sc1/attack_impact/ttahi200.ogg"
+                                                                   ],
+                                                 "attack_siege_mode":  [
+                                                                           "units/terran/tank/sc1/attack_siege_mode/ttafi200.ogg"
+                                                                       ],
+                                                 "attack_tank_mode":  [
+                                                                          "units/terran/tank/sc1/attack_tank_mode/ttafir00.ogg"
+                                                                      ],
+                                                 "death":  [
+                                                               "units/terran/tank/sc1/death/TerranSiegeTankDeath00SC1.ogg"
+                                                           ],
+                                                 "deploy":  [
+                                                                "units/terran/tank/sc1/deploy/TerranSiegeTankReady00SC1.ogg"
+                                                            ],
+                                                 "move":  [
+                                                              "units/terran/tank/sc1/move/TerranSiegeTankYes00SC1.ogg",
+                                                              "units/terran/tank/sc1/move/TerranSiegeTankYes01SC1.ogg",
+                                                              "units/terran/tank/sc1/move/TerranSiegeTankYes02SC1.ogg",
+                                                              "units/terran/tank/sc1/move/TerranSiegeTankYes03SC1.ogg"
+                                                          ],
+                                                 "transform_to_siege":  [
+                                                                            "units/terran/tank/sc1/transform_to_siege/TerranSiegeTankSiegeMode00SC1.ogg",
+                                                                            "units/terran/tank/sc1/transform_to_siege/TerranSiegeTankSiegeMode01SC1.ogg"
+                                                                        ]
+                                             }
+                                },
+                     "zerg":  {
+                                  "hydralisk":  {
+                                                    "attack":  [
+                                                                   "units/zerg/hydralisk/sc1/attack/zhyfir00.ogg"
+                                                               ],
+                                                    "death":  [
+                                                                  "units/zerg/hydralisk/sc1/death/ZergHydraliskDeath00SC1.ogg"
+                                                              ],
+                                                    "deploy":  [
+                                                                   "units/zerg/hydralisk/sc1/deploy/ZergHydraliskReady00SC1.ogg"
+                                                               ],
+                                                    "move":  [
+                                                                 "units/zerg/hydralisk/sc1/move/ZergHydraliskYes00SC1.ogg",
+                                                                 "units/zerg/hydralisk/sc1/move/ZergHydraliskYes01SC1.ogg",
+                                                                 "units/zerg/hydralisk/sc1/move/ZergHydraliskYes02SC1.ogg",
+                                                                 "units/zerg/hydralisk/sc1/move/ZergHydraliskYes03SC1.ogg"
+                                                             ]
+                                                },
+                                  "kerrigan":  {
+                                                   "attack":  [
+                                                                  "units/zerg/kerrigan/sc1/attack/ukifir00.ogg"
+                                                              ],
+                                                   "death":  [
+                                                                 "units/zerg/kerrigan/sc1/death/ZergInfestedKerriganDeath00SC1.ogg"
+                                                             ],
+                                                   "move":  [
+                                                                "units/zerg/kerrigan/sc1/move/ZergInfestedKerriganYes00SC1.ogg",
+                                                                "units/zerg/kerrigan/sc1/move/ZergInfestedKerriganYes01SC1.ogg",
+                                                                "units/zerg/kerrigan/sc1/move/ZergInfestedKerriganYes02SC1.ogg",
+                                                                "units/zerg/kerrigan/sc1/move/ZergInfestedKerriganYes03SC1.ogg"
+                                                            ],
+                                                   "ready":  [
+                                                                 "units/zerg/kerrigan/sc1/ready/ZergInfestedKerriganPissed00SC1.ogg",
+                                                                 "units/zerg/kerrigan/sc1/ready/ZergInfestedKerriganWhat01SC1.ogg"
+                                                             ]
+                                               },
+                                  "zergling":  {
+                                                   "death":  [
+                                                                 "units/zerg/zergling/sc1/death/ZergZerglingDeath00SC1.ogg"
+                                                             ],
+                                                   "deploy":  [
+                                                                  "units/zerg/zergling/sc1/deploy/ZergZerglingReady00SC1.ogg"
+                                                              ],
+                                                   "move":  [
+                                                                "units/zerg/zergling/sc1/move/ZergZerglingYes00SC1.ogg",
+                                                                "units/zerg/zergling/sc1/move/ZergZerglingYes01SC1.ogg",
+                                                                "units/zerg/zergling/sc1/move/ZergZerglingYes02SC1.ogg",
+                                                                "units/zerg/zergling/sc1/move/ZergZerglingYes03SC1.ogg"
+                                                            ]
+                                               }
+                              }
+                 },
     "unitConfigs":  {
                         "protoss":  {
                                         "adept":  {
