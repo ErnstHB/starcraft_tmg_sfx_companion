@@ -1,0 +1,31 @@
+{
+  "name": "SC:TMG - SFX",
+  "short_name": "SC:TMG - SFX",
+  "description": "Sound effects and battle music companion for the StarCraft Tabletop Miniatures Game.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#090c0f",
+  "theme_color": "#090c0f",
+  "icons": [
+    {
+      "src": "pics/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pics/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pics/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
