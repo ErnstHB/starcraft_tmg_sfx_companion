@@ -1073,7 +1073,9 @@ html, body {
 /* GitHub Repository Link Footer Styling */
 .hud-repo-link-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
     margin-top: 25px;
     padding-top: 15px;
     border-top: 1px solid var(--hud-border);
@@ -1166,6 +1168,30 @@ html, body {
     color: var(--hud-accent-secondary);
     padding: 0 10px;
     text-shadow: 0 0 5px rgba(0, 170, 255, 0.4);
+}
+
+/* Authorship credits (original author and fork maintainer) */
+.hud-credits {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 1.5;
+    color: var(--hud-text-muted);
+}
+
+.hud-credits p {
+    margin: 2px 0;
+}
+
+.hud-credits a {
+    color: var(--hud-accent-secondary);
+    text-decoration: none;
+    font-family: var(--hud-mono-font);
+}
+
+.hud-credits a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 /* Legal and copyright disclaimer footer */
