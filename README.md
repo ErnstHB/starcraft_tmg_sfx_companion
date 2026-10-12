@@ -6,6 +6,11 @@
 
 An immersive, responsive, retro-futuristic sci-fi soundboard and soundtrack console designed for tabletop wargaming. This application runs entirely client-side as a Single-Page Application (SPA), optimized for mobile/tablet wargaming layouts and ready for free, static hosting (e.g., GitHub Pages).
 
+> **About this version:** this is a fork of [JerryJohnsonLee/starcraft_tmg_sfx_companion](https://github.com/JerryJohnsonLee/starcraft_tmg_sfx_companion), extended and maintained separately. Live app: [ernsthb.github.io/starcraft_tmg_sfx_companion](https://ernsthb.github.io/starcraft_tmg_sfx_companion/). See [Credits](#-credits).
+>
+> Differences from the original project:
+> *   Optional StarCraft I sound bank per unit with an `SC1 | SC2` card switch (see "StarCraft I Sound Bank" below), including the `fetch-sc1-sounds.ps1` asset downloader.
+
 ---
 
 ## 🎮 Features
@@ -148,6 +153,14 @@ Because this is a serverless Single-Page Application, it can be deployed for fre
 2.  Go to **Repository Settings -> Pages**.
 3.  Set the **Source** to "Deploy from a branch", select **`main`** and **`/ (root)`**, and click **Save**.
 4.  Within minutes, your StarCraft SFX HUD is live online!
+
+---
+
+## 🤝 Credits
+
+*   Original project by Jerry Lee ([@JerryJohnsonLee](https://github.com/JerryJohnsonLee)).
+*   Current version forked, extended and maintained by Ernesto Hernández Benítez ([@ErnstHB](https://github.com/ErnstHB)).
+*   StarCraft I voice lines: [StarCraft Wiki](https://starcraft.fandom.com/wiki/Category:StarCraft_unit_sounds). StarCraft I weapon sounds: [The Sounds Resource](https://sounds.spriters-resource.com/pc_computer/starcraft/).
 
 ---
 
