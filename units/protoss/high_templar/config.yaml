@@ -1,0 +1,16 @@
+unit:
+  name: "High Templar"
+  role: "Support"
+  weapon: "Psionic Storm, Feedback"
+regular_abilities:
+  deploy:
+    sound_sources: [deploy]
+  move:
+    sound_sources: [move]
+  destroyed:
+    sound_sources: [death]
+additional_abilities:
+  psionic_storm:
+    sound_sources: [psionic_storm, psionic_stormFX]
+    playback: sequential
+    sc1_sound_sources: [psionic_storm]

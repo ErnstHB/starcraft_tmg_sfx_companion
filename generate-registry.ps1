@@ -54,6 +54,13 @@ function Read-UnitConfig([string]$path) {
             $sources = @()
             if ($Matches[1].Trim()) { $sources = @($Matches[1].Split(',') | ForEach-Object { $_.Trim() }) }
             $config[$section][$ability].sound_sources = $sources
+            continue
+        }
+        # Optional: different sources when the card is switched to the SC1 bank (e.g. no SC2-only effect appended).
+        if ($ability -and $line -match '^    sc1_sound_sources:\s*\[(.*?)\]\s*$') {
+            $sc1Sources = @()
+            if ($Matches[1].Trim()) { $sc1Sources = @($Matches[1].Split(',') | ForEach-Object { $_.Trim() }) }
+            $config[$section][$ability].sc1_sound_sources = $sc1Sources
         }
     }
 
@@ -141,13 +148,40 @@ foreach ($race in $registry.unitConfigs.Keys) {
     }
 }
 
+# Validate optional sc1_sound_sources overrides: every source must have audio in the SC1 bank or, failing that, the base folders.
+foreach ($race in $registry.unitConfigs.Keys) {
+    foreach ($unit in $registry.unitConfigs[$race].Keys) {
+        foreach ($section in @('regular_abilities', 'additional_abilities')) {
+            foreach ($ability in $registry.unitConfigs[$race][$unit][$section].Keys) {
+                $abilityConfig = $registry.unitConfigs[$race][$unit][$section][$ability]
+                if (-not $abilityConfig.Contains('sc1_sound_sources')) { continue }
+                $sc1Sources = @($abilityConfig.sc1_sound_sources)
+                if ($sc1Sources.Count -eq 0) { throw "Ability '$ability' has an empty sc1_sound_sources in units/$race/$unit/config.yaml" }
+                foreach ($source in $sc1Sources) {
+                    $inSc1 = $registry.unitsSC1[$race].Contains($unit) -and $registry.unitsSC1[$race][$unit].Contains($source) -and $registry.unitsSC1[$race][$unit][$source].Count -gt 0
+                    $inBase = $registry.units[$race][$unit].Contains($source) -and $registry.units[$race][$unit][$source].Count -gt 0
+                    if (-not ($inSc1 -or $inBase)) {
+                        throw "SC1 sound source '$source' for ability '$ability' has no audio files in units/$race/$unit/"
+                    }
+                }
+                if ($sc1Sources.Count -gt 1 -and $abilityConfig.playback -notin @('simultaneous', 'sequential')) {
+                    throw "Ability '$ability' in units/$race/$unit/config.yaml needs playback: simultaneous or sequential because sc1_sound_sources has multiple sources."
+                }
+            }
+        }
+    }
+}
+
 # SC1 folders are optional overrides, so only warn when one does not match any configured sound source (likely a typo).
 $sc1FileCount = 0
 foreach ($race in $registry.unitsSC1.Keys) {
     foreach ($unit in $registry.unitsSC1[$race].Keys) {
         $configuredSources = @()
         foreach ($section in @('regular_abilities', 'additional_abilities')) {
-            foreach ($ability in $registry.unitConfigs[$race][$unit][$section].Values) { $configuredSources += @($ability.sound_sources) }
+            foreach ($ability in $registry.unitConfigs[$race][$unit][$section].Values) {
+                $configuredSources += @($ability.sound_sources)
+                if ($ability.Contains('sc1_sound_sources')) { $configuredSources += @($ability.sc1_sound_sources) }
+            }
         }
         foreach ($action in $registry.unitsSC1[$race][$unit].Keys) {
             $sc1FileCount += $registry.unitsSC1[$race][$unit][$action].Count

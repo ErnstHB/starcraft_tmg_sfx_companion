@@ -380,8 +380,13 @@ function decrementCardActivePlaying(cardElement) {
     }
 }
 
-function playConfiguredAbility(ability, unitAudio, cardElement) {
-    const tracks = (ability.sound_sources || [])
+// Sources an ability plays: the SC1 override (sc1_sound_sources) when the card is on the SC1 bank and defines one.
+function getAbilitySources(ability, bank) {
+    return (bank === 'sc1' && ability.sc1_sound_sources) ? ability.sc1_sound_sources : (ability.sound_sources || []);
+}
+
+function playConfiguredAbility(ability, unitAudio, cardElement, bank) {
+    const tracks = getAbilitySources(ability, bank)
         .map(source => unitAudio[source] || [])
         .filter(trackList => trackList.length > 0)
         .map(trackList => trackList[Math.floor(Math.random() * trackList.length)]);
@@ -433,7 +438,7 @@ function resolveUnitAudio(unitAudio, sc1Audio, bank) {
 // Sound sources referenced by the unit config that have no SC1 files and therefore fall back to SC2.
 function getSc1FallbackSources(config, sc1Audio) {
     const configured = [...Object.values(config.regular_abilities || {}), ...Object.values(config.additional_abilities || {})]
-        .flatMap(ability => ability.sound_sources || []);
+        .flatMap(ability => getAbilitySources(ability, 'sc1'));
     return [...new Set(configured)].filter(source => !(sc1Audio[source] && sc1Audio[source].length > 0));
 }
 
@@ -789,7 +794,7 @@ function renderFactionUnits(factionName, factionUnits, factionConfigs, factionSc
                 : config.regular_abilities[button.dataset.abilityKey];
             button.addEventListener('click', event => {
                 event.stopPropagation();
-                playConfiguredAbility(ability, resolveUnitAudio(unitAudio, sc1Audio, activeBank), card);
+                playConfiguredAbility(ability, resolveUnitAudio(unitAudio, sc1Audio, activeBank), card, activeBank);
             });
         });
 
