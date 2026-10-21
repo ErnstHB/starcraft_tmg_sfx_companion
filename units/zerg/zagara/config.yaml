@@ -1,0 +1,17 @@
+unit:
+  name: "Zagara"
+  role: "Hero, Tactician"
+  weapon: "Zagara's Talons, Zagara's Acid Spines, Talons"
+regular_abilities:
+  deploy:
+    sound_sources: [deploy]
+  move:
+    sound_sources: [move]
+  attack:
+    sound_sources: [attack, attackFX]
+    playback: sequential
+  melee_combat:
+    sound_sources: [combat]
+  destroyed:
+    sound_sources: [death, deathFX]
+    playback: simultaneous

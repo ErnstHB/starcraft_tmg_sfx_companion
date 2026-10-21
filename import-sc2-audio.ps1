@@ -29,6 +29,7 @@ $unitsRoot = Join-Path $PSScriptRoot 'units'
 # Standard English unit voice lines live here (enUS tag in CascView):
 $voice = '*\mods\liberty.sc2mod\enus.sc2assets\localizeddata\sounds\protossunitvo'
 $terranVoice = '*\mods\liberty.sc2mod\enus.sc2assets\localizeddata\sounds\terranunitvo'
+$zergHeroVoice = '*\enus.sc2assets\localizeddata\sounds\vo\zerg'          # Zagara's hero lines (void campaign)
 $novaVoice = '*\enus.sc2assets\localizeddata\sounds\terranunitvo\nova'   # Covert Ops lines sit in the liberty mod and the void campaign
 
 # target = '<race>/<unit>/<action>', patterns = staged files to copy there.
@@ -72,6 +73,15 @@ $importMap = @(
     @{ target = 'terran/nova_assault_mode/death';        patterns = @("$novaVoice\heronovamp2hd_death0[235].wav") }
     @{ target = 'terran/nova_assault_mode/phase_reactor_suit'; patterns = @('*\novacommander_assaultmode0[0-3].ogg') }
     @{ target = 'terran/nova_assault_mode/holo_decoy';   patterns = @('*\novacommander_holodecoy0[0-4].ogg') }
+
+    # --- Zerg Zagara (TMG wave 3) ---
+    # Bile Launcher (a separate card) is intentionally left out for now.
+    # Not imported from the game: attackFX/, combat/ and deathFX/ are copies of the Queen's sounds
+    # (units/zerg/queen/attack, combat, deathFX), placeholders until Zagara has her own effects.
+    @{ target = 'zerg/zagara/deploy';  patterns = @("$zergHeroVoice\zagarahero_ready??.ogg") }
+    @{ target = 'zerg/zagara/move';    patterns = @("$zergHeroVoice\zagarahero_yes??.ogg") }
+    @{ target = 'zerg/zagara/attack';  patterns = @("$zergHeroVoice\zagarahero_attack??.ogg") }
+    @{ target = 'zerg/zagara/death';   patterns = @("$zergHeroVoice\zagarahero_death??.wav") }
 )
 
 if (-not (Test-Path -LiteralPath $SourceRoot)) {
