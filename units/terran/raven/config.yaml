@@ -1,0 +1,19 @@
+unit:
+  name: "Raven"
+  role: "Support, Tactician"
+  weapon: "Railguns"
+regular_abilities:
+  deploy:
+    sound_sources: [deploy]
+  move:
+    sound_sources: [move]
+  destroyed:
+    sound_sources: [death]
+additional_abilities:
+  deploy_auto_turret:
+    sound_sources: [auto_turret, auto_turretFX]
+    playback: sequential
+  anti_armour_missile:
+    sound_sources: [anti_armour_missile]
+  seeker_missile:
+    sound_sources: [seeker_missile]
