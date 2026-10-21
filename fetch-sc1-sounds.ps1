@@ -43,6 +43,9 @@ $heroDeployMap = @(
     @{ unit = 'zerg/kerrigan'; action = 'ready'
        files = @('ZergInfestedKerriganWhat01SC1.ogg',                             # harsh growl
                  'ZergInfestedKerriganPissed00SC1.ogg') }                         # "You begin to annoy me, cerebrate"
+    # SC1 High Templars have no attack, so a "Selected" quote stands in for the TMG attack action.
+    @{ unit = 'protoss/high_templar'; action = 'attack'
+       files = @('ProtossHighTemplarWhat01SC1.ogg') }                             # "Zerah'hah..."
 )
 
 # Phase B mapping: Blizzard bullet sound file (inside weapons/ in the zip) -> target sc1 action folders.

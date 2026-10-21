@@ -7,6 +7,8 @@ regular_abilities:
     sound_sources: [deploy]
   move:
     sound_sources: [move]
+  attack:
+    sound_sources: [attack]
   destroyed:
     sound_sources: [death]
 additional_abilities:
