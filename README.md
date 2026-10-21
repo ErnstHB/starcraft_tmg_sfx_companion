@@ -11,6 +11,7 @@ An immersive, responsive, retro-futuristic sci-fi soundboard and soundtrack cons
 > Differences from the original project:
 > *   Optional StarCraft I sound bank per unit with an `SC1 | SC2` card switch (see "StarCraft I Sound Bank" below), including the `fetch-sc1-sounds.ps1` asset downloader.
 > *   Web app manifest and install icons (`manifest.webmanifest`, `pics/icons/`), so the app can be added to the home screen as "SC:TMG - SFX". The square icons are generated from the existing artwork by `generate-pwa-icons.ps1`. Offline support is planned as a follow-up.
+> *   TMG wave 3 units, added step by step. Done: High Templar (SC2 + SC1 banks). Planned: Defiler, Tassadar, Raven, Nova, Zagara.
 
 ---
 
@@ -105,7 +106,7 @@ additional_abilities:
 
 ### StarCraft I Sound Bank (`sc1/` folders)
 
-A unit can carry an alternative StarCraft I bank in `units/<race>/<unit>/sc1/<action>/`. The action folder names are the same ones referenced by `sound_sources` in the unit's `config.yaml`; no config changes are needed. When a player switches a card to SC1, each action plays from `sc1/<action>/` if that folder has audio and from the regular `<action>/` folder otherwise, so partial banks are fine. The build warns about `sc1/` folders that no ability references.
+A unit can carry an alternative StarCraft I bank in `units/<race>/<unit>/sc1/<action>/`. The action folder names are the same ones referenced by `sound_sources` in the unit's `config.yaml`; no config changes are needed. When a player switches a card to SC1, each action plays from `sc1/<action>/` if that folder has audio and from the regular `<action>/` folder otherwise, so partial banks are fine. The build warns about `sc1/` folders that no ability references. When an ability should behave differently on the SC1 bank (for example, not append an SC2-only effect), add `sc1_sound_sources: [...]` to that ability; the card then plays those sources instead of `sound_sources` while on SC1 (`playback` applies if it lists several).
 
 The SC1 assets for the current units are fetched by script instead of being extracted by hand:
 ```powershell
@@ -115,6 +116,15 @@ python convert-to-ogg.py
 *   **Voice lines** come from the [StarCraft Wiki unit sound files](https://starcraft.fandom.com/wiki/Category:StarCraft_unit_sounds) through the MediaWiki API (already OGG). Heroes have no "Ready" line in SC1, so hand-picked quotes stand in for their deploy action.
 *   **Weapon fire/impact sounds** come from the StarCraft "Weapons" pack on [The Sounds Resource](https://sounds.spriters-resource.com/pc_computer/starcraft/) (WAV; the second command transcodes them). Chained multi-part quotes also need `ffmpeg` on the PATH.
 *   The script is idempotent: files that already exist are skipped, so it can be re-run after extending the mapping tables at the top of the file.
+
+### Importing StarCraft II audio from your own game install
+
+StarCraft II unit audio is not downloadable from a public source, so it is extracted from a licensed local installation with [CascView](https://www.zezula.net/en/casc/main.html) (enable "Allow downloading storage metadata if they're missing" in its options; on recent game builds the local storage may only open after that). Extract the files you need into `tmp_assets/` (keep the path structure; the folder is ignored by git), then:
+```powershell
+powershell -ExecutionPolicy Bypass -File .\import-sc2-audio.ps1
+python convert-to-ogg.py
+```
+`import-sc2-audio.ps1` copies the staged files into the unit action folders according to the table at the top of the script (wildcard patterns per target folder). It is idempotent, and entries whose files are not staged yet only print a notice. English unit voice lines live under `mods\liberty.sc2mod\enus.sc2assets\localizeddata\sounds\<race>unitvo\<unit>\` (tip: in CascView's search dialog, untick all language tags except `enUS` to hide the other languages).
 
 After adding or changing unit sounds/configs, run these steps from the project root:
 

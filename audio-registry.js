@@ -126,6 +126,34 @@ window.AUDIO_REGISTRY = {
                                                                "units/protoss/artanis/move/Artanis_Yes03.ogg"
                                                            ]
                                               },
+                                  "high_templar":  {
+                                                       "death":  [
+                                                                     "units/protoss/high_templar/death/hightemplar_death0.ogg"
+                                                                 ],
+                                                       "deploy":  [
+                                                                      "units/protoss/high_templar/deploy/hightemplar_ready00.ogg",
+                                                                      "units/protoss/high_templar/deploy/pmission_ulnar03_hightemplar_117.ogg"
+                                                                  ],
+                                                       "move":  [
+                                                                    "units/protoss/high_templar/move/hightemplar_yes00.ogg",
+                                                                    "units/protoss/high_templar/move/hightemplar_yes01.ogg",
+                                                                    "units/protoss/high_templar/move/hightemplar_yes02.ogg",
+                                                                    "units/protoss/high_templar/move/hightemplar_yes03.ogg",
+                                                                    "units/protoss/high_templar/move/hightemplar_yes04.ogg",
+                                                                    "units/protoss/high_templar/move/hightemplar_yes05.ogg",
+                                                                    "units/protoss/high_templar/move/hightemplar_yes06.ogg"
+                                                                ],
+                                                       "psionic_storm":  [
+                                                                             "units/protoss/high_templar/psionic_storm/hightemplar_psionicstorm00.ogg"
+                                                                         ],
+                                                       "psionic_stormFX":  [
+                                                                               "units/protoss/high_templar/psionic_stormFX/hightemplar_psionicstormimpact0.ogg",
+                                                                               "units/protoss/high_templar/psionic_stormFX/hightemplar_psionicstormimpact1.ogg",
+                                                                               "units/protoss/high_templar/psionic_stormFX/hightemplar_psionicstormimpact2.ogg",
+                                                                               "units/protoss/high_templar/psionic_stormFX/hightemplar_psionicstormimpact3.ogg",
+                                                                               "units/protoss/high_templar/psionic_stormFX/hightemplar_psionicstormimpact4.ogg"
+                                                                           ]
+                                                   },
                                   "immortal":  {
                                                    "attack":  [
                                                                   "units/protoss/immortal/attack/Immortal_AttackLaunch0.ogg",
@@ -925,6 +953,24 @@ window.AUDIO_REGISTRY = {
               },
     "unitsSC1":  {
                      "protoss":  {
+                                     "high_templar":  {
+                                                          "death":  [
+                                                                        "units/protoss/high_templar/sc1/death/ProtossHighTemplarDeath00SC1.ogg"
+                                                                    ],
+                                                          "deploy":  [
+                                                                         "units/protoss/high_templar/sc1/deploy/ProtossHighTemplarReady00SC1.ogg"
+                                                                     ],
+                                                          "move":  [
+                                                                       "units/protoss/high_templar/sc1/move/ProtossHighTemplarYes00SC1.ogg",
+                                                                       "units/protoss/high_templar/sc1/move/ProtossHighTemplarYes01SC1.ogg",
+                                                                       "units/protoss/high_templar/sc1/move/ProtossHighTemplarYes02SC1.ogg",
+                                                                       "units/protoss/high_templar/sc1/move/ProtossHighTemplarYes03SC1.ogg"
+                                                                   ],
+                                                          "psionic_storm":  [
+                                                                                "units/protoss/high_templar/sc1/psionic_storm/ProtossHighTemplarPsionicStorm00SC1.ogg",
+                                                                                "units/protoss/high_templar/sc1/psionic_storm/ProtossHighTemplarPsionicStorm01SC1.ogg"
+                                                                            ]
+                                                      },
                                      "zealot":  {
                                                     "combat":  [
                                                                    "units/protoss/zealot/sc1/combat/ProtossZealotAttack00SC1.ogg",
@@ -1202,6 +1248,42 @@ window.AUDIO_REGISTRY = {
                                                                                                 }
                                                                                  }
                                                     },
+                                        "high_templar":  {
+                                                             "unit":  {
+                                                                          "name":  "High Templar",
+                                                                          "role":  "Support",
+                                                                          "weapon":  "Psionic Storm, Feedback"
+                                                                      },
+                                                             "regular_abilities":  {
+                                                                                       "deploy":  {
+                                                                                                      "sound_sources":  [
+                                                                                                                            "deploy"
+                                                                                                                        ]
+                                                                                                  },
+                                                                                       "move":  {
+                                                                                                    "sound_sources":  [
+                                                                                                                          "move"
+                                                                                                                      ]
+                                                                                                },
+                                                                                       "destroyed":  {
+                                                                                                         "sound_sources":  [
+                                                                                                                               "death"
+                                                                                                                           ]
+                                                                                                     }
+                                                                                   },
+                                                             "additional_abilities":  {
+                                                                                          "psionic_storm":  {
+                                                                                                                "sound_sources":  [
+                                                                                                                                      "psionic_storm",
+                                                                                                                                      "psionic_stormFX"
+                                                                                                                                  ],
+                                                                                                                "playback":  "sequential",
+                                                                                                                "sc1_sound_sources":  [
+                                                                                                                                          "psionic_storm"
+                                                                                                                                      ]
+                                                                                                            }
+                                                                                      }
+                                                         },
                                         "immortal":  {
                                                          "unit":  {
                                                                       "name":  "immortal",

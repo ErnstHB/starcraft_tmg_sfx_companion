@@ -25,6 +25,7 @@ $voiceMap = @(
     @{ unit = 'zerg/kerrigan';   prefix = 'ZergInfestedKerrigan'; actions = @{ move = 'Yes'; death = 'Death' } }
     @{ unit = 'protoss/zealot';  prefix = 'ProtossZealot';        actions = @{ deploy = 'Ready'; move = 'Yes'; death = 'Death'; combat = 'Attack' } }
     @{ unit = 'protoss/zeratul'; prefix = 'ProtossZeratul';       actions = @{ move = 'Yes'; death = 'Death' } }
+    @{ unit = 'protoss/high_templar'; prefix = 'ProtossHighTemplar'; actions = @{ deploy = 'Ready'; move = 'Yes'; death = 'Death'; psionic_storm = 'PsionicStorm' } }
 )
 
 # Heroes have no "Ready" line in SC1. Selected "What"/"Pissed" quotes stand in for the TMG deploy action.
