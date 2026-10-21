@@ -1260,8 +1260,8 @@ window.AUDIO_REGISTRY = {
                                         "high_templar":  {
                                                              "unit":  {
                                                                           "name":  "High Templar",
-                                                                          "role":  "Support",
-                                                                          "weapon":  "Psionic Storm, Feedback"
+                                                                          "role":  "Support, Damage Dealer",
+                                                                          "weapon":  "Psi Blast"
                                                                       },
                                                              "regular_abilities":  {
                                                                                        "deploy":  {
