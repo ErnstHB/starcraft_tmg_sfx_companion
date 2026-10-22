@@ -18,6 +18,7 @@ const roleFiltersByFaction = new Map();
 const SFX_BANKS = { sc1: 'SC1', sc2: 'SC2' };
 const DEFAULT_SFX_BANK = 'sc2';
 const sfxBankStorageKey = (faction, unitKey) => `sfxBank:${faction}/${unitKey}`;
+const unitModeStorageKey = (faction, storageKey) => `unitMode:${faction}/${storageKey}`;
 
 // UI Elements Cache
 const elements = {
@@ -425,6 +426,34 @@ function setSfxBank(faction, unitKey, bank) {
     }
 }
 
+/* ==========================================================================
+   UNIT MODES (e.g. Nova: Stealth / Assault)
+   ========================================================================== */
+function getUnitMode(faction, group) {
+    try {
+        const stored = localStorage.getItem(unitModeStorageKey(faction, group.storageKey));
+        return group.modes.find(mode => mode.unitKey === stored) || group.modes[0];
+    } catch (e) {
+        return group.modes[0];
+    }
+}
+
+function setUnitMode(faction, group, mode) {
+    try {
+        localStorage.setItem(unitModeStorageKey(faction, group.storageKey), mode.unitKey);
+    } catch (e) {
+        console.warn('Unit mode preference could not be saved:', e);
+    }
+}
+
+function renderModeToggle(faction, group, activeMode) {
+    const buttons = group.modes.map(mode => {
+        const isActive = mode === activeMode;
+        return `<button type="button" class="bank-toggle-btn${isActive ? ' active' : ''}" data-mode="${escapeHtml(mode.unitKey)}" aria-pressed="${isActive}">${escapeHtml(mode.label.toUpperCase())}</button>`;
+    }).join('');
+    return `<div class="bank-toggle" role="group" aria-label="Mode for ${escapeHtml(group.title)}" data-e2e-id="mode-toggle-${faction}-${group.storageKey}">${buttons}</div>`;
+}
+
 // Returns the audio map used for playback: SC1 folders when selected and present, SC2 otherwise (per source key).
 function resolveUnitAudio(unitAudio, sc1Audio, bank) {
     if (bank !== 'sc1' || !sc1Audio) return unitAudio;
@@ -732,48 +761,101 @@ function renderFactionUnits(factionName, factionUnits, factionConfigs, factionSc
         return;
     }
 
+    groupUnitModes(factionName, factionUnits, factionConfigs, factionSc1Units)
+        .forEach(group => renderUnitCard(factionName, group, container));
+}
+
+// Units whose config.yaml share the same `unit.mode_group` (e.g. the two Nova cards) are rendered as ONE card
+// with a mode toggle. Every mode keeps its own config (weapon, abilities) and its own sound folders.
+function groupUnitModes(factionName, factionUnits, factionConfigs, factionSc1Units) {
+    const groups = [];
+    const groupsByName = {};
+
     Object.keys(factionUnits).forEach(unitKey => {
-        const unitAudio = factionUnits[unitKey];
         const config = factionConfigs && factionConfigs[unitKey];
         if (!config || !config.unit) throw new Error(`Missing generated config for ${factionName}/${unitKey}`);
-        const sc1Audio = (factionSc1Units && factionSc1Units[unitKey]) || null;
-        const hasSc1Bank = !!sc1Audio && Object.keys(sc1Audio).length > 0;
-        let activeBank = hasSc1Bank ? getSfxBank(factionName, unitKey) : DEFAULT_SFX_BANK;
+        const mode = {
+            unitKey,
+            config,
+            unitAudio: factionUnits[unitKey],
+            sc1Audio: (factionSc1Units && factionSc1Units[unitKey]) || null,
+            label: config.unit.mode_label || unitKey
+        };
+        const groupName = config.unit.mode_group;
+        if (!groupName) {
+            groups.push({ title: config.unit.name || unitKey, storageKey: unitKey, modes: [mode] });
+            return;
+        }
+        if (!groupsByName[groupName]) {
+            groupsByName[groupName] = { title: groupName, storageKey: groupName.toLowerCase().replace(/[^a-z0-9]+/g, '_'), modes: [] };
+            groups.push(groupsByName[groupName]);
+        }
+        groupsByName[groupName].modes.push(mode);
+    });
 
+    // Optional `unit.mode_order` (1, 2, ...) sets the toggle order; the first mode is the default one.
+    groups.forEach(group => group.modes.sort((a, b) => Number(a.config.unit.mode_order || 0) - Number(b.config.unit.mode_order || 0)));
+
+    return groups;
+}
+
+function renderUnitCard(factionName, group, container) {
+    const hasModes = group.modes.length > 1;
+    const primary = group.modes[0];
+    let activeMode = hasModes ? getUnitMode(factionName, group) : primary;
+
+    // The SC1/SC2 bank toggle only exists on single-mode cards (mode cards use the same slot for the mode toggle).
+    const sc1Audio = hasModes ? null : primary.sc1Audio;
+    const hasSc1Bank = !!sc1Audio && Object.keys(sc1Audio).length > 0;
+    let activeBank = hasSc1Bank ? getSfxBank(factionName, primary.unitKey) : DEFAULT_SFX_BANK;
+
+    const unitName = hasModes ? group.title : (primary.config.unit.name || primary.unitKey);
+    const card = document.createElement('div');
+    card.className = 'unit-card';
+    card.setAttribute('data-unit-name', unitName.toLowerCase());
+    card.setAttribute('data-play-count', '0');
+
+    const headerToggle = hasModes
+        ? renderModeToggle(factionName, group, activeMode)
+        : (hasSc1Bank ? renderBankToggle(factionName, primary.unitKey, activeBank, getSc1FallbackSources(primary.config, sc1Audio)) : '');
+
+    card.innerHTML = `
+        <div class="unit-header" onclick="toggleCard(this.parentNode)">
+            <div style="display: flex; align-items: center;">
+                <div class="sound-indicator"></div>
+                <div class="unit-title-group">
+                    <span class="unit-name">${escapeHtml(unitName)}</span>
+                    <span class="unit-role"></span>
+                </div>
+            </div>
+            <div class="unit-header-controls">
+                ${headerToggle}
+                <span class="chevron-icon">▼</span>
+            </div>
+        </div>
+        <div class="unit-body"></div>
+    `;
+    container.appendChild(card);
+
+    // Fills everything that depends on the active mode: role, description and the ability buttons.
+    const renderActiveMode = () => {
+        const { config } = activeMode;
         const metadata = config.unit;
-        const unitName = metadata.name || unitKey;
         const description = metadata.description || (metadata.weapon ? `Weapon: ${metadata.weapon}` : 'Wargame asset');
         const regular = Object.entries(config.regular_abilities || {});
         const additional = Object.entries(config.additional_abilities || {});
-        const card = document.createElement('div');
-        card.className = 'unit-card';
-        card.setAttribute('data-unit-name', unitName.toLowerCase());
-        card.setAttribute('data-play-count', '0');
+
         const roleParts = String(metadata.role || '').split(',').map(part => part.trim()).filter(Boolean);
         card.dataset.armySlot = normalizeRoleFilterValue(roleParts[0] || 'Unassigned');
         card.dataset.combatRole = normalizeRoleFilterValue(roleParts[1] || 'Unassigned');
+        card.querySelector('.unit-role').textContent = metadata.role || 'FIGHTER';
 
         let html = `
-            <div class="unit-header" onclick="toggleCard(this.parentNode)">
-                <div style="display: flex; align-items: center;">
-                    <div class="sound-indicator"></div>
-                    <div class="unit-title-group">
-                        <span class="unit-name">${escapeHtml(unitName)}</span>
-                        <span class="unit-role">${escapeHtml(metadata.role || 'FIGHTER')}</span>
-                    </div>
-                </div>
-                <div class="unit-header-controls">
-                    ${hasSc1Bank ? renderBankToggle(factionName, unitKey, activeBank, getSc1FallbackSources(config, sc1Audio)) : ''}
-                    <span class="chevron-icon">▼</span>
-                </div>
+            <div style="font-size: 0.65rem; color: var(--hud-text-muted); margin-bottom: 15px; border-left: 2px solid var(--hud-border); padding-left: 8px;">
+                ${escapeHtml(description).toUpperCase()}
             </div>
-            <div class="unit-body">
-                <div style="font-size: 0.65rem; color: var(--hud-text-muted); margin-bottom: 15px; border-left: 2px solid var(--hud-border); padding-left: 8px;">
-                    ${escapeHtml(description).toUpperCase()}
-                </div>
-                <div class="btn-matrix">${renderConfiguredButtons(regular, false)}</div>
+            <div class="btn-matrix">${renderConfiguredButtons(regular, false)}</div>
         `;
-
         if (additional.length > 0) {
             html += `
                 <div class="special-divider">
@@ -784,9 +866,7 @@ function renderFactionUnits(factionName, factionUnits, factionConfigs, factionSc
                 <div class="btn-matrix">${renderConfiguredButtons(additional, true)}</div>
             `;
         }
-        html += '</div>';
-        card.innerHTML = html;
-        container.appendChild(card);
+        card.querySelector('.unit-body').innerHTML = html;
 
         card.querySelectorAll('.config-ability-btn').forEach(button => {
             const ability = button.dataset.abilityGroup === 'additional'
@@ -794,25 +874,43 @@ function renderFactionUnits(factionName, factionUnits, factionConfigs, factionSc
                 : config.regular_abilities[button.dataset.abilityKey];
             button.addEventListener('click', event => {
                 event.stopPropagation();
-                playConfiguredAbility(ability, resolveUnitAudio(unitAudio, sc1Audio, activeBank), card, activeBank);
+                playConfiguredAbility(ability, resolveUnitAudio(activeMode.unitAudio, sc1Audio, activeBank), card, activeBank);
             });
         });
+    };
+    renderActiveMode();
 
-        card.querySelectorAll('.bank-toggle-btn').forEach(button => {
-            button.addEventListener('click', event => {
-                event.stopPropagation(); // Keep the accordion state untouched
-                const bank = button.dataset.bank;
-                if (bank === activeBank) return;
-                activeBank = bank;
-                setSfxBank(factionName, unitKey, bank);
-                card.querySelectorAll('.bank-toggle-btn').forEach(other => {
-                    const isActive = other.dataset.bank === bank;
-                    other.classList.toggle('active', isActive);
-                    other.setAttribute('aria-pressed', String(isActive));
-                });
-                showToast(`${unitName.toUpperCase()}: ${SFX_BANKS[bank]} sound bank active`);
-            });
+    card.querySelectorAll('.bank-toggle-btn[data-bank]').forEach(button => {
+        button.addEventListener('click', event => {
+            event.stopPropagation(); // Keep the accordion state untouched
+            const bank = button.dataset.bank;
+            if (bank === activeBank) return;
+            activeBank = bank;
+            setSfxBank(factionName, primary.unitKey, bank);
+            setToggleActive(card, '[data-bank]', 'bank', bank);
+            showToast(`${unitName.toUpperCase()}: ${SFX_BANKS[bank]} sound bank active`);
         });
+    });
+
+    card.querySelectorAll('.bank-toggle-btn[data-mode]').forEach(button => {
+        button.addEventListener('click', event => {
+            event.stopPropagation();
+            const mode = group.modes.find(candidate => candidate.unitKey === button.dataset.mode);
+            if (!mode || mode === activeMode) return;
+            activeMode = mode;
+            setUnitMode(factionName, group, mode);
+            setToggleActive(card, '[data-mode]', 'mode', mode.unitKey);
+            renderActiveMode();
+            showToast(`${unitName.toUpperCase()}: ${mode.label.toUpperCase()} mode active`);
+        });
+    });
+}
+
+function setToggleActive(card, selector, dataKey, value) {
+    card.querySelectorAll(`.bank-toggle-btn${selector}`).forEach(button => {
+        const isActive = button.dataset[dataKey] === value;
+        button.classList.toggle('active', isActive);
+        button.setAttribute('aria-pressed', String(isActive));
     });
 }
 

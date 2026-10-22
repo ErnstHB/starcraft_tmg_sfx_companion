@@ -1,19 +1,27 @@
 unit:
   name: "Nova (Stealth Mode)"
+  mode_group: "Nova"
+  mode_label: "Stealth"
+  mode_order: 1
   role: "Hero, Damage Dealer"
   weapon: "C-20A Canister Rifle, Combat Knife"
 regular_abilities:
+  # Deploy: Covert Ops ready lines, Tactical Stealth Suit cloak line and the co-op "stealth mode" lines (one pool).
   deploy:
     sound_sources: [deploy]
   move:
     sound_sources: [move]
+  # Attack: Covert Ops voice line, then the Ghost rifle shot.
   attack:
     sound_sources: [attack, attackFX]
     playback: sequential
   destroyed:
     sound_sources: [death]
 additional_abilities:
-  tactical_stealth_suit:
-    sound_sources: [stealth_suit]
   holo_decoy:
     sound_sources: [holo_decoy]
+  # Tactical Stealth Suit and Ghost Visor are passives (no button).
+  # TODO head_shot (Reaction, once per game): no sound source yet (a louder sniper shot would fit).
+  #   Add it here as: head_shot: sound_sources: [head_shot]  (and create the folder with audio).
+  # TODO super_stimpack: no sound source yet (the card has the ability, SC2 has no matching Nova voice line).
+  #   Add it here as: super_stimpack: sound_sources: [super_stimpack]  (and create the folder with audio).

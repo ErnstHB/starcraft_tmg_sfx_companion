@@ -1,18 +1,28 @@
 unit:
   name: "Nova (Assault Mode)"
+  mode_group: "Nova"
+  mode_label: "Assault"
+  mode_order: 2
   role: "Hero, Damage Dealer"
   weapon: "Hellfire Shotgun, Monomolecular Blade"
 regular_abilities:
+  # Deploy: Covert Ops ready lines and the co-op "assault mode" lines (one pool).
   deploy:
     sound_sources: [deploy]
   move:
     sound_sources: [move]
+  # Attack: voice only for now. TODO add the Hellfire Shotgun / Monomolecular Blade effects (attackFX) once found:
+  #   sound_sources: [attack, attackFX]  and  playback: sequential
   attack:
     sound_sources: [attack]
   destroyed:
     sound_sources: [death]
 additional_abilities:
+  # Phase Reactor Suit (the blink): the Stalker's blink sound for now.
   phase_reactor_suit:
     sound_sources: [phase_reactor_suit]
   holo_decoy:
     sound_sources: [holo_decoy]
+  # Ghost Visor is a passive (no button).
+  # TODO super_stimpack: no sound source yet (the card has the ability, SC2 has no matching Nova voice line).
+  #   Add it here as: super_stimpack: sound_sources: [super_stimpack]  (and create the folder with audio).
