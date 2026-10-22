@@ -1,0 +1,18 @@
+unit:
+  name: "Nova (Assault Mode)"
+  role: "Hero, Damage Dealer"
+  weapon: "Hellfire Shotgun, Monomolecular Blade"
+regular_abilities:
+  deploy:
+    sound_sources: [deploy]
+  move:
+    sound_sources: [move]
+  attack:
+    sound_sources: [attack]
+  destroyed:
+    sound_sources: [death]
+additional_abilities:
+  phase_reactor_suit:
+    sound_sources: [phase_reactor_suit]
+  holo_decoy:
+    sound_sources: [holo_decoy]

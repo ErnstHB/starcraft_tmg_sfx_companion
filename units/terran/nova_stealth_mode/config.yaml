@@ -1,0 +1,19 @@
+unit:
+  name: "Nova (Stealth Mode)"
+  role: "Hero, Damage Dealer"
+  weapon: "C-20A Canister Rifle, Combat Knife"
+regular_abilities:
+  deploy:
+    sound_sources: [deploy]
+  move:
+    sound_sources: [move]
+  attack:
+    sound_sources: [attack, attackFX]
+    playback: sequential
+  destroyed:
+    sound_sources: [death]
+additional_abilities:
+  tactical_stealth_suit:
+    sound_sources: [stealth_suit]
+  holo_decoy:
+    sound_sources: [holo_decoy]

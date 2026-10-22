@@ -29,6 +29,7 @@ $unitsRoot = Join-Path $PSScriptRoot 'units'
 # Standard English unit voice lines live here (enUS tag in CascView):
 $voice = '*\mods\liberty.sc2mod\enus.sc2assets\localizeddata\sounds\protossunitvo'
 $terranVoice = '*\mods\liberty.sc2mod\enus.sc2assets\localizeddata\sounds\terranunitvo'
+$novaVoice = '*\enus.sc2assets\localizeddata\sounds\terranunitvo\nova'   # Covert Ops lines sit in the liberty mod and the void campaign
 
 # target = '<race>/<unit>/<action>', patterns = staged files to copy there.
 $importMap = @(
@@ -52,6 +53,25 @@ $importMap = @(
     @{ target = 'terran/raven/auto_turret';        patterns = @("$terranVoice\raven\raven_autoturret??.ogg") }          # voice, followed by auto_turretFX
     @{ target = 'terran/raven/seeker_missile';     patterns = @("$terranVoice\raven\raven_hunterseeker??.ogg") }
     @{ target = 'terran/raven/anti_armour_missile'; patterns = @("$terranVoice\raven\raven_targetingdrone??.ogg") }     # closest SC2 line for the debuff missile (no dedicated voice)
+
+    # --- Terran Nova, Stealth Mode card (TMG wave 3): Covert Ops "n1" voice set + co-op commander lines ---
+    # Not imported from the game: attackFX/ is a copy of units/terran/raynor/revolver/Ghost_AttackLaunch0-2.ogg (rifle shots).
+    # Audition candidates, curate later: heronovamp1_what_n1??, heronovamp3_visor_* (Ghost Visor suit) and heronovamp1_yes?? are staged but unused.
+    @{ target = 'terran/nova_stealth_mode/deploy';       patterns = @("$novaVoice\heronovamp1_ready_n100.ogg") }
+    @{ target = 'terran/nova_stealth_mode/move';         patterns = @("$novaVoice\heronovamp1_yes_n10[0-4].ogg") }
+    @{ target = 'terran/nova_stealth_mode/attack';       patterns = @("$novaVoice\heronovamp1_attack0[0-5].ogg") }
+    @{ target = 'terran/nova_stealth_mode/death';        patterns = @("$novaVoice\heronovamp1_death0[01].wav") }
+    @{ target = 'terran/nova_stealth_mode/stealth_suit'; patterns = @("$novaVoice\heronovamp1_cloak00.ogg", '*\novacommander_stealthmode0[0-3].ogg') }
+    @{ target = 'terran/nova_stealth_mode/holo_decoy';   patterns = @('*\novacommander_holodecoy0[0-4].ogg') }
+
+    # --- Terran Nova, Assault Mode card (TMG wave 3): Covert Ops "n2"/"n3" voice sets + co-op commander lines ---
+    # No energy-sword/shotgun effect has been found yet, so the attack is voice only for now (see the Nova configs).
+    @{ target = 'terran/nova_assault_mode/deploy';       patterns = @("$novaVoice\heronovamp1_ready_n[23]00.ogg", "$novaVoice\heronovamp2hd_ready_n200.ogg") }
+    @{ target = 'terran/nova_assault_mode/move';         patterns = @("$novaVoice\heronovamp1_yes_n20[0-4].ogg", "$novaVoice\heronovamp2hd_yes_n20[0-4].ogg") }
+    @{ target = 'terran/nova_assault_mode/attack';       patterns = @("$novaVoice\heronovamp2hd_attack0[0-5].ogg") }
+    @{ target = 'terran/nova_assault_mode/death';        patterns = @("$novaVoice\heronovamp2hd_death0[235].wav") }
+    @{ target = 'terran/nova_assault_mode/phase_reactor_suit'; patterns = @('*\novacommander_assaultmode0[0-3].ogg') }
+    @{ target = 'terran/nova_assault_mode/holo_decoy';   patterns = @('*\novacommander_holodecoy0[0-4].ogg') }
 )
 
 if (-not (Test-Path -LiteralPath $SourceRoot)) {

@@ -542,6 +542,94 @@ window.AUDIO_REGISTRY = {
                                                             "units/terran/medic/move/Medic_Yes05.ogg"
                                                         ]
                                            },
+                                 "nova_assault_mode":  {
+                                                           "attack":  [
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp2hd_attack00.ogg",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp2hd_attack01.ogg",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp2hd_attack02.ogg",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp2hd_attack03.ogg",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp2hd_attack04.ogg",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp2hd_attack05.ogg"
+                                                                      ],
+                                                           "death":  [
+                                                                         "units/terran/nova_assault_mode/death/heronovamp2hd_death02.ogg",
+                                                                         "units/terran/nova_assault_mode/death/heronovamp2hd_death03.ogg",
+                                                                         "units/terran/nova_assault_mode/death/heronovamp2hd_death05.ogg"
+                                                                     ],
+                                                           "deploy":  [
+                                                                          "units/terran/nova_assault_mode/deploy/heronovamp1_ready_n200.ogg",
+                                                                          "units/terran/nova_assault_mode/deploy/heronovamp1_ready_n300.ogg",
+                                                                          "units/terran/nova_assault_mode/deploy/heronovamp2hd_ready_n200.ogg"
+                                                                      ],
+                                                           "holo_decoy":  [
+                                                                              "units/terran/nova_assault_mode/holo_decoy/novacommander_holodecoy00.ogg",
+                                                                              "units/terran/nova_assault_mode/holo_decoy/novacommander_holodecoy01.ogg",
+                                                                              "units/terran/nova_assault_mode/holo_decoy/novacommander_holodecoy02.ogg",
+                                                                              "units/terran/nova_assault_mode/holo_decoy/novacommander_holodecoy03.ogg",
+                                                                              "units/terran/nova_assault_mode/holo_decoy/novacommander_holodecoy04.ogg"
+                                                                          ],
+                                                           "move":  [
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n200.ogg",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n201.ogg",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n202.ogg",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n203.ogg",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n204.ogg",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp2hd_yes_n200.ogg",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp2hd_yes_n201.ogg",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp2hd_yes_n202.ogg",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp2hd_yes_n203.ogg",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp2hd_yes_n204.ogg"
+                                                                    ],
+                                                           "phase_reactor_suit":  [
+                                                                                      "units/terran/nova_assault_mode/phase_reactor_suit/novacommander_assaultmode00.ogg",
+                                                                                      "units/terran/nova_assault_mode/phase_reactor_suit/novacommander_assaultmode01.ogg",
+                                                                                      "units/terran/nova_assault_mode/phase_reactor_suit/novacommander_assaultmode02.ogg",
+                                                                                      "units/terran/nova_assault_mode/phase_reactor_suit/novacommander_assaultmode03.ogg"
+                                                                                  ]
+                                                       },
+                                 "nova_stealth_mode":  {
+                                                           "attack":  [
+                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack00.ogg",
+                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack01.ogg",
+                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack02.ogg",
+                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack03.ogg",
+                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack04.ogg",
+                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack05.ogg"
+                                                                      ],
+                                                           "attackFX":  [
+                                                                            "units/terran/nova_stealth_mode/attackFX/Ghost_AttackLaunch0.ogg",
+                                                                            "units/terran/nova_stealth_mode/attackFX/Ghost_AttackLaunch1.ogg",
+                                                                            "units/terran/nova_stealth_mode/attackFX/Ghost_AttackLaunch2.ogg"
+                                                                        ],
+                                                           "death":  [
+                                                                         "units/terran/nova_stealth_mode/death/heronovamp1_death00.ogg",
+                                                                         "units/terran/nova_stealth_mode/death/heronovamp1_death01.ogg"
+                                                                     ],
+                                                           "deploy":  [
+                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp1_ready_n100.ogg"
+                                                                      ],
+                                                           "holo_decoy":  [
+                                                                              "units/terran/nova_stealth_mode/holo_decoy/novacommander_holodecoy00.ogg",
+                                                                              "units/terran/nova_stealth_mode/holo_decoy/novacommander_holodecoy01.ogg",
+                                                                              "units/terran/nova_stealth_mode/holo_decoy/novacommander_holodecoy02.ogg",
+                                                                              "units/terran/nova_stealth_mode/holo_decoy/novacommander_holodecoy03.ogg",
+                                                                              "units/terran/nova_stealth_mode/holo_decoy/novacommander_holodecoy04.ogg"
+                                                                          ],
+                                                           "move":  [
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n100.ogg",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n101.ogg",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n102.ogg",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n103.ogg",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n104.ogg"
+                                                                    ],
+                                                           "stealth_suit":  [
+                                                                                "units/terran/nova_stealth_mode/stealth_suit/heronovamp1_cloak00.ogg",
+                                                                                "units/terran/nova_stealth_mode/stealth_suit/novacommander_stealthmode00.ogg",
+                                                                                "units/terran/nova_stealth_mode/stealth_suit/novacommander_stealthmode01.ogg",
+                                                                                "units/terran/nova_stealth_mode/stealth_suit/novacommander_stealthmode02.ogg",
+                                                                                "units/terran/nova_stealth_mode/stealth_suit/novacommander_stealthmode03.ogg"
+                                                                            ]
+                                                       },
                                  "raven":  {
                                                "anti_armour_missile":  [
                                                                            "units/terran/raven/anti_armour_missile/raven_targetingdrone00.ogg"
@@ -1692,6 +1780,90 @@ window.AUDIO_REGISTRY = {
 
                                                                               }
                                                  },
+                                       "nova_assault_mode":  {
+                                                                 "unit":  {
+                                                                              "name":  "Nova (Assault Mode)",
+                                                                              "role":  "Hero, Damage Dealer",
+                                                                              "weapon":  "Hellfire Shotgun, Monomolecular Blade"
+                                                                          },
+                                                                 "regular_abilities":  {
+                                                                                           "deploy":  {
+                                                                                                          "sound_sources":  [
+                                                                                                                                "deploy"
+                                                                                                                            ]
+                                                                                                      },
+                                                                                           "move":  {
+                                                                                                        "sound_sources":  [
+                                                                                                                              "move"
+                                                                                                                          ]
+                                                                                                    },
+                                                                                           "attack":  {
+                                                                                                          "sound_sources":  [
+                                                                                                                                "attack"
+                                                                                                                            ]
+                                                                                                      },
+                                                                                           "destroyed":  {
+                                                                                                             "sound_sources":  [
+                                                                                                                                   "death"
+                                                                                                                               ]
+                                                                                                         }
+                                                                                       },
+                                                                 "additional_abilities":  {
+                                                                                              "phase_reactor_suit":  {
+                                                                                                                         "sound_sources":  [
+                                                                                                                                               "phase_reactor_suit"
+                                                                                                                                           ]
+                                                                                                                     },
+                                                                                              "holo_decoy":  {
+                                                                                                                 "sound_sources":  [
+                                                                                                                                       "holo_decoy"
+                                                                                                                                   ]
+                                                                                                             }
+                                                                                          }
+                                                             },
+                                       "nova_stealth_mode":  {
+                                                                 "unit":  {
+                                                                              "name":  "Nova (Stealth Mode)",
+                                                                              "role":  "Hero, Damage Dealer",
+                                                                              "weapon":  "C-20A Canister Rifle, Combat Knife"
+                                                                          },
+                                                                 "regular_abilities":  {
+                                                                                           "deploy":  {
+                                                                                                          "sound_sources":  [
+                                                                                                                                "deploy"
+                                                                                                                            ]
+                                                                                                      },
+                                                                                           "move":  {
+                                                                                                        "sound_sources":  [
+                                                                                                                              "move"
+                                                                                                                          ]
+                                                                                                    },
+                                                                                           "attack":  {
+                                                                                                          "sound_sources":  [
+                                                                                                                                "attack",
+                                                                                                                                "attackFX"
+                                                                                                                            ],
+                                                                                                          "playback":  "sequential"
+                                                                                                      },
+                                                                                           "destroyed":  {
+                                                                                                             "sound_sources":  [
+                                                                                                                                   "death"
+                                                                                                                               ]
+                                                                                                         }
+                                                                                       },
+                                                                 "additional_abilities":  {
+                                                                                              "tactical_stealth_suit":  {
+                                                                                                                            "sound_sources":  [
+                                                                                                                                                  "stealth_suit"
+                                                                                                                                              ]
+                                                                                                                        },
+                                                                                              "holo_decoy":  {
+                                                                                                                 "sound_sources":  [
+                                                                                                                                       "holo_decoy"
+                                                                                                                                   ]
+                                                                                                             }
+                                                                                          }
+                                                             },
                                        "raven":  {
                                                      "unit":  {
                                                                   "name":  "Raven",
