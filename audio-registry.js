@@ -127,8 +127,14 @@ window.AUDIO_REGISTRY = {
                                                            ]
                                               },
                                   "high_templar":  {
+                                                       "attack":  [
+                                                                      "units/protoss/high_templar/attack/hightemplar_attack04.ogg",
+                                                                      "units/protoss/high_templar/attack/hightemplar_attack06.ogg"
+                                                                  ],
                                                        "death":  [
-                                                                     "units/protoss/high_templar/death/hightemplar_death0.ogg"
+                                                                     "units/protoss/high_templar/death/hightemplar_death0.ogg",
+                                                                     "units/protoss/high_templar/death/hightemplar_energylow00.ogg",
+                                                                     "units/protoss/high_templar/death/karass_death00.ogg"
                                                                  ],
                                                        "deploy":  [
                                                                       "units/protoss/high_templar/deploy/hightemplar_ready00.ogg",
@@ -954,6 +960,9 @@ window.AUDIO_REGISTRY = {
     "unitsSC1":  {
                      "protoss":  {
                                      "high_templar":  {
+                                                          "attack":  [
+                                                                         "units/protoss/high_templar/sc1/attack/ProtossHighTemplarWhat01SC1.ogg"
+                                                                     ],
                                                           "death":  [
                                                                         "units/protoss/high_templar/sc1/death/ProtossHighTemplarDeath00SC1.ogg"
                                                                     ],
@@ -1251,8 +1260,8 @@ window.AUDIO_REGISTRY = {
                                         "high_templar":  {
                                                              "unit":  {
                                                                           "name":  "High Templar",
-                                                                          "role":  "Support",
-                                                                          "weapon":  "Psionic Storm, Feedback"
+                                                                          "role":  "Support, Damage Dealer",
+                                                                          "weapon":  "Psi Blast"
                                                                       },
                                                              "regular_abilities":  {
                                                                                        "deploy":  {
@@ -1265,6 +1274,11 @@ window.AUDIO_REGISTRY = {
                                                                                                                           "move"
                                                                                                                       ]
                                                                                                 },
+                                                                                       "attack":  {
+                                                                                                      "sound_sources":  [
+                                                                                                                            "attack"
+                                                                                                                        ]
+                                                                                                  },
                                                                                        "destroyed":  {
                                                                                                          "sound_sources":  [
                                                                                                                                "death"

@@ -1,12 +1,14 @@
 unit:
   name: "High Templar"
-  role: "Support"
-  weapon: "Psionic Storm, Feedback"
+  role: "Support, Damage Dealer"
+  weapon: "Psi Blast"
 regular_abilities:
   deploy:
     sound_sources: [deploy]
   move:
     sound_sources: [move]
+  attack:
+    sound_sources: [attack]
   destroyed:
     sound_sources: [death]
 additional_abilities:
