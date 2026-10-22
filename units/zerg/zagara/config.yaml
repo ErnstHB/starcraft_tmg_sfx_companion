@@ -15,3 +15,7 @@ regular_abilities:
   destroyed:
     sound_sources: [death, deathFX]
     playback: simultaneous
+additional_abilities:
+  # TODO transfusion (Reaction): no sound source yet. Add it here as:
+  #   transfusion: sound_sources: [transfusion]  (and create the folder with audio).
+  # Passives (Commander, Psionic Link, Infested Drop) have no sound by design.

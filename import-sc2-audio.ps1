@@ -55,24 +55,7 @@ $importMap = @(
     @{ target = 'terran/raven/seeker_missile';     patterns = @("$terranVoice\raven\raven_hunterseeker??.ogg") }
     @{ target = 'terran/raven/anti_armour_missile'; patterns = @("$terranVoice\raven\raven_targetingdrone??.ogg") }     # closest SC2 line for the debuff missile (no dedicated voice)
 
-    # --- Terran Nova, Stealth Mode card (TMG wave 3): Covert Ops "n1" voice set + co-op commander lines ---
-    # Not imported from the game: attackFX/ is a copy of units/terran/raynor/revolver/Ghost_AttackLaunch0-2.ogg (rifle shots).
-    # Audition candidates, curate later: heronovamp1_what_n1??, heronovamp3_visor_* (Ghost Visor suit) and heronovamp1_yes?? are staged but unused.
-    @{ target = 'terran/nova_stealth_mode/deploy';       patterns = @("$novaVoice\heronovamp1_ready_n100.ogg") }
-    @{ target = 'terran/nova_stealth_mode/move';         patterns = @("$novaVoice\heronovamp1_yes_n10[0-4].ogg") }
-    @{ target = 'terran/nova_stealth_mode/attack';       patterns = @("$novaVoice\heronovamp1_attack0[0-5].ogg") }
-    @{ target = 'terran/nova_stealth_mode/death';        patterns = @("$novaVoice\heronovamp1_death0[01].wav") }
-    @{ target = 'terran/nova_stealth_mode/stealth_suit'; patterns = @("$novaVoice\heronovamp1_cloak00.ogg", '*\novacommander_stealthmode0[0-3].ogg') }
-    @{ target = 'terran/nova_stealth_mode/holo_decoy';   patterns = @('*\novacommander_holodecoy0[0-4].ogg') }
-
-    # --- Terran Nova, Assault Mode card (TMG wave 3): Covert Ops "n2"/"n3" voice sets + co-op commander lines ---
-    # No energy-sword/shotgun effect has been found yet, so the attack is voice only for now (see the Nova configs).
-    @{ target = 'terran/nova_assault_mode/deploy';       patterns = @("$novaVoice\heronovamp1_ready_n[23]00.ogg", "$novaVoice\heronovamp2hd_ready_n200.ogg") }
-    @{ target = 'terran/nova_assault_mode/move';         patterns = @("$novaVoice\heronovamp1_yes_n20[0-4].ogg", "$novaVoice\heronovamp2hd_yes_n20[0-4].ogg") }
-    @{ target = 'terran/nova_assault_mode/attack';       patterns = @("$novaVoice\heronovamp2hd_attack0[0-5].ogg") }
-    @{ target = 'terran/nova_assault_mode/death';        patterns = @("$novaVoice\heronovamp2hd_death0[235].wav") }
-    @{ target = 'terran/nova_assault_mode/phase_reactor_suit'; patterns = @('*\novacommander_assaultmode0[0-3].ogg') }
-    @{ target = 'terran/nova_assault_mode/holo_decoy';   patterns = @('*\novacommander_holodecoy0[0-4].ogg') }
+    # --- Terran Nova (TMG wave 3): see the Nova block after this table (two modes, one card) ---
 
     # --- Zerg Zagara (TMG wave 3) ---
     # Bile Launcher (a separate card) is intentionally left out for now.
@@ -83,6 +66,31 @@ $importMap = @(
     @{ target = 'zerg/zagara/attack';  patterns = @("$zergHeroVoice\zagarahero_attack??.ogg") }
     @{ target = 'zerg/zagara/death';   patterns = @("$zergHeroVoice\zagarahero_death??.wav") }
 )
+
+# --- Terran Nova (TMG wave 3) ---
+# Nova has two TMG cards (Stealth Mode, Assault Mode) that the app shows as ONE card with a mode toggle
+# (`mode_group` in both configs). Both modes share the Covert Ops voice pools (heronovamp1 + 2 + 3, never the
+# "2hd" set: it has a reverb, and never the "_np" neural-parasite lines). Only these differ per mode:
+#   deploy: the shared ready lines + the co-op commander mode lines (stealthmode + cloak, or assaultmode)
+#   attack: Stealth appends the Ghost rifle shot (attackFX/), Assault is voice only until a blade/shotgun effect is found
+# Not imported from the game, copied from existing repo files instead:
+#   nova_stealth_mode/attackFX/        <- units/terran/raynor/revolver/Ghost_AttackLaunch0-2.ogg (rifle shots)
+#   nova_assault_mode/phase_reactor_suit/ <- units/protoss/stalker/blink/Stalker_Blink0.ogg (placeholder blink sound)
+# Staged but unused (curate later): heronovamp1_what_n*, heronovamp3_visor_what*, heronovamp1_respawn* and the rest of the set.
+$novaShared = @(
+    @{ action = 'deploy';     patterns = @("$novaVoice\heronovamp1_ready_n[123]00.ogg", "$novaVoice\heronovamp2_ready00.ogg", "$novaVoice\heronovamp3_visor_ready00.ogg") }
+    @{ action = 'move';       patterns = @("$novaVoice\heronovamp1_yes0[0-3].ogg", "$novaVoice\heronovamp1_yes_n[12]0[0-4].ogg") }
+    @{ action = 'attack';     patterns = @("$novaVoice\heronovamp1_attack0[0-5].ogg", "$novaVoice\heronovamp3_visor_attack0[01].ogg") }
+    @{ action = 'death';      patterns = @("$novaVoice\heronovamp1_death0[01].wav", "$novaVoice\heronovamp3_visor_death00.wav") }
+    @{ action = 'holo_decoy'; patterns = @('*\novacommander_holodecoy0[0-4].ogg') }
+)
+foreach ($mode in 'nova_stealth_mode', 'nova_assault_mode') {
+    foreach ($shared in $novaShared) {
+        $importMap += @{ target = "terran/$mode/$($shared.action)"; patterns = $shared.patterns }
+    }
+}
+$importMap += @{ target = 'terran/nova_stealth_mode/deploy'; patterns = @("$novaVoice\heronovamp1_cloak00.ogg", '*\novacommander_stealthmode0[0-3].ogg') }
+$importMap += @{ target = 'terran/nova_assault_mode/deploy'; patterns = @('*\novacommander_assaultmode0[0-3].ogg') }
 
 if (-not (Test-Path -LiteralPath $SourceRoot)) {
     Write-Error "Staging folder not found: $SourceRoot. Extract the game files with CascView first (see the script header)."

@@ -544,22 +544,30 @@ window.AUDIO_REGISTRY = {
                                            },
                                  "nova_assault_mode":  {
                                                            "attack":  [
-                                                                          "units/terran/nova_assault_mode/attack/heronovamp2hd_attack00.ogg",
-                                                                          "units/terran/nova_assault_mode/attack/heronovamp2hd_attack01.ogg",
-                                                                          "units/terran/nova_assault_mode/attack/heronovamp2hd_attack02.ogg",
-                                                                          "units/terran/nova_assault_mode/attack/heronovamp2hd_attack03.ogg",
-                                                                          "units/terran/nova_assault_mode/attack/heronovamp2hd_attack04.ogg",
-                                                                          "units/terran/nova_assault_mode/attack/heronovamp2hd_attack05.ogg"
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack00.ogg",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack01.ogg",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack02.ogg",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack03.ogg",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack04.ogg",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack05.ogg",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp3_visor_attack00.ogg",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp3_visor_attack01.ogg"
                                                                       ],
                                                            "death":  [
-                                                                         "units/terran/nova_assault_mode/death/heronovamp2hd_death02.ogg",
-                                                                         "units/terran/nova_assault_mode/death/heronovamp2hd_death03.ogg",
-                                                                         "units/terran/nova_assault_mode/death/heronovamp2hd_death05.ogg"
+                                                                         "units/terran/nova_assault_mode/death/heronovamp1_death00.ogg",
+                                                                         "units/terran/nova_assault_mode/death/heronovamp1_death01.ogg",
+                                                                         "units/terran/nova_assault_mode/death/heronovamp3_visor_death00.ogg"
                                                                      ],
                                                            "deploy":  [
+                                                                          "units/terran/nova_assault_mode/deploy/heronovamp1_ready_n100.ogg",
                                                                           "units/terran/nova_assault_mode/deploy/heronovamp1_ready_n200.ogg",
                                                                           "units/terran/nova_assault_mode/deploy/heronovamp1_ready_n300.ogg",
-                                                                          "units/terran/nova_assault_mode/deploy/heronovamp2hd_ready_n200.ogg"
+                                                                          "units/terran/nova_assault_mode/deploy/heronovamp2_ready00.ogg",
+                                                                          "units/terran/nova_assault_mode/deploy/heronovamp3_visor_ready00.ogg",
+                                                                          "units/terran/nova_assault_mode/deploy/novacommander_assaultmode00.ogg",
+                                                                          "units/terran/nova_assault_mode/deploy/novacommander_assaultmode01.ogg",
+                                                                          "units/terran/nova_assault_mode/deploy/novacommander_assaultmode02.ogg",
+                                                                          "units/terran/nova_assault_mode/deploy/novacommander_assaultmode03.ogg"
                                                                       ],
                                                            "holo_decoy":  [
                                                                               "units/terran/nova_assault_mode/holo_decoy/novacommander_holodecoy00.ogg",
@@ -569,22 +577,23 @@ window.AUDIO_REGISTRY = {
                                                                               "units/terran/nova_assault_mode/holo_decoy/novacommander_holodecoy04.ogg"
                                                                           ],
                                                            "move":  [
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes00.ogg",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes01.ogg",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes02.ogg",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes03.ogg",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n100.ogg",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n101.ogg",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n102.ogg",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n103.ogg",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n104.ogg",
                                                                         "units/terran/nova_assault_mode/move/heronovamp1_yes_n200.ogg",
                                                                         "units/terran/nova_assault_mode/move/heronovamp1_yes_n201.ogg",
                                                                         "units/terran/nova_assault_mode/move/heronovamp1_yes_n202.ogg",
                                                                         "units/terran/nova_assault_mode/move/heronovamp1_yes_n203.ogg",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n204.ogg",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp2hd_yes_n200.ogg",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp2hd_yes_n201.ogg",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp2hd_yes_n202.ogg",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp2hd_yes_n203.ogg",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp2hd_yes_n204.ogg"
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n204.ogg"
                                                                     ],
                                                            "phase_reactor_suit":  [
-                                                                                      "units/terran/nova_assault_mode/phase_reactor_suit/novacommander_assaultmode00.ogg",
-                                                                                      "units/terran/nova_assault_mode/phase_reactor_suit/novacommander_assaultmode01.ogg",
-                                                                                      "units/terran/nova_assault_mode/phase_reactor_suit/novacommander_assaultmode02.ogg",
-                                                                                      "units/terran/nova_assault_mode/phase_reactor_suit/novacommander_assaultmode03.ogg"
+                                                                                      "units/terran/nova_assault_mode/phase_reactor_suit/Stalker_Blink0.ogg"
                                                                                   ]
                                                        },
                                  "nova_stealth_mode":  {
@@ -594,7 +603,9 @@ window.AUDIO_REGISTRY = {
                                                                           "units/terran/nova_stealth_mode/attack/heronovamp1_attack02.ogg",
                                                                           "units/terran/nova_stealth_mode/attack/heronovamp1_attack03.ogg",
                                                                           "units/terran/nova_stealth_mode/attack/heronovamp1_attack04.ogg",
-                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack05.ogg"
+                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack05.ogg",
+                                                                          "units/terran/nova_stealth_mode/attack/heronovamp3_visor_attack00.ogg",
+                                                                          "units/terran/nova_stealth_mode/attack/heronovamp3_visor_attack01.ogg"
                                                                       ],
                                                            "attackFX":  [
                                                                             "units/terran/nova_stealth_mode/attackFX/Ghost_AttackLaunch0.ogg",
@@ -603,10 +614,20 @@ window.AUDIO_REGISTRY = {
                                                                         ],
                                                            "death":  [
                                                                          "units/terran/nova_stealth_mode/death/heronovamp1_death00.ogg",
-                                                                         "units/terran/nova_stealth_mode/death/heronovamp1_death01.ogg"
+                                                                         "units/terran/nova_stealth_mode/death/heronovamp1_death01.ogg",
+                                                                         "units/terran/nova_stealth_mode/death/heronovamp3_visor_death00.ogg"
                                                                      ],
                                                            "deploy":  [
-                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp1_ready_n100.ogg"
+                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp1_cloak00.ogg",
+                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp1_ready_n100.ogg",
+                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp1_ready_n200.ogg",
+                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp1_ready_n300.ogg",
+                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp2_ready00.ogg",
+                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp3_visor_ready00.ogg",
+                                                                          "units/terran/nova_stealth_mode/deploy/novacommander_stealthmode00.ogg",
+                                                                          "units/terran/nova_stealth_mode/deploy/novacommander_stealthmode01.ogg",
+                                                                          "units/terran/nova_stealth_mode/deploy/novacommander_stealthmode02.ogg",
+                                                                          "units/terran/nova_stealth_mode/deploy/novacommander_stealthmode03.ogg"
                                                                       ],
                                                            "holo_decoy":  [
                                                                               "units/terran/nova_stealth_mode/holo_decoy/novacommander_holodecoy00.ogg",
@@ -616,19 +637,21 @@ window.AUDIO_REGISTRY = {
                                                                               "units/terran/nova_stealth_mode/holo_decoy/novacommander_holodecoy04.ogg"
                                                                           ],
                                                            "move":  [
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes00.ogg",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes01.ogg",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes02.ogg",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes03.ogg",
                                                                         "units/terran/nova_stealth_mode/move/heronovamp1_yes_n100.ogg",
                                                                         "units/terran/nova_stealth_mode/move/heronovamp1_yes_n101.ogg",
                                                                         "units/terran/nova_stealth_mode/move/heronovamp1_yes_n102.ogg",
                                                                         "units/terran/nova_stealth_mode/move/heronovamp1_yes_n103.ogg",
-                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n104.ogg"
-                                                                    ],
-                                                           "stealth_suit":  [
-                                                                                "units/terran/nova_stealth_mode/stealth_suit/heronovamp1_cloak00.ogg",
-                                                                                "units/terran/nova_stealth_mode/stealth_suit/novacommander_stealthmode00.ogg",
-                                                                                "units/terran/nova_stealth_mode/stealth_suit/novacommander_stealthmode01.ogg",
-                                                                                "units/terran/nova_stealth_mode/stealth_suit/novacommander_stealthmode02.ogg",
-                                                                                "units/terran/nova_stealth_mode/stealth_suit/novacommander_stealthmode03.ogg"
-                                                                            ]
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n104.ogg",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n200.ogg",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n201.ogg",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n202.ogg",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n203.ogg",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n204.ogg"
+                                                                    ]
                                                        },
                                  "raven":  {
                                                "anti_armour_missile":  [
@@ -1833,6 +1856,9 @@ window.AUDIO_REGISTRY = {
                                        "nova_assault_mode":  {
                                                                  "unit":  {
                                                                               "name":  "Nova (Assault Mode)",
+                                                                              "mode_group":  "Nova",
+                                                                              "mode_label":  "Assault",
+                                                                              "mode_order":  "2",
                                                                               "role":  "Hero, Damage Dealer",
                                                                               "weapon":  "Hellfire Shotgun, Monomolecular Blade"
                                                                           },
@@ -1874,6 +1900,9 @@ window.AUDIO_REGISTRY = {
                                        "nova_stealth_mode":  {
                                                                  "unit":  {
                                                                               "name":  "Nova (Stealth Mode)",
+                                                                              "mode_group":  "Nova",
+                                                                              "mode_label":  "Stealth",
+                                                                              "mode_order":  "1",
                                                                               "role":  "Hero, Damage Dealer",
                                                                               "weapon":  "C-20A Canister Rifle, Combat Knife"
                                                                           },
@@ -1902,11 +1931,6 @@ window.AUDIO_REGISTRY = {
                                                                                                          }
                                                                                        },
                                                                  "additional_abilities":  {
-                                                                                              "tactical_stealth_suit":  {
-                                                                                                                            "sound_sources":  [
-                                                                                                                                                  "stealth_suit"
-                                                                                                                                              ]
-                                                                                                                        },
                                                                                               "holo_decoy":  {
                                                                                                                  "sound_sources":  [
                                                                                                                                        "holo_decoy"
