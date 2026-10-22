@@ -1027,6 +1027,56 @@ window.AUDIO_REGISTRY = {
                                                               "units/zerg/roach/unburrow/Zerg_UnburrowSmall2.ogg"
                                                           ]
                                          },
+                               "zagara":  {
+                                              "attack":  [
+                                                             "units/zerg/zagara/attack/zagarahero_attack00.ogg",
+                                                             "units/zerg/zagara/attack/zagarahero_attack01.ogg",
+                                                             "units/zerg/zagara/attack/zagarahero_attack02.ogg",
+                                                             "units/zerg/zagara/attack/zagarahero_attack03.ogg",
+                                                             "units/zerg/zagara/attack/zagarahero_attack04.ogg",
+                                                             "units/zerg/zagara/attack/zagarahero_attack05.ogg",
+                                                             "units/zerg/zagara/attack/zagarahero_attack06.ogg"
+                                                         ],
+                                              "attackFX":  [
+                                                               "units/zerg/zagara/attackFX/Zerg_AttackImpactLargeSlice0.ogg",
+                                                               "units/zerg/zagara/attackFX/Zerg_AttackImpactLargeSlice1.ogg",
+                                                               "units/zerg/zagara/attackFX/Zerg_AttackImpactLargeSlice2.ogg",
+                                                               "units/zerg/zagara/attackFX/Zerg_AttackImpactLargeSlice3.ogg",
+                                                               "units/zerg/zagara/attackFX/Zerg_AttackImpactLargeSlice4.ogg"
+                                                           ],
+                                              "combat":  [
+                                                             "units/zerg/zagara/combat/Zerg_AttackLaunchLargeSwing0.ogg",
+                                                             "units/zerg/zagara/combat/Zerg_AttackLaunchLargeSwing1.ogg",
+                                                             "units/zerg/zagara/combat/Zerg_AttackLaunchLargeSwing2.ogg",
+                                                             "units/zerg/zagara/combat/Zerg_AttackLaunchLargeSwing3.ogg"
+                                                         ],
+                                              "death":  [
+                                                            "units/zerg/zagara/death/zagarahero_death00.ogg",
+                                                            "units/zerg/zagara/death/zagarahero_death01.ogg"
+                                                        ],
+                                              "deathFX":  [
+                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium0.ogg",
+                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium1.ogg",
+                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium2.ogg",
+                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium3.ogg",
+                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium4.ogg",
+                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium5.ogg",
+                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium6.ogg"
+                                                          ],
+                                              "deploy":  [
+                                                             "units/zerg/zagara/deploy/zagarahero_ready00.ogg",
+                                                             "units/zerg/zagara/deploy/zagarahero_ready01.ogg"
+                                                         ],
+                                              "move":  [
+                                                           "units/zerg/zagara/move/zagarahero_yes00.ogg",
+                                                           "units/zerg/zagara/move/zagarahero_yes01.ogg",
+                                                           "units/zerg/zagara/move/zagarahero_yes02.ogg",
+                                                           "units/zerg/zagara/move/zagarahero_yes03.ogg",
+                                                           "units/zerg/zagara/move/zagarahero_yes04.ogg",
+                                                           "units/zerg/zagara/move/zagarahero_yes05.ogg",
+                                                           "units/zerg/zagara/move/zagarahero_yes06.ogg"
+                                                       ]
+                                          },
                                "zergling":  {
                                                 "attack":  [
                                                                "units/zerg/zergling/attack/Zergling_AttackLaunch0.ogg",
@@ -2253,6 +2303,47 @@ window.AUDIO_REGISTRY = {
                                                                                              }
                                                                             }
                                                },
+                                     "zagara":  {
+                                                    "unit":  {
+                                                                 "name":  "Zagara",
+                                                                 "role":  "Hero, Tactician",
+                                                                 "weapon":  "Zagara\u0027s Talons, Zagara\u0027s Acid Spines, Talons"
+                                                             },
+                                                    "regular_abilities":  {
+                                                                              "deploy":  {
+                                                                                             "sound_sources":  [
+                                                                                                                   "deploy"
+                                                                                                               ]
+                                                                                         },
+                                                                              "move":  {
+                                                                                           "sound_sources":  [
+                                                                                                                 "move"
+                                                                                                             ]
+                                                                                       },
+                                                                              "attack":  {
+                                                                                             "sound_sources":  [
+                                                                                                                   "attack",
+                                                                                                                   "attackFX"
+                                                                                                               ],
+                                                                                             "playback":  "sequential"
+                                                                                         },
+                                                                              "melee_combat":  {
+                                                                                                   "sound_sources":  [
+                                                                                                                         "combat"
+                                                                                                                     ]
+                                                                                               },
+                                                                              "destroyed":  {
+                                                                                                "sound_sources":  [
+                                                                                                                      "death",
+                                                                                                                      "deathFX"
+                                                                                                                  ],
+                                                                                                "playback":  "simultaneous"
+                                                                                            }
+                                                                          },
+                                                    "additional_abilities":  {
+
+                                                                             }
+                                                },
                                      "zergling":  {
                                                       "unit":  {
                                                                    "name":  "Zergling",
