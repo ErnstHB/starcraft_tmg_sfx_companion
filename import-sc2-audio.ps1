@@ -28,6 +28,7 @@ $unitsRoot = Join-Path $PSScriptRoot 'units'
 
 # Standard English unit voice lines live here (enUS tag in CascView):
 $voice = '*\mods\liberty.sc2mod\enus.sc2assets\localizeddata\sounds\protossunitvo'
+$terranVoice = '*\mods\liberty.sc2mod\enus.sc2assets\localizeddata\sounds\terranunitvo'
 
 # target = '<race>/<unit>/<action>', patterns = staged files to copy there.
 $importMap = @(
@@ -41,6 +42,16 @@ $importMap = @(
     @{ target = 'protoss/high_templar/death';         patterns = @("$voice\hightemplar\hightemplar_death*.ogg", "$voice\hightemplar\hightemplar_death*.wav",
                                                                    "$voice\hightemplar\hightemplar_energylow00.ogg",                              # "low energy" line as an extra death line
                                                                    '*\campaigns\liberty.sc2campaign\enus.sc2assets\localizeddata\sounds\protossvo\campaignunits\karass\karass_death*.wav') }  # Karass is a campaign High Templar
+
+    # --- Terran Raven (TMG wave 3) ---
+    # Not imported from the game, copied from existing repo files instead:
+    #   death/          <- units/terran/tank/death/SiegeTank_Death0.ogg (placeholder until the Raven has a better sound)
+    #   auto_turretFX/  <- units/terran/goliath/attack/Goliath_GroundAttackLaunch0-2.ogg (gunfire after the voice line)
+    @{ target = 'terran/raven/deploy';             patterns = @("$terranVoice\raven\raven_ready??.ogg") }
+    @{ target = 'terran/raven/move';               patterns = @("$terranVoice\raven\raven_yes??.ogg") }
+    @{ target = 'terran/raven/auto_turret';        patterns = @("$terranVoice\raven\raven_autoturret??.ogg") }          # voice, followed by auto_turretFX
+    @{ target = 'terran/raven/seeker_missile';     patterns = @("$terranVoice\raven\raven_hunterseeker??.ogg") }
+    @{ target = 'terran/raven/anti_armour_missile'; patterns = @("$terranVoice\raven\raven_targetingdrone??.ogg") }     # closest SC2 line for the debuff missile (no dedicated voice)
 )
 
 if (-not (Test-Path -LiteralPath $SourceRoot)) {
