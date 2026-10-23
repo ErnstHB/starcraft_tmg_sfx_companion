@@ -30,7 +30,7 @@
         <header class="app-header">
             <div class="hud-top-border"></div>
             <div class="hud-main-bar">
-                <img src="pics/app_logo.png" class="hud-logo" alt="SC TMG Logo">
+                <img src="pics/app_logo_small.png" class="hud-logo" alt="SC TMG Logo">
             </div>
             
             <!-- Faction Nav Tabs -->
@@ -178,7 +178,54 @@
                             </div>
                         </div>
                     </fieldset>
-                    
+
+                    <!-- Install the app and keep the sounds available offline (offline.js) -->
+                    <fieldset class="config-frame" id="offline-frame" data-e2e-id="offline-frame">
+                        <legend class="config-frame-title">INSTALL &amp; OFFLINE</legend>
+                        <div class="config-grid">
+                            <div class="config-card">
+                                <div class="card-title">INSTALL APP</div>
+                                <div id="install-status" class="offline-status" data-e2e-id="install-status"></div>
+                                <button type="button" id="btn-install-app" class="hud-action-btn" data-e2e-id="btn-install-app" hidden>INSTALL APP</button>
+                                <div id="install-ios-hint" class="offline-hint" hidden>ON IPHONE / IPAD: TAP SHARE, THEN "ADD TO HOME SCREEN".</div>
+                            </div>
+
+                            <div class="config-card">
+                                <div class="card-title">OFFLINE SOUNDS</div>
+                                <div class="toggle-group">
+                                    <label class="hud-checkbox-container">
+                                        <input type="checkbox" id="offline-terran" checked>
+                                        <span class="hud-checkbox"></span>
+                                        TERRAN UNITS
+                                    </label>
+                                    <label class="hud-checkbox-container">
+                                        <input type="checkbox" id="offline-zerg" checked>
+                                        <span class="hud-checkbox"></span>
+                                        ZERG UNITS
+                                    </label>
+                                    <label class="hud-checkbox-container">
+                                        <input type="checkbox" id="offline-protoss" checked>
+                                        <span class="hud-checkbox"></span>
+                                        PROTOSS UNITS
+                                    </label>
+                                    <label class="hud-checkbox-container">
+                                        <input type="checkbox" id="offline-ost">
+                                        <span class="hud-checkbox"></span>
+                                        BATTLE MUSIC (LARGE)
+                                    </label>
+                                </div>
+                                <div class="offline-actions">
+                                    <button type="button" id="btn-offline-prepare" class="hud-action-btn" data-e2e-id="btn-offline-prepare">PREPARE OFFLINE</button>
+                                    <button type="button" id="btn-offline-clear" class="hud-action-btn hud-action-btn-quiet" data-e2e-id="btn-offline-clear">REMOVE OFFLINE DATA</button>
+                                </div>
+                                <div id="offline-progress" class="offline-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" hidden>
+                                    <div id="offline-progress-bar" class="offline-progress-bar"></div>
+                                </div>
+                                <div id="offline-status" class="offline-status" data-e2e-id="offline-status"></div>
+                            </div>
+                        </div>
+                    </fieldset>
+
                     <!-- GitHub Repository Links (this fork and the original project) -->
                     <div class="hud-repo-link-container">
                         <a href="https://github.com/JerryJohnsonLee/starcraft_tmg_sfx_companion" target="_blank" rel="noopener" class="hud-repo-link" title="VIEW THE ORIGINAL REPOSITORY ON GITHUB">
@@ -193,6 +240,11 @@
                             </svg>
                             <span>THIS VERSION ON GITHUB</span>
                         </a>
+                    </div>
+
+                    <!-- Change log: recent changes in a dialog (changelog.js) -->
+                    <div class="hud-changelog-row">
+                        <button type="button" id="btn-changelog" class="hud-text-btn" data-e2e-id="btn-changelog">CHANGE LOG</button>
                     </div>
 
                     <!-- Unofficial Disclaimer Section -->
@@ -226,9 +278,19 @@
         </main>
     </div>
 
+    <dialog id="changelog-dialog" class="hud-dialog" aria-labelledby="changelog-title" data-e2e-id="changelog-dialog">
+        <div class="hud-dialog-header">
+            <h2 id="changelog-title" class="hud-dialog-title">CHANGE LOG</h2>
+            <button type="button" id="btn-changelog-close" class="hud-dialog-close" aria-label="Close change log">&times;</button>
+        </div>
+        <ul id="changelog-list" class="changelog-list"></ul>
+    </dialog>
+
     <!-- Web Audio & Core Javascript Files -->
     <script src="audio-registry.js?v=wave3-v14"></script>
     <script src="app.js?v=wave3-v4"></script>
-    <script src="pwa.js?v=pwa-v1"></script>
+    <script src="pwa.js?v=pwa-v2"></script>
+    <script src="offline.js?v=offline-v1"></script>
+    <script src="changelog.js?v=changelog-v1"></script>
 </body>
 </html>
