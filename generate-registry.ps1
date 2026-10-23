@@ -114,9 +114,12 @@ Get-ChildItem -LiteralPath $unitsRoot -File -Recurse | ForEach-Object {
             $isSC1 = $parts[3] -eq $sc1FolderName
             if ($isSC1 -and $parts.Count -lt 6) { return }
             $action = if ($isSC1) { $parts[4] } else { $parts[3] }
-            $bank = if ($isSC1) { $registry.unitsSC1 } else { $registry.units }
+            # Units without SC2 audio set `unit.audio_source: sc1`; their sc1/ folders are the only (primary) bank.
+            $isSC1Only = $registry.unitConfigs[$race].Contains($unit) -and $registry.unitConfigs[$race][$unit].unit.audio_source -eq 'sc1'
+            $isSecondaryBank = $isSC1 -and -not $isSC1Only
+            $bank = if ($isSecondaryBank) { $registry.unitsSC1 } else { $registry.units }
             if ($registry.units[$race] -and $registry.units[$race].Contains($unit)) {
-                if ($isSC1 -and -not $bank[$race].Contains($unit)) {
+                if ($isSecondaryBank -and -not $bank[$race].Contains($unit)) {
                     $bank[$race][$unit] = [ordered]@{}
                 }
                 if (-not $bank[$race][$unit].Contains($action)) {

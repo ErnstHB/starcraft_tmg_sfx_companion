@@ -282,6 +282,25 @@ window.AUDIO_REGISTRY = {
                                                                 "units/protoss/stalker/ready/Stalker_Ready00.ogg"
                                                             ]
                                               },
+                                  "tassadar":  {
+                                                   "death":  [
+                                                                 "units/protoss/tassadar/sc1/death/ProtossTassadarHighTemplarDeath00SC1.ogg"
+                                                             ],
+                                                   "deploy":  [
+                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarPissed00-01SC1.ogg",
+                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarPissed02-03SC1.ogg",
+                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarWhat00SC1.ogg",
+                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarWhat01SC1.ogg",
+                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarWhat02SC1.ogg",
+                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarWhat03SC1.ogg"
+                                                              ],
+                                                   "move":  [
+                                                                "units/protoss/tassadar/sc1/move/ProtossTassadarHighTemplarYes00SC1.ogg",
+                                                                "units/protoss/tassadar/sc1/move/ProtossTassadarHighTemplarYes01SC1.ogg",
+                                                                "units/protoss/tassadar/sc1/move/ProtossTassadarHighTemplarYes02SC1.ogg",
+                                                                "units/protoss/tassadar/sc1/move/ProtossTassadarHighTemplarYes03SC1.ogg"
+                                                            ]
+                                               },
                                   "zealot":  {
                                                  "charge":  [
                                                                 "units/protoss/zealot/charge/charge.ogg"
@@ -787,6 +806,56 @@ window.AUDIO_REGISTRY = {
                                           }
                              },
                   "zerg":  {
+                               "defiler":  {
+                                               "burrow":  [
+                                                              "units/zerg/defiler/burrow/Zerg_BurrowSmall0.ogg",
+                                                              "units/zerg/defiler/burrow/Zerg_BurrowSmall1.ogg",
+                                                              "units/zerg/defiler/burrow/Zerg_BurrowSmall2.ogg"
+                                                          ],
+                                               "combat":  [
+                                                              "units/zerg/defiler/combat/Roach_AttackLaunchMelee0.ogg",
+                                                              "units/zerg/defiler/combat/Roach_AttackLaunchMelee1.ogg",
+                                                              "units/zerg/defiler/combat/Roach_AttackLaunchMelee2.ogg",
+                                                              "units/zerg/defiler/combat/Roach_AttackLaunchMelee3.ogg",
+                                                              "units/zerg/defiler/combat/Roach_AttackLaunchMelee4.ogg"
+                                                          ],
+                                               "combatVO":  [
+                                                                "units/zerg/defiler/sc1/combatVO/ZergDefilerPissed00SC1.ogg",
+                                                                "units/zerg/defiler/sc1/combatVO/ZergDefilerPissed01SC1.ogg",
+                                                                "units/zerg/defiler/sc1/combatVO/ZergDefilerPissed02SC1.ogg",
+                                                                "units/zerg/defiler/sc1/combatVO/ZergDefilerPissed03SC1.ogg"
+                                                            ],
+                                               "consume":  [
+                                                               "units/zerg/defiler/sc1/consume/ZergDefilerConsume00SC1.ogg"
+                                                           ],
+                                               "dark_swarm":  [
+                                                                  "units/zerg/defiler/sc1/dark_swarm/ZergDefilerPlague01SC1.ogg"
+                                                              ],
+                                               "death":  [
+                                                             "units/zerg/defiler/sc1/death/ZergDefilerDeath00SC1.ogg"
+                                                         ],
+                                               "deploy":  [
+                                                              "units/zerg/defiler/sc1/deploy/ZergDefilerReady00SC1.ogg",
+                                                              "units/zerg/defiler/sc1/deploy/ZergDefilerWhat00SC1.ogg",
+                                                              "units/zerg/defiler/sc1/deploy/ZergDefilerWhat01SC1.ogg",
+                                                              "units/zerg/defiler/sc1/deploy/ZergDefilerWhat02SC1.ogg",
+                                                              "units/zerg/defiler/sc1/deploy/ZergDefilerWhat03SC1.ogg"
+                                                          ],
+                                               "move":  [
+                                                            "units/zerg/defiler/sc1/move/ZergDefilerYes00SC1.ogg",
+                                                            "units/zerg/defiler/sc1/move/ZergDefilerYes01SC1.ogg",
+                                                            "units/zerg/defiler/sc1/move/ZergDefilerYes02SC1.ogg",
+                                                            "units/zerg/defiler/sc1/move/ZergDefilerYes03SC1.ogg"
+                                                        ],
+                                               "plague":  [
+                                                              "units/zerg/defiler/sc1/plague/ZergDefilerPlague00SC1.ogg"
+                                                          ],
+                                               "unburrow":  [
+                                                                "units/zerg/defiler/unburrow/Zerg_UnburrowSmall0.ogg",
+                                                                "units/zerg/defiler/unburrow/Zerg_UnburrowSmall1.ogg",
+                                                                "units/zerg/defiler/unburrow/Zerg_UnburrowSmall2.ogg"
+                                                            ]
+                                           },
                                "hydralisk":  {
                                                  "attack":  [
                                                                 "units/zerg/hydralisk/attack/Hydralisk_AttackLaunchRanged0.ogg",
@@ -1626,6 +1695,34 @@ window.AUDIO_REGISTRY = {
                                                                                                }
                                                                                  }
                                                     },
+                                        "tassadar":  {
+                                                         "unit":  {
+                                                                      "name":  "Tassadar",
+                                                                      "role":  "Hero, Tactician",
+                                                                      "weapon":  "Resonance Beam",
+                                                                      "audio_source":  "sc1"
+                                                                  },
+                                                         "regular_abilities":  {
+                                                                                   "deploy":  {
+                                                                                                  "sound_sources":  [
+                                                                                                                        "deploy"
+                                                                                                                    ]
+                                                                                              },
+                                                                                   "move":  {
+                                                                                                "sound_sources":  [
+                                                                                                                      "move"
+                                                                                                                  ]
+                                                                                            },
+                                                                                   "destroyed":  {
+                                                                                                     "sound_sources":  [
+                                                                                                                           "death"
+                                                                                                                       ]
+                                                                                                 }
+                                                                               },
+                                                         "additional_abilities":  {
+
+                                                                                  }
+                                                     },
                                         "zealot":  {
                                                        "unit":  {
                                                                     "name":  "Zealot",
@@ -2069,6 +2166,67 @@ window.AUDIO_REGISTRY = {
                                                 }
                                    },
                         "zerg":  {
+                                     "defiler":  {
+                                                     "unit":  {
+                                                                  "name":  "Defiler",
+                                                                  "role":  "Support, Lifesaver",
+                                                                  "weapon":  "Claws",
+                                                                  "audio_source":  "sc1"
+                                                              },
+                                                     "regular_abilities":  {
+                                                                               "deploy":  {
+                                                                                              "sound_sources":  [
+                                                                                                                    "deploy"
+                                                                                                                ]
+                                                                                          },
+                                                                               "move":  {
+                                                                                            "sound_sources":  [
+                                                                                                                  "move"
+                                                                                                              ]
+                                                                                        },
+                                                                               "melee_combat":  {
+                                                                                                    "sound_sources":  [
+                                                                                                                          "combatVO",
+                                                                                                                          "combat"
+                                                                                                                      ],
+                                                                                                    "playback":  "sequential"
+                                                                                                },
+                                                                               "destroyed":  {
+                                                                                                 "sound_sources":  [
+                                                                                                                       "death"
+                                                                                                                   ]
+                                                                                             }
+                                                                           },
+                                                     "additional_abilities":  {
+                                                                                  "burrow":  {
+                                                                                                 "sound_sources":  [
+                                                                                                                       "burrow"
+                                                                                                                   ],
+                                                                                                 "button_size":  1
+                                                                                             },
+                                                                                  "unburrow":  {
+                                                                                                   "sound_sources":  [
+                                                                                                                         "unburrow"
+                                                                                                                     ],
+                                                                                                   "button_size":  1
+                                                                                               },
+                                                                                  "consume":  {
+                                                                                                  "sound_sources":  [
+                                                                                                                        "consume"
+                                                                                                                    ]
+                                                                                              },
+                                                                                  "plague":  {
+                                                                                                 "sound_sources":  [
+                                                                                                                       "plague"
+                                                                                                                   ]
+                                                                                             },
+                                                                                  "dark_swarm":  {
+                                                                                                     "sound_sources":  [
+                                                                                                                           "dark_swarm"
+                                                                                                                       ]
+                                                                                                 }
+                                                                              }
+                                                 },
                                      "hydralisk":  {
                                                        "unit":  {
                                                                     "name":  "Hydralisk",

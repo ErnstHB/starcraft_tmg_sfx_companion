@@ -482,6 +482,11 @@ function renderBankToggle(faction, unitKey, bank, fallbackSources) {
     return `<div class="bank-toggle" role="group" aria-label="Sound effects bank for ${escapeHtml(unitKey)}" title="${escapeHtml(fallbackNote)}" data-e2e-id="bank-toggle-${faction}-${unitKey}">${buttons}</div>`;
 }
 
+// Static marker for units that only have StarCraft I audio (`unit.audio_source: sc1`), so there is nothing to switch.
+function renderSc1OnlyBadge(faction, unitKey) {
+    return `<span class="bank-badge" title="This unit only has StarCraft I audio" data-e2e-id="bank-badge-${faction}-${unitKey}">${SFX_BANKS.sc1}</span>`;
+}
+
 function stopAllSounds() {
     // Stop all SFX
     activeSfxAudios.forEach(audio => {
@@ -817,7 +822,8 @@ function renderUnitCard(factionName, group, container) {
 
     const headerToggle = hasModes
         ? renderModeToggle(factionName, group, activeMode)
-        : (hasSc1Bank ? renderBankToggle(factionName, primary.unitKey, activeBank, getSc1FallbackSources(primary.config, sc1Audio)) : '');
+        : (hasSc1Bank ? renderBankToggle(factionName, primary.unitKey, activeBank, getSc1FallbackSources(primary.config, sc1Audio))
+            : (primary.config.unit.audio_source === 'sc1' ? renderSc1OnlyBadge(factionName, primary.unitKey) : ''));
 
     card.innerHTML = `
         <div class="unit-header" onclick="toggleCard(this.parentNode)">
