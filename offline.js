@@ -1,18 +1,19 @@
-// Install and offline pack UI (the "INSTALL & OFFLINE" card in the Control Center).
+// Offline pack UI (the collapsible "OFFLINE SETTINGS" card in the Control Center).
+// Installing the app is left to the browser (address bar install icon, or Share > Add to Home Screen on iOS).
 //
 // - collectPackUrls(scope) is the ONLY place that decides which audio files belong to an offline pack. It walks
 //   AUDIO_REGISTRY through the same helpers the unit cards use (resolveUnitAudio, getAbilitySources in app.js),
 //   so the pack holds exactly the files a card can play. Nothing is built from folder names.
 // - The service worker (sw.js) downloads into the `media` cache; this file only reads that cache and decides what
-//   to add and remove. Unit audio paths carry a `?v=<hash>` stamp from generate-registry.ps1, so a file replaced
-//   under the same name is a different URL: it is downloaded again and the old copy is removed as an orphan.
+//   to add and remove. Audio paths carry a `?v=<hash>-<bytes>` stamp from generate-registry.ps1: a file replaced
+//   under the same name is a different URL (downloaded again, the old copy removed as an orphan), and the byte
+//   count gives the size estimates shown in the card.
 (() => {
     const MEDIA_CACHE = 'media';
     const SCOPE_STORAGE_KEY = 'offlinePackScope';
     const ALL_FACTIONS = ['terran', 'zerg', 'protoss'];
 
     let isBusy = false;
-    let installPromptEvent = null;
 
     /* ======================================================================
        PACK CONTENT (pure, no browser storage involved)
@@ -55,6 +56,23 @@
 
     const toAbsoluteUrl = url => new URL(url, document.baseURI).href;
 
+    // Size in bytes from the stamp (`?v=<hash>-<bytes>`); 0 when a URL carries none.
+    function getUrlSize(url) {
+        const match = /[?&]v=[0-9a-f]+-(\d+)/.exec(url);
+        return match ? Number(match[1]) : 0;
+    }
+
+    const sumSizes = urls => urls.reduce((total, url) => total + getUrlSize(url), 0);
+
+    function formatBytes(bytes) {
+        const kilobyte = 1024;
+        const megabyte = kilobyte * 1024;
+        const gigabyte = megabyte * 1024;
+        if (bytes >= gigabyte) return `${(bytes / gigabyte).toFixed(2)} GB`;
+        if (bytes >= megabyte) return `${(bytes / megabyte).toFixed(bytes < 10 * megabyte ? 1 : 0)} MB`;
+        return `${Math.max(1, Math.round(bytes / kilobyte))} KB`;
+    }
+
     /* ======================================================================
        CACHE ACCESS AND PACK OPERATIONS
        ====================================================================== */
@@ -64,15 +82,21 @@
         return (await cache.keys()).map(request => request.url);
     }
 
-    // Compares what the scope needs with what is stored.
+    // Compares what the scope needs with what is stored, with sizes for the estimates.
     async function getPackDiff(scope) {
         const needed = new Set(collectPackUrls(scope).map(toAbsoluteUrl));
         const cached = new Set(await listCachedUrls());
+        const missing = [...needed].filter(url => !cached.has(url));
+        const orphans = [...cached].filter(url => !needed.has(url));
         return {
             neededCount: needed.size,
             cachedCount: cached.size,
-            missing: [...needed].filter(url => !cached.has(url)),
-            orphans: [...cached].filter(url => !needed.has(url))
+            neededBytes: sumSizes([...needed]),
+            cachedBytes: sumSizes([...cached]),
+            missing,
+            orphans,
+            missingBytes: sumSizes(missing),
+            orphanBytes: sumSizes(orphans)
         };
     }
 
@@ -147,15 +171,8 @@
     /* ======================================================================
        UI
        ====================================================================== */
-    function formatBytes(bytes) {
-        return bytes >= 1024 * 1024 * 1024 ? `${(bytes / 1024 / 1024 / 1024).toFixed(1)} GB` : `${Math.round(bytes / 1024 / 1024)} MB`;
-    }
-
     function initOfflineCard() {
         const ui = {
-            installStatus: document.getElementById('install-status'),
-            installButton: document.getElementById('btn-install-app'),
-            iosHint: document.getElementById('install-ios-hint'),
             prepareButton: document.getElementById('btn-offline-prepare'),
             clearButton: document.getElementById('btn-offline-clear'),
             progress: document.getElementById('offline-progress'),
@@ -196,7 +213,7 @@
         const isSupported = 'serviceWorker' in navigator && !!window.caches;
         const isWorkerEnabled = isSupported && window.swEnabled === true;
 
-        /* ---- Offline sounds status ---- */
+        // Shows what the buttons would do: how much would be downloaded or freed.
         const refreshStatus = async () => {
             if (!isSupported) {
                 setControlsDisabled(true);
@@ -209,23 +226,32 @@
                 return;
             }
             const scope = readScope();
-            ui.prepareButton.disabled = isBusy || scope.factions.length === 0;
             const diff = await getPackDiff(scope);
+            const hasChanges = diff.missing.length > 0 || diff.orphans.length > 0;
+            const hasSelection = scope.factions.length > 0;
+
+            ui.prepareButton.disabled = isBusy || !hasSelection || !hasChanges;
+            ui.clearButton.disabled = isBusy || diff.cachedCount === 0;
+            ui.clearButton.textContent = diff.cachedCount > 0 ? `REMOVE OFFLINE DATA (FREES ABOUT ${formatBytes(diff.cachedBytes)})` : 'REMOVE OFFLINE DATA';
 
             if (diff.cachedCount === 0) {
-                ui.prepareButton.textContent = 'PREPARE OFFLINE';
-                setStatus(scope.factions.length === 0
-                    ? 'Select at least one faction to prepare offline sounds.'
-                    : `Not downloaded yet: ${diff.neededCount} sounds for the selection.`);
-            } else if (diff.missing.length === 0 && diff.orphans.length === 0) {
-                ui.prepareButton.textContent = 'UPDATE OFFLINE DATA';
-                const usage = navigator.storage && navigator.storage.estimate ? (await navigator.storage.estimate()).usage : 0;
-                setStatus(`Ready for offline use: ${diff.neededCount} sounds${usage ? `, ${formatBytes(usage)} stored by this app` : ''}.`, 'is-ready');
+                ui.prepareButton.textContent = hasSelection ? `PREPARE OFFLINE (DOWNLOADS ABOUT ${formatBytes(diff.neededBytes)})` : 'PREPARE OFFLINE';
+                setStatus(hasSelection
+                    ? `Not downloaded yet: ${diff.neededCount} sounds, about ${formatBytes(diff.neededBytes)} to download.`
+                    : 'Select at least one faction to prepare offline sounds.');
+            } else if (!hasChanges) {
+                ui.prepareButton.textContent = 'UP TO DATE';
+                setStatus(`Ready for offline use: ${diff.neededCount} sounds, about ${formatBytes(diff.cachedBytes)} stored.`, 'is-ready');
             } else {
-                ui.prepareButton.textContent = 'UPDATE OFFLINE DATA';
-                setStatus(`Changes pending: ${diff.missing.length} to download, ${diff.orphans.length} to remove.`, 'is-warning');
+                const parts = [];
+                if (diff.missing.length > 0) parts.push(`+${formatBytes(diff.missingBytes)}`);
+                if (diff.orphans.length > 0) parts.push(`-${formatBytes(diff.orphanBytes)}`);
+                ui.prepareButton.textContent = `UPDATE OFFLINE DATA (${parts.join(' / ')})`;
+                const sentences = [];
+                if (diff.missing.length > 0) sentences.push(`about ${formatBytes(diff.missingBytes)} to download (${diff.missing.length} sounds)`);
+                if (diff.orphans.length > 0) sentences.push(`about ${formatBytes(diff.orphanBytes)} to free (${diff.orphans.length} sounds)`);
+                setStatus(`Changes pending: ${sentences.join(', ')}.`, 'is-warning');
             }
-            ui.clearButton.disabled = isBusy || diff.cachedCount === 0;
         };
 
         const runPrepare = async ({ isSilent }) => {
@@ -271,50 +297,8 @@
             const diff = await getPackDiff(savedScope);
             if (diff.missing.length > 0 || diff.orphans.length > 0) runPrepare({ isSilent: true });
         });
-
-        /* ---- Install ---- */
-        const isStandalone = () => window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
-        const isIos = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-
-        const renderInstall = () => {
-            ui.installButton.hidden = true;
-            ui.iosHint.hidden = true;
-            if (isStandalone()) {
-                ui.installStatus.textContent = 'Installed: running as an app.';
-                ui.installStatus.className = 'offline-status is-ready';
-                return;
-            }
-            ui.installStatus.className = 'offline-status';
-            if (installPromptEvent) {
-                ui.installStatus.textContent = 'This app can be installed on this device.';
-                ui.installButton.hidden = false;
-            } else if (isIos) {
-                ui.installStatus.textContent = 'Install it from the browser share menu.';
-                ui.iosHint.hidden = false;
-            } else {
-                ui.installStatus.textContent = 'Install it from the browser menu (Install app or Add to Home Screen) when the browser offers it.';
-            }
-        };
-
-        window.addEventListener('beforeinstallprompt', event => {
-            event.preventDefault();
-            installPromptEvent = event;
-            renderInstall();
-        });
-        window.addEventListener('appinstalled', () => {
-            installPromptEvent = null;
-            renderInstall();
-        });
-        ui.installButton.addEventListener('click', async () => {
-            if (!installPromptEvent) return;
-            installPromptEvent.prompt();
-            await installPromptEvent.userChoice;
-            installPromptEvent = null;
-            renderInstall();
-        });
-        renderInstall();
     }
 
-    window.OfflinePack = { collectPackUrls, getPackDiff, prepare, clearOfflineData };
+    window.OfflinePack = { collectPackUrls, getPackDiff, prepare, clearOfflineData, formatBytes };
     initOfflineCard();
 })();
