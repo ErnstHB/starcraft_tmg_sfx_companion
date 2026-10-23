@@ -3,6 +3,7 @@
 // One line per merged change, newest first: add the new entry at the TOP when a pull request is merged.
 // Keep titles short and written for players, not for developers.
 window.CHANGELOG = [
+    { date: '2026-10-24', title: 'Offline Settings: a collapsible card that shows how much each download or removal will use or free' },
     { date: '2026-10-24', title: 'Install and offline: save the sounds on your device, smaller header logo, this change log' },
     { date: '2026-10-24', title: 'The app shell works offline (service worker)' },
     { date: '2026-10-24', title: 'Defiler and Tassadar added (StarCraft I sounds only)' },
