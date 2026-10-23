@@ -18,6 +18,12 @@ function Get-ConfigScalar([string]$value) {
     return $value
 }
 
+$stampHasher = [System.Security.Cryptography.SHA1]::Create()
+function Get-FileStamp([string]$path) {
+    $hash = $stampHasher.ComputeHash([System.IO.File]::ReadAllBytes($path))
+    return -join ($hash[0..3] | ForEach-Object { $_.ToString('x2') })
+}
+
 function Read-UnitConfig([string]$path) {
     $config = [ordered]@{
         unit = [ordered]@{}
@@ -125,7 +131,9 @@ Get-ChildItem -LiteralPath $unitsRoot -File -Recurse | ForEach-Object {
                 if (-not $bank[$race][$unit].Contains($action)) {
                     $bank[$race][$unit][$action] = @()
                 }
-                $bank[$race][$unit][$action] += $relPath
+                # Version stamp: a short content hash in the URL. A file replaced under the same name gets a new URL, so the
+                # offline media cache downloads it again and drops the old copy (see offline.js).
+                $bank[$race][$unit][$action] += "${relPath}?v=$(Get-FileStamp $_.FullName)"
             }
         }
     }
