@@ -1496,7 +1496,7 @@ window.AUDIO_REGISTRY = {
                                                          },
                                         "immortal":  {
                                                          "unit":  {
-                                                                      "name":  "immortal",
+                                                                      "name":  "Immortal",
                                                                       "role":  "Elite, Tank",
                                                                       "weapon":  "Photon Disruptor (Upgrade: Phase Disruptor)"
                                                                   },
@@ -1666,8 +1666,8 @@ window.AUDIO_REGISTRY = {
                                                    },
                                         "zeratul":  {
                                                         "unit":  {
-                                                                     "name":  "zeratul",
-                                                                     "role":  "Hero, Damage dealer",
+                                                                     "name":  "Zeratul",
+                                                                     "role":  "Hero, Damage Dealer",
                                                                      "weapon":  "Master Warp Blade"
                                                                  },
                                                         "regular_abilities":  {
@@ -2019,9 +2019,9 @@ window.AUDIO_REGISTRY = {
                                                   },
                                        "tank":  {
                                                     "unit":  {
-                                                                 "name":  "siege tank",
+                                                                 "name":  "Siege Tank",
                                                                  "role":  "Elite, Damage Dealer",
-                                                                 "weapon":  "Twin cannon, shock cannon"
+                                                                 "weapon":  "Twin Cannon, Shock Cannon"
                                                              },
                                                     "regular_abilities":  {
                                                                               "deploy":  {
@@ -2073,7 +2073,7 @@ window.AUDIO_REGISTRY = {
                                                        "unit":  {
                                                                     "name":  "Hydralisk",
                                                                     "role":  "Elite, Damage Dealer",
-                                                                    "weapon":  "Needle Spine, Scyche"
+                                                                    "weapon":  "Needle Spines, Scythe"
                                                                 },
                                                        "regular_abilities":  {
                                                                                  "deploy":  {
@@ -2239,7 +2239,7 @@ window.AUDIO_REGISTRY = {
                                                },
                                      "ravager":  {
                                                      "unit":  {
-                                                                  "name":  "ravager",
+                                                                  "name":  "Ravager",
                                                                   "role":  "Core, Tactician",
                                                                   "weapon":  "Plasma Discharge, Claws"
                                                               },
