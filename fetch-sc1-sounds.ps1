@@ -26,8 +26,14 @@ $voiceMap = @(
     @{ unit = 'protoss/zealot';  prefix = 'ProtossZealot';        actions = @{ deploy = 'Ready'; move = 'Yes'; death = 'Death'; combat = 'Attack' } }
     @{ unit = 'protoss/zeratul'; prefix = 'ProtossZeratul';       actions = @{ move = 'Yes'; death = 'Death' } }
     @{ unit = 'protoss/high_templar'; prefix = 'ProtossHighTemplar'; actions = @{ deploy = 'Ready'; move = 'Yes'; death = 'Death'; psionic_storm = 'PsionicStorm' } }
+    # SC1-only units (config `audio_source: sc1`): no SC2 audio exists, the sc1/ folders are their only bank.
+    # Defiler Mound ("ZergDefilerMound*") lines are a building and never match the exact kinds below.
+    @{ unit = 'zerg/defiler';    prefix = 'ZergDefiler';          actions = @{ deploy = @('Ready', 'What'); move = 'Yes'; death = 'Death'; combatVO = 'Pissed'; consume = 'Consume' } }   # Plague is curated in $heroDeployMap below
+    # Tassadar's Gantrithor (Archon) lines are never used: the card is the High Templar one.
+    @{ unit = 'protoss/tassadar'; prefix = 'ProtossTassadarHighTemplar'; actions = @{ move = 'Yes'; death = 'Death' } }
 )
 
+# Curated single wiki files for actions that no wiki kind maps to directly (the name is historical: it also holds other picks).
 # Heroes have no "Ready" line in SC1. Selected "What"/"Pissed" quotes stand in for the TMG deploy action.
 # `chains` concatenates several wiki files into one clip (needs ffmpeg on PATH).
 $heroDeployMap = @(
@@ -46,6 +52,22 @@ $heroDeployMap = @(
     # SC1 High Templars have no attack, so a "Selected" quote stands in for the TMG attack action.
     @{ unit = 'protoss/high_templar'; action = 'attack'
        files = @('ProtossHighTemplarWhat01SC1.ogg') }                             # "Zerah'hah..."
+    # Defiler: the wiki has no Dark Swarm line, so Plague01 is borrowed for it until a better sound is found.
+    # When Dark Swarm gets its own sound, move Plague01 back to plague (change the `files` below accordingly).
+    @{ unit = 'zerg/defiler'; action = 'plague'
+       files = @('ZergDefilerPlague00SC1.ogg') }
+    @{ unit = 'zerg/defiler'; action = 'dark_swarm'
+       files = @('ZergDefilerPlague01SC1.ogg') }                                  # placeholder borrowed from Plague
+    # Tassadar has no "Ready" line either: all four "Selected" quotes plus two chained "Pissed" pairs.
+    @{ unit = 'protoss/tassadar'; action = 'deploy'
+       files = @('ProtossTassadarHighTemplarWhat00SC1.ogg',                       # "Yes, Executor?"
+                 'ProtossTassadarHighTemplarWhat01SC1.ogg',                       # "I hear you."
+                 'ProtossTassadarHighTemplarWhat02SC1.ogg',                       # "How may I help?"
+                 'ProtossTassadarHighTemplarWhat03SC1.ogg')                       # "Your will?"
+       chains = @(@{ name = 'ProtossTassadarHighTemplarPissed00-01SC1.ogg'        # "Speak quickly, Executor!" + "I don't have time for games!"
+                     parts = @('ProtossTassadarHighTemplarPissed00SC1.ogg', 'ProtossTassadarHighTemplarPissed01SC1.ogg') }
+                  @{ name = 'ProtossTassadarHighTemplarPissed02-03SC1.ogg'        # "I was Executor long before you!" + "So do not try my patience!"
+                     parts = @('ProtossTassadarHighTemplarPissed02SC1.ogg', 'ProtossTassadarHighTemplarPissed03SC1.ogg') }) }
 )
 
 # Phase B mapping: Blizzard bullet sound file (inside weapons/ in the zip) -> target sc1 action folders.
@@ -129,14 +151,16 @@ Write-Host '== Phase A: StarCraft Wiki voice lines =='
 foreach ($entry in $voiceMap) {
     Write-Host "[$($entry.unit)]"
     foreach ($action in $entry.actions.Keys) {
-        $kind = $entry.actions[$action]
-        # Exact kind match: "<Prefix><Kind><digits>SC1.ogg". Avoids e.g. Ready matching ReadySomething.
-        $names = @(Get-WikiFileNames "$($entry.prefix)$kind" | Where-Object { $_ -match "^$($entry.prefix)$kind\d*SC1\.ogg$" })
-        if ($names.Count -eq 0) { Write-Warning "No wiki files for $($entry.prefix)$kind"; continue }
-        $urls = Get-WikiFileUrls $names
-        foreach ($name in $names) {
-            if (-not $urls.ContainsKey($name)) { $stats.failed++; Write-Warning "No URL for $name"; continue }
-            Save-File $urls[$name] (Get-TargetPath $entry.unit $action $name) { param($p) Test-OggFile $p }
+        # An action maps to one wiki kind, or to a list of kinds that share the same folder (e.g. What + Pissed).
+        foreach ($kind in @($entry.actions[$action])) {
+            # Exact kind match: "<Prefix><Kind><digits>SC1.ogg". Avoids e.g. Ready matching ReadySomething.
+            $names = @(Get-WikiFileNames "$($entry.prefix)$kind" | Where-Object { $_ -match "^$($entry.prefix)$kind\d*SC1\.ogg$" })
+            if ($names.Count -eq 0) { Write-Warning "No wiki files for $($entry.prefix)$kind"; continue }
+            $urls = Get-WikiFileUrls $names
+            foreach ($name in $names) {
+                if (-not $urls.ContainsKey($name)) { $stats.failed++; Write-Warning "No URL for $name"; continue }
+                Save-File $urls[$name] (Get-TargetPath $entry.unit $action $name) { param($p) Test-OggFile $p }
+            }
         }
     }
 }

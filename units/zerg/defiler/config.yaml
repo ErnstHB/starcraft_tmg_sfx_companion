@@ -1,0 +1,35 @@
+unit:
+  name: "Defiler"
+  role: "Support, Lifesaver"
+  weapon: "Claws"
+  audio_source: sc1
+regular_abilities:
+  deploy:
+    sound_sources: [deploy]
+  move:
+    sound_sources: [move]
+  # The Defiler has no attack in-game. Claws plays a Pissed voice line, then the Roach melee sound
+  # (units/zerg/defiler/combat/, a placeholder).
+  melee_combat:
+    sound_sources: [combatVO, combat]
+    playback: sequential
+  destroyed:
+    sound_sources: [death]
+additional_abilities:
+  # Burrow Ambush: same burrow sounds as the Hydralisk (SC2 files in units/zerg/defiler/burrow and unburrow).
+  burrow:
+    button_size: 1
+    sound_sources: [burrow]
+  unburrow:
+    button_size: 1
+    sound_sources: [unburrow]
+  consume:
+    sound_sources: [consume]
+  plague:
+    sound_sources: [plague]
+  # Dark Swarm (covers Gestate Dark Swarm and the Dark Swarm reaction). PLACEHOLDER: SC1 has no Dark Swarm sound on the wiki,
+  # so sc1/dark_swarm/ holds ZergDefilerPlague01SC1.ogg borrowed from Plague.
+  # TODO: find a proper sound (the Infestor's Microbial Shroud is a candidate). Once it is added, give Plague01 back to
+  # plague (move it to sc1/plague/ and update fetch-sc1-sounds.ps1).
+  dark_swarm:
+    sound_sources: [dark_swarm]

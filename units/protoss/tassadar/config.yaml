@@ -1,0 +1,17 @@
+unit:
+  name: "Tassadar"
+  role: "Hero, Tactician"
+  weapon: "Resonance Beam"
+  audio_source: sc1
+regular_abilities:
+  deploy:
+    sound_sources: [deploy]
+  move:
+    sound_sources: [move]
+  # TODO attack (Resonance Beam / Strike): no sound source yet. Add it here as:
+  #   attack: sound_sources: [attack]  (and create the folder with audio under sc1/).
+  destroyed:
+    sound_sources: [death]
+additional_abilities:
+  # TODO force_wall, psi_lightning, telekinetic_push (Active abilities on the card): no sound sources yet
+  #   (SC1 has no ability voice lines for Tassadar). Passives (e.g. Khala's Gift, Executor's Will) get no button.
