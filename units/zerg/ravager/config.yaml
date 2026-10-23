@@ -1,5 +1,5 @@
 unit:
-  name: "ravager"
+  name: "Ravager"
   role: "Core, Tactician"
   weapon: "Plasma Discharge, Claws"
 regular_abilities:

@@ -1,6 +1,6 @@
 unit:
-  name: "zeratul"
-  role: "Hero, Damage dealer"
+  name: "Zeratul"
+  role: "Hero, Damage Dealer"
   weapon: "Master Warp Blade"
 regular_abilities:
   deploy:

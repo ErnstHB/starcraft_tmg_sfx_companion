@@ -1,7 +1,7 @@
 unit:
-  name: "siege tank"
+  name: "Siege Tank"
   role: "Elite, Damage Dealer"
-  weapon: "Twin cannon, shock cannon"
+  weapon: "Twin Cannon, Shock Cannon"
 regular_abilities:
   deploy:
     sound_sources: [deploy]
