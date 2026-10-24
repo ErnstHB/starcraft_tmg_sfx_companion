@@ -20,6 +20,11 @@ const DEFAULT_SFX_BANK = 'sc2';
 const sfxBankStorageKey = (faction, unitKey) => `sfxBank:${faction}/${unitKey}`;
 const unitModeStorageKey = (faction, storageKey) => `unitMode:${faction}/${storageKey}`;
 
+// Offline awareness, fed by offline.js. While the device is offline, only sounds stored in the media cache can play;
+// everything else is dimmed with a message. While online nothing is restricted.
+const offlineState = { isOffline: false, cachedUrls: new Set() };
+const OFFLINE_HINT = 'Reconnect and use "Offline Settings" in the Control Center to save sounds for offline use.';
+
 // UI Elements Cache
 const elements = {
     body: document.body,
@@ -226,9 +231,11 @@ function buildPlaylist() {
         });
     });
 
-    currentPlaylist = playlist;
+    // Offline, only the tracks saved on this device can play.
+    currentPlaylist = playlist.filter(isUrlPlayable);
     // Reset shuffled queue when playlist configurations change
     shuffledQueue = [];
+    refreshMusicOfflineNotice(playlist.length);
 }
 
 // Fisher-Yates Shuffle with standard ES5 swap for guaranteed cross-browser compatibility
@@ -281,7 +288,7 @@ function playNextMusicTrack() {
 
     const nextTrack = getNextTrack();
     if (!nextTrack) {
-        elements.ostTrackTitle.textContent = "NO TRACKS IN CONFIGURED PLAYLIST";
+        elements.ostTrackTitle.textContent = offlineState.isOffline ? "NO SAVED TRACKS AVAILABLE OFFLINE" : "NO TRACKS IN CONFIGURED PLAYLIST";
         elements.ostStatus.textContent = "ERROR";
         return;
     }
@@ -505,6 +512,85 @@ function stopAllSounds() {
         card.setAttribute('data-play-count', '0');
         card.classList.remove('active-playing');
     });
+}
+
+/* ==========================================================================
+   OFFLINE AWARENESS
+   ========================================================================== */
+// Called by offline.js whenever the connection or the stored sounds change.
+function setOfflineState(isOffline, cachedUrls) {
+    offlineState.isOffline = isOffline;
+    offlineState.cachedUrls = cachedUrls;
+
+    document.querySelectorAll('.unit-card').forEach(card => {
+        if (card.applyOfflineAvailability) card.applyOfflineAvailability();
+    });
+    FACTION_NAMES.forEach(refreshFactionOfflineNotice);
+    buildPlaylist();
+}
+
+const FACTION_NAMES = ['terran', 'zerg', 'protoss'];
+
+function isUrlPlayable(url) {
+    return !offlineState.isOffline || offlineState.cachedUrls.has(new URL(url, document.baseURI).href);
+}
+
+// An ability is playable when every sound source it uses (with files) has at least one playable file.
+// Sources without any file are not an offline matter: online they do nothing either.
+function isAbilityPlayable(ability, unitAudio, bank) {
+    return getAbilitySources(ability, bank)
+        .map(source => unitAudio[source] || [])
+        .filter(trackList => trackList.length > 0)
+        .every(trackList => trackList.some(isUrlPlayable));
+}
+
+function getAbilityForButton(config, button) {
+    return button.dataset.abilityGroup === 'additional'
+        ? config.additional_abilities[button.dataset.abilityKey]
+        : config.regular_abilities[button.dataset.abilityKey];
+}
+
+// One notice above each faction's unit list that explains why buttons are dimmed.
+function createFactionOfflineNotice(factionName, container) {
+    const notice = document.createElement('div');
+    notice.id = `offline-notice-${factionName}`;
+    notice.className = 'offline-notice';
+    notice.setAttribute('role', 'status');
+    notice.setAttribute('data-e2e-id', `offline-notice-${factionName}`);
+    notice.hidden = true;
+    container.parentNode.insertBefore(notice, container);
+}
+
+function refreshFactionOfflineNotice(factionName) {
+    const notice = document.getElementById(`offline-notice-${factionName}`);
+    if (!notice) return;
+
+    const buttons = [...document.querySelectorAll(`#${factionName}-unit-container .config-ability-btn`)];
+    const unavailableCount = buttons.filter(button => button.disabled).length;
+    notice.hidden = !offlineState.isOffline || unavailableCount === 0;
+    if (notice.hidden) return;
+
+    notice.textContent = unavailableCount === buttons.length
+        ? `You are offline and no ${factionName} sounds are saved on this device. ${OFFLINE_HINT}`
+        : `You are offline: ${unavailableCount} ${unavailableCount === 1 ? 'button is' : 'buttons are'} dimmed because their sounds are not saved on this device. ${OFFLINE_HINT}`;
+}
+
+// `selectionCount` = tracks in the current music selection, before the offline filter.
+function refreshMusicOfflineNotice(selectionCount) {
+    const notice = document.getElementById('ost-offline-notice');
+    if (!notice) return;
+
+    const savedCount = currentPlaylist.length;
+    const isPlaying = !!currentMusicAudio && !currentMusicAudio.paused;
+    const isMissingTracks = offlineState.isOffline && savedCount < selectionCount;
+
+    notice.hidden = !isMissingTracks;
+    elements.btnOstPlayPause.disabled = offlineState.isOffline && savedCount === 0 && !isPlaying;
+    if (!isMissingTracks) return;
+
+    notice.textContent = savedCount === 0
+        ? `You are offline and no battle music is saved on this device. ${OFFLINE_HINT}`
+        : `You are offline: only the ${savedCount} of ${selectionCount} tracks saved on this device will play. ${OFFLINE_HINT}`;
 }
 
 /* ==========================================================================
@@ -766,6 +852,7 @@ function renderFactionUnits(factionName, factionUnits, factionConfigs, factionSc
         return;
     }
 
+    createFactionOfflineNotice(factionName, container);
     groupUnitModes(factionName, factionUnits, factionConfigs, factionSc1Units)
         .forEach(group => renderUnitCard(factionName, group, container));
 }
@@ -875,15 +962,30 @@ function renderUnitCard(factionName, group, container) {
         card.querySelector('.unit-body').innerHTML = html;
 
         card.querySelectorAll('.config-ability-btn').forEach(button => {
-            const ability = button.dataset.abilityGroup === 'additional'
-                ? config.additional_abilities[button.dataset.abilityKey]
-                : config.regular_abilities[button.dataset.abilityKey];
+            const ability = getAbilityForButton(config, button);
             button.addEventListener('click', event => {
                 event.stopPropagation();
                 playConfiguredAbility(ability, resolveUnitAudio(activeMode.unitAudio, sc1Audio, activeBank), card, activeBank);
             });
         });
+        refreshOfflineAvailability();
     };
+
+    // Dims the buttons whose sounds are not stored on this device (only while offline) and updates the faction notice.
+    function applyOfflineAvailability() {
+        const audio = resolveUnitAudio(activeMode.unitAudio, sc1Audio, activeBank);
+        card.querySelectorAll('.config-ability-btn').forEach(button => {
+            const isPlayable = isAbilityPlayable(getAbilityForButton(activeMode.config, button), audio, activeBank);
+            button.disabled = !isPlayable;
+            if (isPlayable) button.removeAttribute('title');
+            else button.title = 'Not saved on this device for offline use';
+        });
+    }
+    function refreshOfflineAvailability() {
+        applyOfflineAvailability();
+        refreshFactionOfflineNotice(factionName);
+    }
+    card.applyOfflineAvailability = applyOfflineAvailability;
     renderActiveMode();
 
     card.querySelectorAll('.bank-toggle-btn[data-bank]').forEach(button => {
@@ -894,6 +996,7 @@ function renderUnitCard(factionName, group, container) {
             activeBank = bank;
             setSfxBank(factionName, primary.unitKey, bank);
             setToggleActive(card, '[data-bank]', 'bank', bank);
+            refreshOfflineAvailability();
             showToast(`${unitName.toUpperCase()}: ${SFX_BANKS[bank]} sound bank active`);
         });
     });

@@ -1438,3 +1438,38 @@ html, body {
 .changelog-title {
     color: var(--hud-text);
 }
+
+/* Offline notices (faction pages and music player) and buttons dimmed because their sounds are not saved */
+.offline-notice {
+    margin: 0 0 12px;
+    padding: 10px 12px;
+    border: 1px solid var(--hud-accent-secondary);
+    border-left-width: 3px;
+    border-radius: 4px;
+    background: rgba(0, 170, 255, 0.06);
+    color: var(--hud-accent-secondary);
+    font-size: 0.68rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.offline-notice[hidden] {
+    display: none;
+}
+
+.sfx-btn:disabled,
+.sfx-btn:disabled:hover,
+.sfx-btn:disabled:active {
+    opacity: 0.35;
+    cursor: not-allowed;
+    background: rgba(255, 255, 255, 0.03);
+    border-color: var(--hud-border);
+    color: var(--hud-text-muted);
+    box-shadow: none;
+    transform: none;
+}
+.huge-play-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    box-shadow: none;
+}
