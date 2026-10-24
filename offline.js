@@ -40,10 +40,15 @@
                 });
             });
 
-            if (scope.includeOst) {
-                Object.values(registry.ost || {}).forEach(versionTracks => (versionTracks[faction] || []).forEach(url => urls.add(url)));
-            }
         });
+
+        // Music is independent of the unit factions: the Control Center plays any track the user selects there,
+        // so the pack can hold music only (no faction selected) or music together with units.
+        if (scope.includeOst) {
+            Object.values(registry.ost || {}).forEach(versionTracks => {
+                Object.values(versionTracks).forEach(trackUrls => trackUrls.forEach(url => urls.add(url)));
+            });
+        }
         return [...urls];
     }
 
@@ -98,6 +103,14 @@
             missingBytes: sumSizes(missing),
             orphanBytes: sumSizes(orphans)
         };
+    }
+
+    // Tells the faction pages and the music player (app.js) which sounds can play right now. While online every
+    // sound can; while offline only the ones stored in the media cache can.
+    async function syncOfflineAvailability() {
+        if (typeof setOfflineState !== 'function') return;
+        const isOffline = navigator.onLine === false;
+        setOfflineState(isOffline, isOffline ? new Set(await listCachedUrls()) : new Set());
     }
 
     // Downloading only needs the active worker, not a page it controls (a fresh install does not control the page
@@ -215,6 +228,7 @@
 
         // Shows what the buttons would do: how much would be downloaded or freed.
         const refreshStatus = async () => {
+            await syncOfflineAvailability();
             if (!isSupported) {
                 setControlsDisabled(true);
                 setStatus('Offline mode is not available in this browser (it needs HTTPS).', 'is-warning');
@@ -228,9 +242,12 @@
             const scope = readScope();
             const diff = await getPackDiff(scope);
             const hasChanges = diff.missing.length > 0 || diff.orphans.length > 0;
-            const hasSelection = scope.factions.length > 0;
+            // Units or music: the pack may hold only the battle music.
+            const hasSelection = scope.factions.length > 0 || scope.includeOst;
+            const isOnline = navigator.onLine;
 
-            ui.prepareButton.disabled = isBusy || !hasSelection || !hasChanges;
+            // Downloading needs a connection; removing or freeing does not.
+            ui.prepareButton.disabled = isBusy || !hasSelection || !hasChanges || (!isOnline && diff.missing.length > 0);
             ui.clearButton.disabled = isBusy || diff.cachedCount === 0;
             ui.clearButton.textContent = diff.cachedCount > 0 ? `REMOVE OFFLINE DATA (FREES ABOUT ${formatBytes(diff.cachedBytes)})` : 'REMOVE OFFLINE DATA';
 
@@ -238,7 +255,7 @@
                 ui.prepareButton.textContent = hasSelection ? `PREPARE OFFLINE (DOWNLOADS ABOUT ${formatBytes(diff.neededBytes)})` : 'PREPARE OFFLINE';
                 setStatus(hasSelection
                     ? `Not downloaded yet: ${diff.neededCount} sounds, about ${formatBytes(diff.neededBytes)} to download.`
-                    : 'Select at least one faction to prepare offline sounds.');
+                    : 'Select at least one faction or the battle music to prepare offline sounds.');
             } else if (!hasChanges) {
                 ui.prepareButton.textContent = 'UP TO DATE';
                 setStatus(`Ready for offline use: ${diff.neededCount} sounds, about ${formatBytes(diff.cachedBytes)} stored.`, 'is-ready');
@@ -251,6 +268,9 @@
                 if (diff.missing.length > 0) sentences.push(`about ${formatBytes(diff.missingBytes)} to download (${diff.missing.length} sounds)`);
                 if (diff.orphans.length > 0) sentences.push(`about ${formatBytes(diff.orphanBytes)} to free (${diff.orphans.length} sounds)`);
                 setStatus(`Changes pending: ${sentences.join(', ')}.`, 'is-warning');
+            }
+            if (!isOnline && diff.missing.length > 0) {
+                setStatus(`${ui.status.textContent} You are offline: reconnect to download.`, 'is-warning');
             }
         };
 
@@ -288,6 +308,8 @@
             await refreshStatus();
         });
         [...Object.values(ui.factions), ui.ost].forEach(input => input.addEventListener('change', refreshStatus));
+        window.addEventListener('online', refreshStatus);
+        window.addEventListener('offline', refreshStatus);
 
         const savedScope = loadSavedScope();
         if (savedScope) applyScope(savedScope);

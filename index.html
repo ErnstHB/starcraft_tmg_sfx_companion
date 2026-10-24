@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=offline-v2">
+    <link rel="stylesheet" href="styles.css?v=offline-v3">
 </head>
 <body class="theme-neutral">
     
@@ -133,6 +133,7 @@
                             <span class="play-icon">▶</span> PLAY MUSIC
                         </button>
                     </div>
+                    <div id="ost-offline-notice" class="offline-notice" role="status" data-e2e-id="offline-notice-ost" hidden></div>
 
                     <!-- Configuration Options Frame -->
                     <fieldset class="config-frame">
@@ -285,9 +286,9 @@
 
     <!-- Web Audio & Core Javascript Files -->
     <script src="audio-registry.js?v=wave3-v14"></script>
-    <script src="app.js?v=wave3-v4"></script>
+    <script src="app.js?v=offline-v3"></script>
     <script src="pwa.js?v=pwa-v2"></script>
-    <script src="offline.js?v=offline-v2"></script>
-    <script src="changelog.js?v=changelog-v2"></script>
+    <script src="offline.js?v=offline-v3"></script>
+    <script src="changelog.js?v=changelog-v3"></script>
 </body>
 </html>
