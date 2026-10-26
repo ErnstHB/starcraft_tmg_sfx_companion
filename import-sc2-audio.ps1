@@ -37,7 +37,10 @@ $importMap = @(
     @{ target = 'protoss/high_templar/move';          patterns = @("$voice\hightemplar\hightemplar_yes??.ogg") }
     @{ target = 'protoss/high_templar/psionic_storm'; patterns = @("$voice\hightemplar\hightemplar_psionicstorm??.ogg") }                    # voice: "Saraht tuun!"
     @{ target = 'protoss/high_templar/psionic_stormFX'; patterns = @('*\mods\liberty.sc2mod\base.sc2assets\assets\sounds\protoss\hightemplar\hightemplar_psionicstormimpact?.wav') }  # storm impact, played after the voice
-    @{ target = 'protoss/high_templar/death';         patterns = @("$voice\hightemplar\hightemplar_death*.ogg", "$voice\hightemplar\hightemplar_death*.wav") }
+    @{ target = 'protoss/high_templar/attack';        patterns = @("$voice\hightemplar\hightemplar_attack04.ogg", "$voice\hightemplar\hightemplar_attack06.ogg") }  # picked by the maintainer; no AttackLaunch file exists
+    @{ target = 'protoss/high_templar/death';         patterns = @("$voice\hightemplar\hightemplar_death*.ogg", "$voice\hightemplar\hightemplar_death*.wav",
+                                                                   "$voice\hightemplar\hightemplar_energylow00.ogg",                              # "low energy" line as an extra death line
+                                                                   '*\campaigns\liberty.sc2campaign\enus.sc2assets\localizeddata\sounds\protossvo\campaignunits\karass\karass_death*.wav') }  # Karass is a campaign High Templar
 )
 
 if (-not (Test-Path -LiteralPath $SourceRoot)) {
