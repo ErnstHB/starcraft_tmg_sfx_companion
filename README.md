@@ -11,7 +11,7 @@ An immersive, responsive, retro-futuristic sci-fi soundboard and soundtrack cons
 > Differences from the original project:
 > *   Optional StarCraft I sound bank per unit with an `SC1 | SC2` card switch (see "StarCraft I Sound Bank" below), including the `fetch-sc1-sounds.ps1` asset downloader.
 > *   Web app manifest and install icons (`manifest.webmanifest`, `pics/icons/`), so the app can be added to the home screen as "SC:TMG - SFX". The square icons are generated from the existing artwork by `generate-pwa-icons.ps1`. Offline support is planned as a follow-up.
-> *   TMG wave 3 units, added step by step. Done: High Templar (SC2 + SC1 banks). Planned: Defiler, Tassadar, Raven, Nova, Zagara.
+> *   TMG wave 3 units, added step by step. Done: High Templar (SC2 + SC1 banks), Raven (SC2 only; its destroyed sound is a placeholder borrowed from the Siege Tank). Planned: Defiler, Tassadar, Nova, Zagara.
 
 ---
 

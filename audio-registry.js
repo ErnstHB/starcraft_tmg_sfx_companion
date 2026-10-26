@@ -542,6 +542,41 @@ window.AUDIO_REGISTRY = {
                                                             "units/terran/medic/move/Medic_Yes05.ogg"
                                                         ]
                                            },
+                                 "raven":  {
+                                               "anti_armour_missile":  [
+                                                                           "units/terran/raven/anti_armour_missile/raven_targetingdrone00.ogg"
+                                                                       ],
+                                               "auto_turret":  [
+                                                                   "units/terran/raven/auto_turret/raven_autoturret00.ogg"
+                                                               ],
+                                               "auto_turretFX":  [
+                                                                     "units/terran/raven/auto_turretFX/Goliath_GroundAttackLaunch0.ogg",
+                                                                     "units/terran/raven/auto_turretFX/Goliath_GroundAttackLaunch1.ogg",
+                                                                     "units/terran/raven/auto_turretFX/Goliath_GroundAttackLaunch2.ogg"
+                                                                 ],
+                                               "death":  [
+                                                             "units/terran/raven/death/SiegeTank_Death0.ogg"
+                                                         ],
+                                               "deploy":  [
+                                                              "units/terran/raven/deploy/raven_ready00.ogg"
+                                                          ],
+                                               "move":  [
+                                                            "units/terran/raven/move/raven_yes00.ogg",
+                                                            "units/terran/raven/move/raven_yes01.ogg",
+                                                            "units/terran/raven/move/raven_yes02.ogg",
+                                                            "units/terran/raven/move/raven_yes03.ogg",
+                                                            "units/terran/raven/move/raven_yes04.ogg",
+                                                            "units/terran/raven/move/raven_yes05.ogg",
+                                                            "units/terran/raven/move/raven_yes06.ogg",
+                                                            "units/terran/raven/move/raven_yes07.ogg",
+                                                            "units/terran/raven/move/raven_yes08.ogg",
+                                                            "units/terran/raven/move/raven_yes09.ogg",
+                                                            "units/terran/raven/move/raven_yes10.ogg"
+                                                        ],
+                                               "seeker_missile":  [
+                                                                      "units/terran/raven/seeker_missile/raven_hunterseeker00.ogg"
+                                                                  ]
+                                           },
                                  "raynor":  {
                                                 "attack":  [
                                                                "units/terran/raynor/attack/Marine_AttackLaunch0.ogg",
@@ -1655,6 +1690,49 @@ window.AUDIO_REGISTRY = {
                                                                            },
                                                      "additional_abilities":  {
 
+                                                                              }
+                                                 },
+                                       "raven":  {
+                                                     "unit":  {
+                                                                  "name":  "Raven",
+                                                                  "role":  "Support, Tactician",
+                                                                  "weapon":  "Railguns"
+                                                              },
+                                                     "regular_abilities":  {
+                                                                               "deploy":  {
+                                                                                              "sound_sources":  [
+                                                                                                                    "deploy"
+                                                                                                                ]
+                                                                                          },
+                                                                               "move":  {
+                                                                                            "sound_sources":  [
+                                                                                                                  "move"
+                                                                                                              ]
+                                                                                        },
+                                                                               "destroyed":  {
+                                                                                                 "sound_sources":  [
+                                                                                                                       "death"
+                                                                                                                   ]
+                                                                                             }
+                                                                           },
+                                                     "additional_abilities":  {
+                                                                                  "deploy_auto_turret":  {
+                                                                                                             "sound_sources":  [
+                                                                                                                                   "auto_turret",
+                                                                                                                                   "auto_turretFX"
+                                                                                                                               ],
+                                                                                                             "playback":  "sequential"
+                                                                                                         },
+                                                                                  "anti_armour_missile":  {
+                                                                                                              "sound_sources":  [
+                                                                                                                                    "anti_armour_missile"
+                                                                                                                                ]
+                                                                                                          },
+                                                                                  "seeker_missile":  {
+                                                                                                         "sound_sources":  [
+                                                                                                                               "seeker_missile"
+                                                                                                                           ]
+                                                                                                     }
                                                                               }
                                                  },
                                        "raynor":  {
