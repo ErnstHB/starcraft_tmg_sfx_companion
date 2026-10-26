@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=sc1only-v1">
+    <link rel="stylesheet" href="styles.css?v=offline-v2">
 </head>
 <body class="theme-neutral">
     
@@ -179,52 +179,49 @@
                         </div>
                     </fieldset>
 
-                    <!-- Install the app and keep the sounds available offline (offline.js) -->
-                    <fieldset class="config-frame" id="offline-frame" data-e2e-id="offline-frame">
-                        <legend class="config-frame-title">INSTALL &amp; OFFLINE</legend>
-                        <div class="config-grid">
-                            <div class="config-card">
-                                <div class="card-title">INSTALL APP</div>
-                                <div id="install-status" class="offline-status" data-e2e-id="install-status"></div>
-                                <button type="button" id="btn-install-app" class="hud-action-btn" data-e2e-id="btn-install-app" hidden>INSTALL APP</button>
-                                <div id="install-ios-hint" class="offline-hint" hidden>ON IPHONE / IPAD: TAP SHARE, THEN "ADD TO HOME SCREEN".</div>
+                    <!-- Offline settings: a collapsed card like the unit cards (toggleCard). offline.js fills it in.
+                         Installing the app is left to the browser. -->
+                    <div class="unit-card offline-card" id="offline-frame" data-e2e-id="offline-frame">
+                        <div class="unit-header" onclick="toggleCard(this.parentNode)">
+                            <div class="unit-title-group">
+                                <span class="unit-name">OFFLINE SETTINGS</span>
+                                <span class="unit-role">SAVE SOUNDS FOR USE WITHOUT A CONNECTION</span>
                             </div>
-
-                            <div class="config-card">
-                                <div class="card-title">OFFLINE SOUNDS</div>
-                                <div class="toggle-group">
-                                    <label class="hud-checkbox-container">
-                                        <input type="checkbox" id="offline-terran" checked>
-                                        <span class="hud-checkbox"></span>
-                                        TERRAN UNITS
-                                    </label>
-                                    <label class="hud-checkbox-container">
-                                        <input type="checkbox" id="offline-zerg" checked>
-                                        <span class="hud-checkbox"></span>
-                                        ZERG UNITS
-                                    </label>
-                                    <label class="hud-checkbox-container">
-                                        <input type="checkbox" id="offline-protoss" checked>
-                                        <span class="hud-checkbox"></span>
-                                        PROTOSS UNITS
-                                    </label>
-                                    <label class="hud-checkbox-container">
-                                        <input type="checkbox" id="offline-ost">
-                                        <span class="hud-checkbox"></span>
-                                        BATTLE MUSIC (LARGE)
-                                    </label>
-                                </div>
-                                <div class="offline-actions">
-                                    <button type="button" id="btn-offline-prepare" class="hud-action-btn" data-e2e-id="btn-offline-prepare">PREPARE OFFLINE</button>
-                                    <button type="button" id="btn-offline-clear" class="hud-action-btn hud-action-btn-quiet" data-e2e-id="btn-offline-clear">REMOVE OFFLINE DATA</button>
-                                </div>
-                                <div id="offline-progress" class="offline-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" hidden>
-                                    <div id="offline-progress-bar" class="offline-progress-bar"></div>
-                                </div>
-                                <div id="offline-status" class="offline-status" data-e2e-id="offline-status"></div>
-                            </div>
+                            <span class="chevron-icon">▼</span>
                         </div>
-                    </fieldset>
+                        <div class="unit-body">
+                            <div class="toggle-group">
+                                <label class="hud-checkbox-container">
+                                    <input type="checkbox" id="offline-terran" checked>
+                                    <span class="hud-checkbox"></span>
+                                    TERRAN UNITS
+                                </label>
+                                <label class="hud-checkbox-container">
+                                    <input type="checkbox" id="offline-zerg" checked>
+                                    <span class="hud-checkbox"></span>
+                                    ZERG UNITS
+                                </label>
+                                <label class="hud-checkbox-container">
+                                    <input type="checkbox" id="offline-protoss" checked>
+                                    <span class="hud-checkbox"></span>
+                                    PROTOSS UNITS
+                                </label>
+                                <label class="hud-checkbox-container">
+                                    <input type="checkbox" id="offline-ost">
+                                    <span class="hud-checkbox"></span>
+                                    BATTLE MUSIC (LARGE)
+                                </label>
+                            </div>
+                            <div class="offline-actions">
+                                <button type="button" id="btn-offline-prepare" class="hud-action-btn" data-e2e-id="btn-offline-prepare">PREPARE OFFLINE</button>
+                                <button type="button" id="btn-offline-clear" class="hud-action-btn hud-action-btn-quiet" data-e2e-id="btn-offline-clear">REMOVE OFFLINE DATA</button>
+                            </div>
+                            <div id="offline-progress" class="offline-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" hidden>
+                                <div id="offline-progress-bar" class="offline-progress-bar"></div>
+                            </div>
+                            <div id="offline-status" class="offline-status" data-e2e-id="offline-status"></div>
+                        </div>
+                    </div>
 
                     <!-- GitHub Repository Links (this fork and the original project) -->
                     <div class="hud-repo-link-container">
@@ -290,7 +287,7 @@
     <script src="audio-registry.js?v=wave3-v14"></script>
     <script src="app.js?v=wave3-v4"></script>
     <script src="pwa.js?v=pwa-v2"></script>
-    <script src="offline.js?v=offline-v1"></script>
-    <script src="changelog.js?v=changelog-v1"></script>
+    <script src="offline.js?v=offline-v2"></script>
+    <script src="changelog.js?v=changelog-v2"></script>
 </body>
 </html>

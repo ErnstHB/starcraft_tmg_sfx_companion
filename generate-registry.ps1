@@ -19,9 +19,12 @@ function Get-ConfigScalar([string]$value) {
 }
 
 $stampHasher = [System.Security.Cryptography.SHA1]::Create()
+# Stamp = "<short content hash>-<size in bytes>". The hash makes a replaced file a new URL; the size lets the offline
+# settings estimate download sizes without a separate table (see offline.js, getUrlSize).
 function Get-FileStamp([string]$path) {
-    $hash = $stampHasher.ComputeHash([System.IO.File]::ReadAllBytes($path))
-    return -join ($hash[0..3] | ForEach-Object { $_.ToString('x2') })
+    $bytes = [System.IO.File]::ReadAllBytes($path)
+    $hash = $stampHasher.ComputeHash($bytes)
+    return "$(-join ($hash[0..3] | ForEach-Object { $_.ToString('x2') }))-$($bytes.Length)"
 }
 
 function Read-UnitConfig([string]$path) {
@@ -87,7 +90,7 @@ if (Test-Path -LiteralPath $ostRoot) {
                 $ver = $parts[1]
                 $race = $parts[2]
                 if ($registry.ost.Contains($ver) -and $registry.ost[$ver].Contains($race)) {
-                    $registry.ost[$ver][$race] += $relPath
+                    $registry.ost[$ver][$race] += "${relPath}?v=$(Get-FileStamp $_.FullName)"
                 }
             }
         }

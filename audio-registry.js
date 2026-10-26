@@ -3,51 +3,51 @@ window.AUDIO_REGISTRY = {
     "ost":  {
                 "starcraft1":  {
                                    "protoss":  [
-                                                   "ost/starcraft1/protoss/SC1_Protoss1.ogg",
-                                                   "ost/starcraft1/protoss/SC1_Protoss2.ogg",
-                                                   "ost/starcraft1/protoss/SC1_Protoss3.ogg",
-                                                   "ost/starcraft1/protoss/SC1_Protoss4.ogg"
+                                                   "ost/starcraft1/protoss/SC1_Protoss1.ogg?v=4675cbeb-5706835",
+                                                   "ost/starcraft1/protoss/SC1_Protoss2.ogg?v=2906a260-5990403",
+                                                   "ost/starcraft1/protoss/SC1_Protoss3.ogg?v=2f2c6c10-6196381",
+                                                   "ost/starcraft1/protoss/SC1_Protoss4.ogg?v=98ab55f6-5072858"
                                                ],
                                    "terran":  [
-                                                  "ost/starcraft1/terran/SC1_Terran1.ogg",
-                                                  "ost/starcraft1/terran/SC1_Terran2.ogg",
-                                                  "ost/starcraft1/terran/SC1_Terran3.ogg",
-                                                  "ost/starcraft1/terran/SC1_Terran4.ogg"
+                                                  "ost/starcraft1/terran/SC1_Terran1.ogg?v=91642a00-6096374",
+                                                  "ost/starcraft1/terran/SC1_Terran2.ogg?v=703ae6db-4863926",
+                                                  "ost/starcraft1/terran/SC1_Terran3.ogg?v=3f891000-5446415",
+                                                  "ost/starcraft1/terran/SC1_Terran4.ogg?v=2ef9836c-4659212"
                                               ],
                                    "zerg":  [
-                                                "ost/starcraft1/zerg/SC1_Zerg1.ogg",
-                                                "ost/starcraft1/zerg/SC1_Zerg2.ogg",
-                                                "ost/starcraft1/zerg/SC1_Zerg3.ogg",
-                                                "ost/starcraft1/zerg/SC1_Zerg4.ogg"
+                                                "ost/starcraft1/zerg/SC1_Zerg1.ogg?v=a1d38e51-5795898",
+                                                "ost/starcraft1/zerg/SC1_Zerg2.ogg?v=885eb5a5-6882550",
+                                                "ost/starcraft1/zerg/SC1_Zerg3.ogg?v=4a41b2a6-6289125",
+                                                "ost/starcraft1/zerg/SC1_Zerg4.ogg?v=c3bc3c4d-4768551"
                                             ]
                                },
                 "starcraft2":  {
                                    "protoss":  [
-                                                   "ost/starcraft2/protoss/ProtossSC2-01.ogg",
-                                                   "ost/starcraft2/protoss/ProtossSC2-02.ogg",
-                                                   "ost/starcraft2/protoss/ProtossSC2-03.ogg",
-                                                   "ost/starcraft2/protoss/ProtossSC2-04.ogg",
-                                                   "ost/starcraft2/protoss/ProtossSC2-05.ogg",
-                                                   "ost/starcraft2/protoss/ProtossSC2-06.ogg",
-                                                   "ost/starcraft2/protoss/ProtossSC2-07.ogg"
+                                                   "ost/starcraft2/protoss/ProtossSC2-01.ogg?v=9482fc45-5276220",
+                                                   "ost/starcraft2/protoss/ProtossSC2-02.ogg?v=b58de5fc-5597469",
+                                                   "ost/starcraft2/protoss/ProtossSC2-03.ogg?v=fe25cb17-5806925",
+                                                   "ost/starcraft2/protoss/ProtossSC2-04.ogg?v=58aca20e-5009594",
+                                                   "ost/starcraft2/protoss/ProtossSC2-05.ogg?v=f451df3e-5738305",
+                                                   "ost/starcraft2/protoss/ProtossSC2-06.ogg?v=58808732-4766397",
+                                                   "ost/starcraft2/protoss/ProtossSC2-07.ogg?v=9641c86c-5171198"
                                                ],
                                    "terran":  [
-                                                  "ost/starcraft2/terran/TerranSC2-01.ogg",
-                                                  "ost/starcraft2/terran/TerranSC2-02.ogg",
-                                                  "ost/starcraft2/terran/TerranSC2-03.ogg",
-                                                  "ost/starcraft2/terran/TerranSC2-04.ogg",
-                                                  "ost/starcraft2/terran/TerranSC2-05.ogg"
+                                                  "ost/starcraft2/terran/TerranSC2-01.ogg?v=88c1b6e6-5195821",
+                                                  "ost/starcraft2/terran/TerranSC2-02.ogg?v=986914a6-3907267",
+                                                  "ost/starcraft2/terran/TerranSC2-03.ogg?v=cded1870-4616250",
+                                                  "ost/starcraft2/terran/TerranSC2-04.ogg?v=fd255424-3527954",
+                                                  "ost/starcraft2/terran/TerranSC2-05.ogg?v=04ee37db-3880373"
                                               ],
                                    "zerg":  [
-                                                "ost/starcraft2/zerg/ZergSC2-01.ogg",
-                                                "ost/starcraft2/zerg/ZergSC2-02.ogg",
-                                                "ost/starcraft2/zerg/ZergSC2-03.ogg",
-                                                "ost/starcraft2/zerg/ZergSC2-04.ogg",
-                                                "ost/starcraft2/zerg/ZergSC2-05.ogg",
-                                                "ost/starcraft2/zerg/ZergSC2-06.ogg",
-                                                "ost/starcraft2/zerg/ZergSC2-07.ogg",
-                                                "ost/starcraft2/zerg/ZergSC2-08.ogg",
-                                                "ost/starcraft2/zerg/ZergSC2-09.ogg"
+                                                "ost/starcraft2/zerg/ZergSC2-01.ogg?v=cdf3e554-2012864",
+                                                "ost/starcraft2/zerg/ZergSC2-02.ogg?v=7797868f-4406927",
+                                                "ost/starcraft2/zerg/ZergSC2-03.ogg?v=d140592a-2628077",
+                                                "ost/starcraft2/zerg/ZergSC2-04.ogg?v=213f002c-2253869",
+                                                "ost/starcraft2/zerg/ZergSC2-05.ogg?v=b8563766-2578330",
+                                                "ost/starcraft2/zerg/ZergSC2-06.ogg?v=331f78bd-3536148",
+                                                "ost/starcraft2/zerg/ZergSC2-07.ogg?v=3b01b7d5-3877859",
+                                                "ost/starcraft2/zerg/ZergSC2-08.ogg?v=1f371006-3659695",
+                                                "ost/starcraft2/zerg/ZergSC2-09.ogg?v=dbef30af-2741954"
                                             ]
                                }
             },
@@ -55,1169 +55,1169 @@ window.AUDIO_REGISTRY = {
                   "protoss":  {
                                   "adept":  {
                                                 "attack":  [
-                                                               "units/protoss/adept/attack/Adept_AttackLaunch00.ogg?v=259a639e",
-                                                               "units/protoss/adept/attack/Adept_AttackLaunch01.ogg?v=728fb900",
-                                                               "units/protoss/adept/attack/Adept_AttackLaunch02.ogg?v=3b51673d",
-                                                               "units/protoss/adept/attack/Adept_AttackLaunch03.ogg?v=e6e57bd1",
-                                                               "units/protoss/adept/attack/Adept_AttackLaunch04.ogg?v=3417d9f5"
+                                                               "units/protoss/adept/attack/Adept_AttackLaunch00.ogg?v=259a639e-12179",
+                                                               "units/protoss/adept/attack/Adept_AttackLaunch01.ogg?v=728fb900-12318",
+                                                               "units/protoss/adept/attack/Adept_AttackLaunch02.ogg?v=3b51673d-12496",
+                                                               "units/protoss/adept/attack/Adept_AttackLaunch03.ogg?v=e6e57bd1-11117",
+                                                               "units/protoss/adept/attack/Adept_AttackLaunch04.ogg?v=3417d9f5-12478"
                                                            ],
                                                 "death":  [
-                                                              "units/protoss/adept/death/Adept_Death00.ogg?v=99cfc69c",
-                                                              "units/protoss/adept/death/Adept_Death01.ogg?v=8ed1d34a",
-                                                              "units/protoss/adept/death/Adept_Death02.ogg?v=7d4af04b",
-                                                              "units/protoss/adept/death/Adept_Death03.ogg?v=74c5f84f"
+                                                              "units/protoss/adept/death/Adept_Death00.ogg?v=99cfc69c-20720",
+                                                              "units/protoss/adept/death/Adept_Death01.ogg?v=8ed1d34a-22867",
+                                                              "units/protoss/adept/death/Adept_Death02.ogg?v=7d4af04b-27272",
+                                                              "units/protoss/adept/death/Adept_Death03.ogg?v=74c5f84f-28614"
                                                           ],
                                                 "deathFX":  [
-                                                                "units/protoss/adept/deathFX/Adept_DeathFX00.ogg?v=2361b434",
-                                                                "units/protoss/adept/deathFX/Adept_DeathFX01.ogg?v=29e919f0",
-                                                                "units/protoss/adept/deathFX/Adept_DeathFX02.ogg?v=e83184e0",
-                                                                "units/protoss/adept/deathFX/Adept_DeathFX03.ogg?v=50fbcb80"
+                                                                "units/protoss/adept/deathFX/Adept_DeathFX00.ogg?v=2361b434-20115",
+                                                                "units/protoss/adept/deathFX/Adept_DeathFX01.ogg?v=29e919f0-17328",
+                                                                "units/protoss/adept/deathFX/Adept_DeathFX02.ogg?v=e83184e0-21149",
+                                                                "units/protoss/adept/deathFX/Adept_DeathFX03.ogg?v=50fbcb80-19244"
                                                             ],
                                                 "deploy":  [
-                                                               "units/protoss/adept/deploy/Adept_Ready00.ogg?v=8b2180b1",
-                                                               "units/protoss/adept/deploy/Adept_Ready01.ogg?v=357f44a3"
+                                                               "units/protoss/adept/deploy/Adept_Ready00.ogg?v=8b2180b1-24391",
+                                                               "units/protoss/adept/deploy/Adept_Ready01.ogg?v=357f44a3-30580"
                                                            ],
                                                 "move":  [
-                                                             "units/protoss/adept/move/Adept_Yes00.ogg?v=8f531dc5",
-                                                             "units/protoss/adept/move/Adept_Yes01.ogg?v=b128bd72",
-                                                             "units/protoss/adept/move/Adept_Yes02.ogg?v=b710a82d",
-                                                             "units/protoss/adept/move/Adept_Yes03.ogg?v=951c9582",
-                                                             "units/protoss/adept/move/Adept_Yes04.ogg?v=4eee6632",
-                                                             "units/protoss/adept/move/Adept_Yes05.ogg?v=a1b17ea9",
-                                                             "units/protoss/adept/move/Adept_Yes06.ogg?v=17acc752",
-                                                             "units/protoss/adept/move/Adept_Yes07.ogg?v=25da68ef"
+                                                             "units/protoss/adept/move/Adept_Yes00.ogg?v=8f531dc5-29541",
+                                                             "units/protoss/adept/move/Adept_Yes01.ogg?v=b128bd72-20501",
+                                                             "units/protoss/adept/move/Adept_Yes02.ogg?v=b710a82d-26760",
+                                                             "units/protoss/adept/move/Adept_Yes03.ogg?v=951c9582-25405",
+                                                             "units/protoss/adept/move/Adept_Yes04.ogg?v=4eee6632-27266",
+                                                             "units/protoss/adept/move/Adept_Yes05.ogg?v=a1b17ea9-17840",
+                                                             "units/protoss/adept/move/Adept_Yes06.ogg?v=17acc752-18195",
+                                                             "units/protoss/adept/move/Adept_Yes07.ogg?v=25da68ef-14312"
                                                          ],
                                                 "psionic_transfer":  [
-                                                                         "units/protoss/adept/psionic_transfer/Adept_PsionicTransferLaunch_01.ogg?v=fe380baa",
-                                                                         "units/protoss/adept/psionic_transfer/Adept_PsionicTransferLaunch_02.ogg?v=0df6c0fc",
-                                                                         "units/protoss/adept/psionic_transfer/Adept_PsionicTransferLaunch_03.ogg?v=0c07b3e5",
-                                                                         "units/protoss/adept/psionic_transfer/Adept_PsionicTransferLaunch_04.ogg?v=1891dd6a",
-                                                                         "units/protoss/adept/psionic_transfer/Adept_PsionicTransferLaunch_05.ogg?v=1bf93d32",
-                                                                         "units/protoss/adept/psionic_transfer/Adept_PsionicTransferLaunch_06.ogg?v=aba45cc0"
+                                                                         "units/protoss/adept/psionic_transfer/Adept_PsionicTransferLaunch_01.ogg?v=fe380baa-16884",
+                                                                         "units/protoss/adept/psionic_transfer/Adept_PsionicTransferLaunch_02.ogg?v=0df6c0fc-18390",
+                                                                         "units/protoss/adept/psionic_transfer/Adept_PsionicTransferLaunch_03.ogg?v=0c07b3e5-18676",
+                                                                         "units/protoss/adept/psionic_transfer/Adept_PsionicTransferLaunch_04.ogg?v=1891dd6a-18805",
+                                                                         "units/protoss/adept/psionic_transfer/Adept_PsionicTransferLaunch_05.ogg?v=1bf93d32-18933",
+                                                                         "units/protoss/adept/psionic_transfer/Adept_PsionicTransferLaunch_06.ogg?v=aba45cc0-18638"
                                                                      ]
                                             },
                                   "artanis":  {
                                                   "charge":  [
-                                                                 "units/protoss/artanis/charge/charge.ogg?v=de58870d"
+                                                                 "units/protoss/artanis/charge/charge.ogg?v=de58870d-19781"
                                                              ],
                                                   "combat":  [
-                                                                 "units/protoss/artanis/combat/Zealot_AttackLaunch0.ogg?v=471b7f37",
-                                                                 "units/protoss/artanis/combat/Zealot_AttackLaunch1.ogg?v=c0eb5e62",
-                                                                 "units/protoss/artanis/combat/Zealot_AttackLaunch2.ogg?v=b9371c7d",
-                                                                 "units/protoss/artanis/combat/Zealot_AttackLaunch3.ogg?v=0fa37271",
-                                                                 "units/protoss/artanis/combat/Zealot_AttackLaunch4.ogg?v=e30d161b",
-                                                                 "units/protoss/artanis/combat/Zealot_AttackLaunch5.ogg?v=d0c1dd17"
+                                                                 "units/protoss/artanis/combat/Zealot_AttackLaunch0.ogg?v=471b7f37-12147",
+                                                                 "units/protoss/artanis/combat/Zealot_AttackLaunch1.ogg?v=c0eb5e62-12813",
+                                                                 "units/protoss/artanis/combat/Zealot_AttackLaunch2.ogg?v=b9371c7d-12240",
+                                                                 "units/protoss/artanis/combat/Zealot_AttackLaunch3.ogg?v=0fa37271-12469",
+                                                                 "units/protoss/artanis/combat/Zealot_AttackLaunch4.ogg?v=e30d161b-12574",
+                                                                 "units/protoss/artanis/combat/Zealot_AttackLaunch5.ogg?v=d0c1dd17-13106"
                                                              ],
                                                   "death":  [
-                                                                "units/protoss/artanis/death/Artanis_Death00.ogg?v=2cd9bfe2"
+                                                                "units/protoss/artanis/death/Artanis_Death00.ogg?v=2cd9bfe2-28657"
                                                             ],
                                                   "deploy":  [
-                                                                 "units/protoss/artanis/deploy/Artanis_Ready00.ogg?v=296291fb"
+                                                                 "units/protoss/artanis/deploy/Artanis_Ready00.ogg?v=296291fb-39941"
                                                              ],
                                                   "move":  [
-                                                               "units/protoss/artanis/move/Artanis_What00.ogg?v=6c927fe9",
-                                                               "units/protoss/artanis/move/Artanis_What01.ogg?v=2627556a",
-                                                               "units/protoss/artanis/move/Artanis_What02.ogg?v=9a2eee75",
-                                                               "units/protoss/artanis/move/Artanis_What03.ogg?v=3e0da777",
-                                                               "units/protoss/artanis/move/Artanis_What04.ogg?v=8ef96fac",
-                                                               "units/protoss/artanis/move/Artanis_Yes00.ogg?v=31c09137",
-                                                               "units/protoss/artanis/move/Artanis_Yes01.ogg?v=da5138f5",
-                                                               "units/protoss/artanis/move/Artanis_Yes02.ogg?v=8837570d",
-                                                               "units/protoss/artanis/move/Artanis_Yes03.ogg?v=8c47c8fd"
+                                                               "units/protoss/artanis/move/Artanis_What00.ogg?v=6c927fe9-38799",
+                                                               "units/protoss/artanis/move/Artanis_What01.ogg?v=2627556a-39978",
+                                                               "units/protoss/artanis/move/Artanis_What02.ogg?v=9a2eee75-35387",
+                                                               "units/protoss/artanis/move/Artanis_What03.ogg?v=3e0da777-39892",
+                                                               "units/protoss/artanis/move/Artanis_What04.ogg?v=8ef96fac-43565",
+                                                               "units/protoss/artanis/move/Artanis_Yes00.ogg?v=31c09137-31040",
+                                                               "units/protoss/artanis/move/Artanis_Yes01.ogg?v=da5138f5-25857",
+                                                               "units/protoss/artanis/move/Artanis_Yes02.ogg?v=8837570d-30074",
+                                                               "units/protoss/artanis/move/Artanis_Yes03.ogg?v=8c47c8fd-36176"
                                                            ]
                                               },
                                   "high_templar":  {
                                                        "attack":  [
-                                                                      "units/protoss/high_templar/attack/hightemplar_attack04.ogg?v=7464a76a",
-                                                                      "units/protoss/high_templar/attack/hightemplar_attack06.ogg?v=b031ad19"
+                                                                      "units/protoss/high_templar/attack/hightemplar_attack04.ogg?v=7464a76a-24702",
+                                                                      "units/protoss/high_templar/attack/hightemplar_attack06.ogg?v=b031ad19-32207"
                                                                   ],
                                                        "death":  [
-                                                                     "units/protoss/high_templar/death/hightemplar_death0.ogg?v=4fa34ba3",
-                                                                     "units/protoss/high_templar/death/hightemplar_energylow00.ogg?v=76f1e761",
-                                                                     "units/protoss/high_templar/death/karass_death00.ogg?v=71ff8567"
+                                                                     "units/protoss/high_templar/death/hightemplar_death0.ogg?v=4fa34ba3-18713",
+                                                                     "units/protoss/high_templar/death/hightemplar_energylow00.ogg?v=76f1e761-25261",
+                                                                     "units/protoss/high_templar/death/karass_death00.ogg?v=71ff8567-38998"
                                                                  ],
                                                        "deploy":  [
-                                                                      "units/protoss/high_templar/deploy/hightemplar_ready00.ogg?v=73bd56f3",
-                                                                      "units/protoss/high_templar/deploy/pmission_ulnar03_hightemplar_117.ogg?v=4fd7d8b1"
+                                                                      "units/protoss/high_templar/deploy/hightemplar_ready00.ogg?v=73bd56f3-33920",
+                                                                      "units/protoss/high_templar/deploy/pmission_ulnar03_hightemplar_117.ogg?v=4fd7d8b1-69386"
                                                                   ],
                                                        "move":  [
-                                                                    "units/protoss/high_templar/move/hightemplar_yes00.ogg?v=c02fcc20",
-                                                                    "units/protoss/high_templar/move/hightemplar_yes01.ogg?v=fcd5e3cd",
-                                                                    "units/protoss/high_templar/move/hightemplar_yes02.ogg?v=a6b2728d",
-                                                                    "units/protoss/high_templar/move/hightemplar_yes03.ogg?v=26bfe922",
-                                                                    "units/protoss/high_templar/move/hightemplar_yes04.ogg?v=53b09b2b",
-                                                                    "units/protoss/high_templar/move/hightemplar_yes05.ogg?v=01580765",
-                                                                    "units/protoss/high_templar/move/hightemplar_yes06.ogg?v=1e02e826"
+                                                                    "units/protoss/high_templar/move/hightemplar_yes00.ogg?v=c02fcc20-32037",
+                                                                    "units/protoss/high_templar/move/hightemplar_yes01.ogg?v=fcd5e3cd-35220",
+                                                                    "units/protoss/high_templar/move/hightemplar_yes02.ogg?v=a6b2728d-30021",
+                                                                    "units/protoss/high_templar/move/hightemplar_yes03.ogg?v=26bfe922-29975",
+                                                                    "units/protoss/high_templar/move/hightemplar_yes04.ogg?v=53b09b2b-26479",
+                                                                    "units/protoss/high_templar/move/hightemplar_yes05.ogg?v=01580765-34203",
+                                                                    "units/protoss/high_templar/move/hightemplar_yes06.ogg?v=1e02e826-33228"
                                                                 ],
                                                        "psionic_storm":  [
-                                                                             "units/protoss/high_templar/psionic_storm/hightemplar_psionicstorm00.ogg?v=0232017a"
+                                                                             "units/protoss/high_templar/psionic_storm/hightemplar_psionicstorm00.ogg?v=0232017a-26356"
                                                                          ],
                                                        "psionic_stormFX":  [
-                                                                               "units/protoss/high_templar/psionic_stormFX/hightemplar_psionicstormimpact0.ogg?v=876ee313",
-                                                                               "units/protoss/high_templar/psionic_stormFX/hightemplar_psionicstormimpact1.ogg?v=de0e3648",
-                                                                               "units/protoss/high_templar/psionic_stormFX/hightemplar_psionicstormimpact2.ogg?v=8640b145",
-                                                                               "units/protoss/high_templar/psionic_stormFX/hightemplar_psionicstormimpact3.ogg?v=036f65d9",
-                                                                               "units/protoss/high_templar/psionic_stormFX/hightemplar_psionicstormimpact4.ogg?v=f6746c65"
+                                                                               "units/protoss/high_templar/psionic_stormFX/hightemplar_psionicstormimpact0.ogg?v=876ee313-25032",
+                                                                               "units/protoss/high_templar/psionic_stormFX/hightemplar_psionicstormimpact1.ogg?v=de0e3648-25262",
+                                                                               "units/protoss/high_templar/psionic_stormFX/hightemplar_psionicstormimpact2.ogg?v=8640b145-26195",
+                                                                               "units/protoss/high_templar/psionic_stormFX/hightemplar_psionicstormimpact3.ogg?v=036f65d9-26250",
+                                                                               "units/protoss/high_templar/psionic_stormFX/hightemplar_psionicstormimpact4.ogg?v=f6746c65-25800"
                                                                            ]
                                                    },
                                   "immortal":  {
                                                    "attack":  [
-                                                                  "units/protoss/immortal/attack/Immortal_AttackLaunch0.ogg?v=5f8068ee",
-                                                                  "units/protoss/immortal/attack/Immortal_AttackLaunch1.ogg?v=0bd624f2",
-                                                                  "units/protoss/immortal/attack/Immortal_AttackLaunch2.ogg?v=c5d6853a"
+                                                                  "units/protoss/immortal/attack/Immortal_AttackLaunch0.ogg?v=5f8068ee-18942",
+                                                                  "units/protoss/immortal/attack/Immortal_AttackLaunch1.ogg?v=0bd624f2-21861",
+                                                                  "units/protoss/immortal/attack/Immortal_AttackLaunch2.ogg?v=c5d6853a-19471"
                                                               ],
                                                    "death":  [
-                                                                 "units/protoss/immortal/death/Immortal_BarrierOff_01.ogg?v=12b3c1b4",
-                                                                 "units/protoss/immortal/death/Immortal_BarrierOff_02.ogg?v=704e9f6b",
-                                                                 "units/protoss/immortal/death/Immortal_BarrierOff_03.ogg?v=d195b8e9",
-                                                                 "units/protoss/immortal/death/Immortal_BarrierOff_04.ogg?v=72c95c23"
+                                                                 "units/protoss/immortal/death/Immortal_BarrierOff_01.ogg?v=12b3c1b4-14438",
+                                                                 "units/protoss/immortal/death/Immortal_BarrierOff_02.ogg?v=704e9f6b-15010",
+                                                                 "units/protoss/immortal/death/Immortal_BarrierOff_03.ogg?v=d195b8e9-14458",
+                                                                 "units/protoss/immortal/death/Immortal_BarrierOff_04.ogg?v=72c95c23-15146"
                                                              ],
                                                    "deathFX":  [
-                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge0.ogg?v=ded1a39c",
-                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge1.ogg?v=9494bb75",
-                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge2.ogg?v=01ac7caf",
-                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge3.ogg?v=38e4dc8c",
-                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge4.ogg?v=5a0da7a1",
-                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge5.ogg?v=81bb458f",
-                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge6.ogg?v=adc73bd4",
-                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge7.ogg?v=a9a88be9",
-                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge8.ogg?v=a31b70e1",
-                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge9.ogg?v=e62354f0"
+                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge0.ogg?v=ded1a39c-45410",
+                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge1.ogg?v=9494bb75-46900",
+                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge2.ogg?v=01ac7caf-39937",
+                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge3.ogg?v=38e4dc8c-41438",
+                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge4.ogg?v=5a0da7a1-39602",
+                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge5.ogg?v=81bb458f-41234",
+                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge6.ogg?v=adc73bd4-49606",
+                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge7.ogg?v=a9a88be9-43409",
+                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge8.ogg?v=a31b70e1-40980",
+                                                                   "units/protoss/immortal/deathFX/Protoss_ExplosionLarge9.ogg?v=e62354f0-51074"
                                                                ],
                                                    "deploy":  [
-                                                                  "units/protoss/immortal/deploy/Immortal_Ready00.ogg?v=72ea6ac7"
+                                                                  "units/protoss/immortal/deploy/Immortal_Ready00.ogg?v=72ea6ac7-31858"
                                                               ],
                                                    "move":  [
-                                                                "units/protoss/immortal/move/Immortal_Yes00.ogg?v=2ee5059d",
-                                                                "units/protoss/immortal/move/Immortal_Yes01.ogg?v=32906c37",
-                                                                "units/protoss/immortal/move/Immortal_Yes02.ogg?v=10ed1e7a",
-                                                                "units/protoss/immortal/move/Immortal_Yes03.ogg?v=0a93a01e",
-                                                                "units/protoss/immortal/move/Immortal_Yes04.ogg?v=204fbe15",
-                                                                "units/protoss/immortal/move/Immortal_Yes05.ogg?v=6b90af9a"
+                                                                "units/protoss/immortal/move/Immortal_Yes00.ogg?v=2ee5059d-22572",
+                                                                "units/protoss/immortal/move/Immortal_Yes01.ogg?v=32906c37-29105",
+                                                                "units/protoss/immortal/move/Immortal_Yes02.ogg?v=10ed1e7a-30865",
+                                                                "units/protoss/immortal/move/Immortal_Yes03.ogg?v=0a93a01e-25177",
+                                                                "units/protoss/immortal/move/Immortal_Yes04.ogg?v=204fbe15-31162",
+                                                                "units/protoss/immortal/move/Immortal_Yes05.ogg?v=6b90af9a-30415"
                                                             ]
                                                },
                                   "pylon":  {
                                                 "death":  [
-                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge0.ogg?v=7eea1cd9",
-                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge1.ogg?v=addaf4d6",
-                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge2.ogg?v=09642f3d",
-                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge3.ogg?v=ae006543",
-                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge4.ogg?v=ebb4e622",
-                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge5.ogg?v=b2251cdf",
-                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge6.ogg?v=63e2ca83",
-                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge7.ogg?v=8df35ea5",
-                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge8.ogg?v=699fb243",
-                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge9.ogg?v=ef73f0ed"
+                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge0.ogg?v=7eea1cd9-45410",
+                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge1.ogg?v=addaf4d6-46900",
+                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge2.ogg?v=09642f3d-39937",
+                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge3.ogg?v=ae006543-41438",
+                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge4.ogg?v=ebb4e622-39602",
+                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge5.ogg?v=b2251cdf-41234",
+                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge6.ogg?v=63e2ca83-49606",
+                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge7.ogg?v=8df35ea5-43409",
+                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge8.ogg?v=699fb243-40980",
+                                                              "units/protoss/pylon/death/Protoss_ExplosionLarge9.ogg?v=ef73f0ed-51074"
                                                           ],
                                                 "deploy":  [
-                                                               "units/protoss/pylon/deploy/Protoss_BuildingWarpStart0.ogg?v=e7eaac78"
+                                                               "units/protoss/pylon/deploy/Protoss_BuildingWarpStart0.ogg?v=e7eaac78-111816"
                                                            ]
                                             },
                                   "sentry":  {
                                                  "attack":  [
-                                                                "units/protoss/sentry/attack/weapon.ogg?v=42baae4e"
+                                                                "units/protoss/sentry/attack/weapon.ogg?v=42baae4e-39476"
                                                             ],
                                                  "death":  [
-                                                               "units/protoss/sentry/death/Sentry_Death00.ogg?v=153aff8c",
-                                                               "units/protoss/sentry/death/Sentry_Death01.ogg?v=223a1971",
-                                                               "units/protoss/sentry/death/Sentry_Death02.ogg?v=be5cd2eb"
+                                                               "units/protoss/sentry/death/Sentry_Death00.ogg?v=153aff8c-30816",
+                                                               "units/protoss/sentry/death/Sentry_Death01.ogg?v=223a1971-30751",
+                                                               "units/protoss/sentry/death/Sentry_Death02.ogg?v=be5cd2eb-35052"
                                                            ],
                                                  "deathFX":  [
-                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge0.ogg?v=ded1a39c",
-                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge1.ogg?v=9494bb75",
-                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge2.ogg?v=01ac7caf",
-                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge3.ogg?v=38e4dc8c",
-                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge4.ogg?v=5a0da7a1",
-                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge5.ogg?v=81bb458f",
-                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge6.ogg?v=adc73bd4",
-                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge7.ogg?v=a9a88be9",
-                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge8.ogg?v=a31b70e1",
-                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge9.ogg?v=e62354f0"
+                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge0.ogg?v=ded1a39c-45410",
+                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge1.ogg?v=9494bb75-46900",
+                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge2.ogg?v=01ac7caf-39937",
+                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge3.ogg?v=38e4dc8c-41438",
+                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge4.ogg?v=5a0da7a1-39602",
+                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge5.ogg?v=81bb458f-41234",
+                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge6.ogg?v=adc73bd4-49606",
+                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge7.ogg?v=a9a88be9-43409",
+                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge8.ogg?v=a31b70e1-40980",
+                                                                 "units/protoss/sentry/deathFX/Protoss_ExplosionLarge9.ogg?v=e62354f0-51074"
                                                              ],
                                                  "deploy":  [
-                                                                "units/protoss/sentry/deploy/Sentry_Ready00.ogg?v=232e3df1",
-                                                                "units/protoss/sentry/deploy/Sentry_Ready01.ogg?v=dc5a62aa"
+                                                                "units/protoss/sentry/deploy/Sentry_Ready00.ogg?v=232e3df1-66838",
+                                                                "units/protoss/sentry/deploy/Sentry_Ready01.ogg?v=dc5a62aa-65270"
                                                             ],
                                                  "force_field":  [
-                                                                     "units/protoss/sentry/force_field/Sentry_ForceFieldLaunch.ogg?v=94c9b9c6"
+                                                                     "units/protoss/sentry/force_field/Sentry_ForceFieldLaunch.ogg?v=94c9b9c6-26217"
                                                                  ],
                                                  "move":  [
-                                                              "units/protoss/sentry/move/Sentry_Yes00.ogg?v=67f7cd9a",
-                                                              "units/protoss/sentry/move/Sentry_Yes01.ogg?v=46eae8de",
-                                                              "units/protoss/sentry/move/Sentry_Yes02.ogg?v=5573767d",
-                                                              "units/protoss/sentry/move/Sentry_Yes03.ogg?v=63fe46d1"
+                                                              "units/protoss/sentry/move/Sentry_Yes00.ogg?v=67f7cd9a-45253",
+                                                              "units/protoss/sentry/move/Sentry_Yes01.ogg?v=46eae8de-61637",
+                                                              "units/protoss/sentry/move/Sentry_Yes02.ogg?v=5573767d-41986",
+                                                              "units/protoss/sentry/move/Sentry_Yes03.ogg?v=63fe46d1-65237"
                                                           ]
                                              },
                                   "stalker":  {
                                                   "attack":  [
-                                                                 "units/protoss/stalker/attack/Stalker_AttackLaunch0.ogg?v=5fe8937a",
-                                                                 "units/protoss/stalker/attack/Stalker_AttackLaunch1.ogg?v=c3144926",
-                                                                 "units/protoss/stalker/attack/Stalker_AttackLaunch2.ogg?v=ae332461",
-                                                                 "units/protoss/stalker/attack/Stalker_AttackLaunch3.ogg?v=9fff10c6",
-                                                                 "units/protoss/stalker/attack/Stalker_AttackLaunch4.ogg?v=e36f36d1"
+                                                                 "units/protoss/stalker/attack/Stalker_AttackLaunch0.ogg?v=5fe8937a-18392",
+                                                                 "units/protoss/stalker/attack/Stalker_AttackLaunch1.ogg?v=c3144926-19970",
+                                                                 "units/protoss/stalker/attack/Stalker_AttackLaunch2.ogg?v=ae332461-25277",
+                                                                 "units/protoss/stalker/attack/Stalker_AttackLaunch3.ogg?v=9fff10c6-10203",
+                                                                 "units/protoss/stalker/attack/Stalker_AttackLaunch4.ogg?v=e36f36d1-10056"
                                                              ],
                                                   "blink":  [
-                                                                "units/protoss/stalker/blink/Stalker_Blink0.ogg?v=09ee2742"
+                                                                "units/protoss/stalker/blink/Stalker_Blink0.ogg?v=09ee2742-17409"
                                                             ],
                                                   "death":  [
-                                                                "units/protoss/stalker/death/Stalker_Death00.ogg?v=5bec0270"
+                                                                "units/protoss/stalker/death/Stalker_Death00.ogg?v=5bec0270-23312"
                                                             ],
                                                   "deathFX":  [
-                                                                  "units/protoss/stalker/deathFX/Stalker_Explode_Fall_01.ogg?v=7bb799b0",
-                                                                  "units/protoss/stalker/deathFX/Stalker_Explode_Fall_02.ogg?v=99ca7f8f",
-                                                                  "units/protoss/stalker/deathFX/Stalker_Explode_Fall_03.ogg?v=9ad337be",
-                                                                  "units/protoss/stalker/deathFX/Stalker_Explode_Fall_04.ogg?v=aa54529f"
+                                                                  "units/protoss/stalker/deathFX/Stalker_Explode_Fall_01.ogg?v=7bb799b0-23417",
+                                                                  "units/protoss/stalker/deathFX/Stalker_Explode_Fall_02.ogg?v=99ca7f8f-23349",
+                                                                  "units/protoss/stalker/deathFX/Stalker_Explode_Fall_03.ogg?v=9ad337be-23383",
+                                                                  "units/protoss/stalker/deathFX/Stalker_Explode_Fall_04.ogg?v=aa54529f-23518"
                                                               ],
                                                   "move":  [
-                                                               "units/protoss/stalker/move/Stalker_Yes00.ogg?v=c447d052",
-                                                               "units/protoss/stalker/move/Stalker_Yes01.ogg?v=bd732839",
-                                                               "units/protoss/stalker/move/Stalker_Yes02.ogg?v=a784ff76",
-                                                               "units/protoss/stalker/move/Stalker_Yes03.ogg?v=67f0510b",
-                                                               "units/protoss/stalker/move/Stalker_Yes04.ogg?v=ee4f1a8e",
-                                                               "units/protoss/stalker/move/Stalker_Yes05.ogg?v=817d2135",
-                                                               "units/protoss/stalker/move/Stalker_Yes06.ogg?v=7530c4c5",
-                                                               "units/protoss/stalker/move/Stalker_Yes07.ogg?v=fa7a2a39"
+                                                               "units/protoss/stalker/move/Stalker_Yes00.ogg?v=c447d052-25357",
+                                                               "units/protoss/stalker/move/Stalker_Yes01.ogg?v=bd732839-39860",
+                                                               "units/protoss/stalker/move/Stalker_Yes02.ogg?v=a784ff76-28773",
+                                                               "units/protoss/stalker/move/Stalker_Yes03.ogg?v=67f0510b-29424",
+                                                               "units/protoss/stalker/move/Stalker_Yes04.ogg?v=ee4f1a8e-47068",
+                                                               "units/protoss/stalker/move/Stalker_Yes05.ogg?v=817d2135-38580",
+                                                               "units/protoss/stalker/move/Stalker_Yes06.ogg?v=7530c4c5-27608",
+                                                               "units/protoss/stalker/move/Stalker_Yes07.ogg?v=fa7a2a39-28135"
                                                            ],
                                                   "ready":  [
-                                                                "units/protoss/stalker/ready/Stalker_Ready00.ogg?v=5a04e95b"
+                                                                "units/protoss/stalker/ready/Stalker_Ready00.ogg?v=5a04e95b-43045"
                                                             ]
                                               },
                                   "tassadar":  {
                                                    "death":  [
-                                                                 "units/protoss/tassadar/sc1/death/ProtossTassadarHighTemplarDeath00SC1.ogg?v=36f736e9"
+                                                                 "units/protoss/tassadar/sc1/death/ProtossTassadarHighTemplarDeath00SC1.ogg?v=36f736e9-20465"
                                                              ],
                                                    "deploy":  [
-                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarPissed00-01SC1.ogg?v=d7021164",
-                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarPissed02-03SC1.ogg?v=a66e29ff",
-                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarWhat00SC1.ogg?v=782d45f0",
-                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarWhat01SC1.ogg?v=500699ef",
-                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarWhat02SC1.ogg?v=d35de260",
-                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarWhat03SC1.ogg?v=c00a4e90"
+                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarPissed00-01SC1.ogg?v=d7021164-23841",
+                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarPissed02-03SC1.ogg?v=a66e29ff-29110",
+                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarWhat00SC1.ogg?v=782d45f0-12961",
+                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarWhat01SC1.ogg?v=500699ef-10628",
+                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarWhat02SC1.ogg?v=d35de260-12515",
+                                                                  "units/protoss/tassadar/sc1/deploy/ProtossTassadarHighTemplarWhat03SC1.ogg?v=c00a4e90-12274"
                                                               ],
                                                    "move":  [
-                                                                "units/protoss/tassadar/sc1/move/ProtossTassadarHighTemplarYes00SC1.ogg?v=a5a832e4",
-                                                                "units/protoss/tassadar/sc1/move/ProtossTassadarHighTemplarYes01SC1.ogg?v=88189828",
-                                                                "units/protoss/tassadar/sc1/move/ProtossTassadarHighTemplarYes02SC1.ogg?v=6688e93a",
-                                                                "units/protoss/tassadar/sc1/move/ProtossTassadarHighTemplarYes03SC1.ogg?v=2e0b8248"
+                                                                "units/protoss/tassadar/sc1/move/ProtossTassadarHighTemplarYes00SC1.ogg?v=a5a832e4-11245",
+                                                                "units/protoss/tassadar/sc1/move/ProtossTassadarHighTemplarYes01SC1.ogg?v=88189828-12389",
+                                                                "units/protoss/tassadar/sc1/move/ProtossTassadarHighTemplarYes02SC1.ogg?v=6688e93a-12137",
+                                                                "units/protoss/tassadar/sc1/move/ProtossTassadarHighTemplarYes03SC1.ogg?v=2e0b8248-11379"
                                                             ]
                                                },
                                   "zealot":  {
                                                  "charge":  [
-                                                                "units/protoss/zealot/charge/charge.ogg?v=c51a9d7a"
+                                                                "units/protoss/zealot/charge/charge.ogg?v=c51a9d7a-19781"
                                                             ],
                                                  "combat":  [
-                                                                "units/protoss/zealot/combat/Zealot_AttackLaunch0.ogg?v=acd231da",
-                                                                "units/protoss/zealot/combat/Zealot_AttackLaunch1.ogg?v=ae4a7f5d",
-                                                                "units/protoss/zealot/combat/Zealot_AttackLaunch2.ogg?v=0ae2b89f",
-                                                                "units/protoss/zealot/combat/Zealot_AttackLaunch3.ogg?v=207d09ea",
-                                                                "units/protoss/zealot/combat/Zealot_AttackLaunch4.ogg?v=47f89ccf",
-                                                                "units/protoss/zealot/combat/Zealot_AttackLaunch5.ogg?v=4559567d"
+                                                                "units/protoss/zealot/combat/Zealot_AttackLaunch0.ogg?v=acd231da-12147",
+                                                                "units/protoss/zealot/combat/Zealot_AttackLaunch1.ogg?v=ae4a7f5d-12813",
+                                                                "units/protoss/zealot/combat/Zealot_AttackLaunch2.ogg?v=0ae2b89f-12240",
+                                                                "units/protoss/zealot/combat/Zealot_AttackLaunch3.ogg?v=207d09ea-12469",
+                                                                "units/protoss/zealot/combat/Zealot_AttackLaunch4.ogg?v=47f89ccf-12574",
+                                                                "units/protoss/zealot/combat/Zealot_AttackLaunch5.ogg?v=4559567d-13106"
                                                             ],
                                                  "death":  [
-                                                               "units/protoss/zealot/death/Zealot_Death00.ogg?v=ed63323e",
-                                                               "units/protoss/zealot/death/Zealot_Death01.ogg?v=7f9c1508",
-                                                               "units/protoss/zealot/death/Zealot_Death02.ogg?v=e76728b8",
-                                                               "units/protoss/zealot/death/Zealot_Death03.ogg?v=0e0f4874",
-                                                               "units/protoss/zealot/death/Zealot_Death04.ogg?v=2d680802"
+                                                               "units/protoss/zealot/death/Zealot_Death00.ogg?v=ed63323e-19478",
+                                                               "units/protoss/zealot/death/Zealot_Death01.ogg?v=7f9c1508-24748",
+                                                               "units/protoss/zealot/death/Zealot_Death02.ogg?v=e76728b8-26079",
+                                                               "units/protoss/zealot/death/Zealot_Death03.ogg?v=0e0f4874-22161",
+                                                               "units/protoss/zealot/death/Zealot_Death04.ogg?v=2d680802-22760"
                                                            ],
                                                  "deathFX":  [
-                                                                 "units/protoss/zealot/deathFX/Protoss_DeathFX0.ogg?v=8701e955",
-                                                                 "units/protoss/zealot/deathFX/Protoss_DeathFX1.ogg?v=581591df",
-                                                                 "units/protoss/zealot/deathFX/Protoss_DeathFX2.ogg?v=49bce101"
+                                                                 "units/protoss/zealot/deathFX/Protoss_DeathFX0.ogg?v=8701e955-22715",
+                                                                 "units/protoss/zealot/deathFX/Protoss_DeathFX1.ogg?v=581591df-23380",
+                                                                 "units/protoss/zealot/deathFX/Protoss_DeathFX2.ogg?v=49bce101-22795"
                                                              ],
                                                  "deploy":  [
-                                                                "units/protoss/zealot/deploy/ready.ogg?v=518b84b1"
+                                                                "units/protoss/zealot/deploy/ready.ogg?v=518b84b1-19397"
                                                             ],
                                                  "move":  [
-                                                              "units/protoss/zealot/move/Zealot_Yes00.ogg?v=db10ddf9",
-                                                              "units/protoss/zealot/move/Zealot_Yes01.ogg?v=ecc03dde",
-                                                              "units/protoss/zealot/move/Zealot_Yes02.ogg?v=e63c7594",
-                                                              "units/protoss/zealot/move/Zealot_Yes03.ogg?v=02afd76d",
-                                                              "units/protoss/zealot/move/Zealot_Yes04.ogg?v=b9e037da",
-                                                              "units/protoss/zealot/move/Zealot_Yes05.ogg?v=9904a780"
+                                                              "units/protoss/zealot/move/Zealot_Yes00.ogg?v=db10ddf9-19428",
+                                                              "units/protoss/zealot/move/Zealot_Yes01.ogg?v=ecc03dde-20863",
+                                                              "units/protoss/zealot/move/Zealot_Yes02.ogg?v=e63c7594-15231",
+                                                              "units/protoss/zealot/move/Zealot_Yes03.ogg?v=02afd76d-19861",
+                                                              "units/protoss/zealot/move/Zealot_Yes04.ogg?v=b9e037da-23386",
+                                                              "units/protoss/zealot/move/Zealot_Yes05.ogg?v=9904a780-19021"
                                                           ]
                                              },
                                   "zeratul":  {
                                                   "attack":  [
-                                                                 "units/protoss/zeratul/attack/DarkTemplar_AttackLaunch0.ogg?v=8142a5b2",
-                                                                 "units/protoss/zeratul/attack/DarkTemplar_AttackLaunch1.ogg?v=3534c24a",
-                                                                 "units/protoss/zeratul/attack/DarkTemplar_AttackLaunch2.ogg?v=eacd8e4e",
-                                                                 "units/protoss/zeratul/attack/DarkTemplar_AttackLaunch3.ogg?v=010a3ec6",
-                                                                 "units/protoss/zeratul/attack/DarkTemplar_AttackLaunch4.ogg?v=7992d93b"
+                                                                 "units/protoss/zeratul/attack/DarkTemplar_AttackLaunch0.ogg?v=8142a5b2-16492",
+                                                                 "units/protoss/zeratul/attack/DarkTemplar_AttackLaunch1.ogg?v=3534c24a-12757",
+                                                                 "units/protoss/zeratul/attack/DarkTemplar_AttackLaunch2.ogg?v=eacd8e4e-13624",
+                                                                 "units/protoss/zeratul/attack/DarkTemplar_AttackLaunch3.ogg?v=010a3ec6-12752",
+                                                                 "units/protoss/zeratul/attack/DarkTemplar_AttackLaunch4.ogg?v=7992d93b-12391"
                                                              ],
                                                   "blink":  [
-                                                                "units/protoss/zeratul/blink/Zeratul_BlinkCloud01.ogg?v=8b277beb",
-                                                                "units/protoss/zeratul/blink/Zeratul_BlinkCloud02.ogg?v=e5b0124d",
-                                                                "units/protoss/zeratul/blink/Zeratul_BlinkCloud03.ogg?v=91b6b938",
-                                                                "units/protoss/zeratul/blink/Zeratul_BlinkCloud04.ogg?v=1f52dd0b"
+                                                                "units/protoss/zeratul/blink/Zeratul_BlinkCloud01.ogg?v=8b277beb-21758",
+                                                                "units/protoss/zeratul/blink/Zeratul_BlinkCloud02.ogg?v=e5b0124d-18857",
+                                                                "units/protoss/zeratul/blink/Zeratul_BlinkCloud03.ogg?v=91b6b938-15515",
+                                                                "units/protoss/zeratul/blink/Zeratul_BlinkCloud04.ogg?v=1f52dd0b-15470"
                                                             ],
                                                   "death":  [
-                                                                "units/protoss/zeratul/death/Zeratul_Death00.ogg?v=ba9e00f4",
-                                                                "units/protoss/zeratul/death/Zeratul_Death01.ogg?v=68fb972c",
-                                                                "units/protoss/zeratul/death/Zeratul_Death02.ogg?v=5decebed",
-                                                                "units/protoss/zeratul/death/Zeratul_Death03.ogg?v=34b75b02",
-                                                                "units/protoss/zeratul/death/Zeratul_Death04.ogg?v=b6b4c0eb",
-                                                                "units/protoss/zeratul/death/Zeratul_Death05.ogg?v=25b7a191"
+                                                                "units/protoss/zeratul/death/Zeratul_Death00.ogg?v=ba9e00f4-63233",
+                                                                "units/protoss/zeratul/death/Zeratul_Death01.ogg?v=68fb972c-69485",
+                                                                "units/protoss/zeratul/death/Zeratul_Death02.ogg?v=5decebed-75595",
+                                                                "units/protoss/zeratul/death/Zeratul_Death03.ogg?v=34b75b02-78143",
+                                                                "units/protoss/zeratul/death/Zeratul_Death04.ogg?v=b6b4c0eb-87932",
+                                                                "units/protoss/zeratul/death/Zeratul_Death05.ogg?v=25b7a191-97188"
                                                             ],
                                                   "deploy":  [
-                                                                 "units/protoss/zeratul/deploy/Zeratul_Ready00.ogg?v=b881fef7"
+                                                                 "units/protoss/zeratul/deploy/Zeratul_Ready00.ogg?v=b881fef7-79492"
                                                              ],
                                                   "move":  [
-                                                               "units/protoss/zeratul/move/Zeratul_Yes.10.ogg?v=306dd9d9",
-                                                               "units/protoss/zeratul/move/Zeratul_Yes00.ogg?v=702673e3",
-                                                               "units/protoss/zeratul/move/Zeratul_Yes01.ogg?v=d381888d",
-                                                               "units/protoss/zeratul/move/Zeratul_Yes02.ogg?v=7db525ba",
-                                                               "units/protoss/zeratul/move/Zeratul_Yes03.ogg?v=dc288a9b",
-                                                               "units/protoss/zeratul/move/Zeratul_Yes04.ogg?v=60cb2f7e",
-                                                               "units/protoss/zeratul/move/Zeratul_Yes05.ogg?v=0ca4c323",
-                                                               "units/protoss/zeratul/move/Zeratul_Yes06.ogg?v=2616ca01",
-                                                               "units/protoss/zeratul/move/Zeratul_Yes07.ogg?v=09adee4e",
-                                                               "units/protoss/zeratul/move/Zeratul_Yes08.ogg?v=567ebc0f"
+                                                               "units/protoss/zeratul/move/Zeratul_Yes.10.ogg?v=306dd9d9-90050",
+                                                               "units/protoss/zeratul/move/Zeratul_Yes00.ogg?v=702673e3-82630",
+                                                               "units/protoss/zeratul/move/Zeratul_Yes01.ogg?v=d381888d-77521",
+                                                               "units/protoss/zeratul/move/Zeratul_Yes02.ogg?v=7db525ba-66154",
+                                                               "units/protoss/zeratul/move/Zeratul_Yes03.ogg?v=dc288a9b-90050",
+                                                               "units/protoss/zeratul/move/Zeratul_Yes04.ogg?v=60cb2f7e-79972",
+                                                               "units/protoss/zeratul/move/Zeratul_Yes05.ogg?v=0ca4c323-62530",
+                                                               "units/protoss/zeratul/move/Zeratul_Yes06.ogg?v=2616ca01-88314",
+                                                               "units/protoss/zeratul/move/Zeratul_Yes07.ogg?v=09adee4e-68072",
+                                                               "units/protoss/zeratul/move/Zeratul_Yes08.ogg?v=567ebc0f-77627"
                                                            ]
                                               }
                               },
                   "terran":  {
                                  "goliath":  {
                                                  "attack":  [
-                                                                "units/terran/goliath/attack/Goliath_GroundAttackLaunch0.ogg?v=319d1ce7",
-                                                                "units/terran/goliath/attack/Goliath_GroundAttackLaunch1.ogg?v=3f235eca",
-                                                                "units/terran/goliath/attack/Goliath_GroundAttackLaunch2.ogg?v=3a3e249a"
+                                                                "units/terran/goliath/attack/Goliath_GroundAttackLaunch0.ogg?v=319d1ce7-19028",
+                                                                "units/terran/goliath/attack/Goliath_GroundAttackLaunch1.ogg?v=3f235eca-18681",
+                                                                "units/terran/goliath/attack/Goliath_GroundAttackLaunch2.ogg?v=3a3e249a-19287"
                                                             ],
                                                  "death":  [
-                                                               "units/terran/goliath/death/Goliath_DeathFXB0.ogg?v=4fbefd02",
-                                                               "units/terran/goliath/death/Goliath_DeathFXB1.ogg?v=a8bacc6f",
-                                                               "units/terran/goliath/death/Goliath_DeathFXB2.ogg?v=ee080f8c"
+                                                               "units/terran/goliath/death/Goliath_DeathFXB0.ogg?v=4fbefd02-28812",
+                                                               "units/terran/goliath/death/Goliath_DeathFXB1.ogg?v=a8bacc6f-33922",
+                                                               "units/terran/goliath/death/Goliath_DeathFXB2.ogg?v=ee080f8c-23190"
                                                            ],
                                                  "deploy":  [
-                                                                "units/terran/goliath/deploy/Goliath_Ready00.ogg?v=a051562e"
+                                                                "units/terran/goliath/deploy/Goliath_Ready00.ogg?v=a051562e-26298"
                                                             ],
                                                  "missles":  [
-                                                                 "units/terran/goliath/missles/Viking_FighterAttackLaunch0.ogg?v=bc4460f6",
-                                                                 "units/terran/goliath/missles/Viking_FighterAttackLaunch1.ogg?v=bc44d555",
-                                                                 "units/terran/goliath/missles/Viking_FighterAttackLaunch2.ogg?v=6eb17934"
+                                                                 "units/terran/goliath/missles/Viking_FighterAttackLaunch0.ogg?v=bc4460f6-20379",
+                                                                 "units/terran/goliath/missles/Viking_FighterAttackLaunch1.ogg?v=bc44d555-20980",
+                                                                 "units/terran/goliath/missles/Viking_FighterAttackLaunch2.ogg?v=6eb17934-21352"
                                                              ],
                                                  "move":  [
-                                                              "units/terran/goliath/move/Goliath_Yes00.ogg?v=39491b72",
-                                                              "units/terran/goliath/move/Goliath_Yes01.ogg?v=e6bcf079",
-                                                              "units/terran/goliath/move/Goliath_Yes02.ogg?v=664d4380",
-                                                              "units/terran/goliath/move/Goliath_Yes03.ogg?v=460a6194",
-                                                              "units/terran/goliath/move/Goliath_Yes04.ogg?v=03047742",
-                                                              "units/terran/goliath/move/Goliath_Yes05.ogg?v=9beb22cd"
+                                                              "units/terran/goliath/move/Goliath_Yes00.ogg?v=39491b72-24127",
+                                                              "units/terran/goliath/move/Goliath_Yes01.ogg?v=e6bcf079-31756",
+                                                              "units/terran/goliath/move/Goliath_Yes02.ogg?v=664d4380-21580",
+                                                              "units/terran/goliath/move/Goliath_Yes03.ogg?v=460a6194-24246",
+                                                              "units/terran/goliath/move/Goliath_Yes04.ogg?v=03047742-16607",
+                                                              "units/terran/goliath/move/Goliath_Yes05.ogg?v=9beb22cd-23949"
                                                           ]
                                              },
                                  "marauder":  {
                                                   "attack":  [
-                                                                 "units/terran/marauder/attack/Marauder_AttackLaunch0.ogg?v=5badec34",
-                                                                 "units/terran/marauder/attack/Marauder_AttackLaunch1.ogg?v=164b512e",
-                                                                 "units/terran/marauder/attack/Marauder_AttackLaunch2.ogg?v=35b5a59d",
-                                                                 "units/terran/marauder/attack/Marauder_AttackLaunch3.ogg?v=b50d77f0",
-                                                                 "units/terran/marauder/attack/Marauder_AttackLaunch4.ogg?v=4b0817b3",
-                                                                 "units/terran/marauder/attack/Marauder_AttackLaunch5.ogg?v=56053c38"
+                                                                 "units/terran/marauder/attack/Marauder_AttackLaunch0.ogg?v=5badec34-32420",
+                                                                 "units/terran/marauder/attack/Marauder_AttackLaunch1.ogg?v=164b512e-25999",
+                                                                 "units/terran/marauder/attack/Marauder_AttackLaunch2.ogg?v=35b5a59d-33167",
+                                                                 "units/terran/marauder/attack/Marauder_AttackLaunch3.ogg?v=b50d77f0-31535",
+                                                                 "units/terran/marauder/attack/Marauder_AttackLaunch4.ogg?v=4b0817b3-32026",
+                                                                 "units/terran/marauder/attack/Marauder_AttackLaunch5.ogg?v=56053c38-30107"
                                                              ],
                                                   "death":  [
-                                                                "units/terran/marauder/death/Marauder_Death00.ogg?v=58f56001",
-                                                                "units/terran/marauder/death/Marauder_Death01.ogg?v=afa7ea61",
-                                                                "units/terran/marauder/death/Marauder_Death02.ogg?v=aca0f44f",
-                                                                "units/terran/marauder/death/Marauder_Death03.ogg?v=88fb6eaa",
-                                                                "units/terran/marauder/death/Marauder_Death04.ogg?v=ae920c3b",
-                                                                "units/terran/marauder/death/Marauder_Death05.ogg?v=39951954",
-                                                                "units/terran/marauder/death/Marauder_Death06.ogg?v=badfbdc6"
+                                                                "units/terran/marauder/death/Marauder_Death00.ogg?v=58f56001-21129",
+                                                                "units/terran/marauder/death/Marauder_Death01.ogg?v=afa7ea61-11147",
+                                                                "units/terran/marauder/death/Marauder_Death02.ogg?v=aca0f44f-16654",
+                                                                "units/terran/marauder/death/Marauder_Death03.ogg?v=88fb6eaa-15172",
+                                                                "units/terran/marauder/death/Marauder_Death04.ogg?v=ae920c3b-15985",
+                                                                "units/terran/marauder/death/Marauder_Death05.ogg?v=39951954-14722",
+                                                                "units/terran/marauder/death/Marauder_Death06.ogg?v=badfbdc6-15004"
                                                             ],
                                                   "deathFX":  [
-                                                                  "units/terran/marauder/deathFX/Marauder_Explode0.ogg?v=45257b6e",
-                                                                  "units/terran/marauder/deathFX/Marauder_Explode1.ogg?v=b9ecaa6a",
-                                                                  "units/terran/marauder/deathFX/Marauder_Explode2.ogg?v=1cd8b65d",
-                                                                  "units/terran/marauder/deathFX/Marauder_Explode3.ogg?v=c03c20e7",
-                                                                  "units/terran/marauder/deathFX/Marauder_Explode4.ogg?v=99fdbdc5",
-                                                                  "units/terran/marauder/deathFX/Marauder_Explode5.ogg?v=adfe2d29",
-                                                                  "units/terran/marauder/deathFX/Marauder_Explode6.ogg?v=2db18363"
+                                                                  "units/terran/marauder/deathFX/Marauder_Explode0.ogg?v=45257b6e-39260",
+                                                                  "units/terran/marauder/deathFX/Marauder_Explode1.ogg?v=b9ecaa6a-36557",
+                                                                  "units/terran/marauder/deathFX/Marauder_Explode2.ogg?v=1cd8b65d-33264",
+                                                                  "units/terran/marauder/deathFX/Marauder_Explode3.ogg?v=c03c20e7-36647",
+                                                                  "units/terran/marauder/deathFX/Marauder_Explode4.ogg?v=99fdbdc5-36391",
+                                                                  "units/terran/marauder/deathFX/Marauder_Explode5.ogg?v=adfe2d29-33151",
+                                                                  "units/terran/marauder/deathFX/Marauder_Explode6.ogg?v=2db18363-28228"
                                                               ],
                                                   "deploy":  [
-                                                                 "units/terran/marauder/deploy/Marauder_Ready00.ogg?v=bfbfaeca"
+                                                                 "units/terran/marauder/deploy/Marauder_Ready00.ogg?v=bfbfaeca-22461"
                                                              ],
                                                   "move":  [
-                                                               "units/terran/marauder/move/Marauder_Yes00.ogg?v=34e9a2fc",
-                                                               "units/terran/marauder/move/Marauder_Yes01.ogg?v=21f86497",
-                                                               "units/terran/marauder/move/Marauder_Yes02.ogg?v=ce9f6a5a",
-                                                               "units/terran/marauder/move/Marauder_Yes03.ogg?v=2b0df711",
-                                                               "units/terran/marauder/move/Marauder_Yes04.ogg?v=2526c0c3",
-                                                               "units/terran/marauder/move/Marauder_Yes05.ogg?v=744753c4",
-                                                               "units/terran/marauder/move/Marauder_Yes06.ogg?v=f55bb3f1",
-                                                               "units/terran/marauder/move/Marauder_Yes07.ogg?v=f8bd26a0",
-                                                               "units/terran/marauder/move/Marauder_Yes08.ogg?v=4950be70",
-                                                               "units/terran/marauder/move/Marauder_Yes09.ogg?v=c1d662b8",
-                                                               "units/terran/marauder/move/Marauder_Yes10.ogg?v=f2ff69df",
-                                                               "units/terran/marauder/move/Marauder_Yes11.ogg?v=99383f95"
+                                                               "units/terran/marauder/move/Marauder_Yes00.ogg?v=34e9a2fc-19118",
+                                                               "units/terran/marauder/move/Marauder_Yes01.ogg?v=21f86497-12203",
+                                                               "units/terran/marauder/move/Marauder_Yes02.ogg?v=ce9f6a5a-23325",
+                                                               "units/terran/marauder/move/Marauder_Yes03.ogg?v=2b0df711-19997",
+                                                               "units/terran/marauder/move/Marauder_Yes04.ogg?v=2526c0c3-17517",
+                                                               "units/terran/marauder/move/Marauder_Yes05.ogg?v=744753c4-22685",
+                                                               "units/terran/marauder/move/Marauder_Yes06.ogg?v=f55bb3f1-19806",
+                                                               "units/terran/marauder/move/Marauder_Yes07.ogg?v=f8bd26a0-9415",
+                                                               "units/terran/marauder/move/Marauder_Yes08.ogg?v=4950be70-11246",
+                                                               "units/terran/marauder/move/Marauder_Yes09.ogg?v=c1d662b8-16196",
+                                                               "units/terran/marauder/move/Marauder_Yes10.ogg?v=f2ff69df-13264",
+                                                               "units/terran/marauder/move/Marauder_Yes11.ogg?v=99383f95-13114"
                                                            ],
                                                   "stimpack":  [
-                                                                   "units/terran/marauder/stimpack/Marine_Stimpack0.ogg?v=2c086cdd",
-                                                                   "units/terran/marauder/stimpack/Marine_Stimpack1.ogg?v=f035613f",
-                                                                   "units/terran/marauder/stimpack/Marine_Stimpack2.ogg?v=e7240909",
-                                                                   "units/terran/marauder/stimpack/Marine_Stimpack3.ogg?v=fe24f65b",
-                                                                   "units/terran/marauder/stimpack/Marine_Stimpack4.ogg?v=6bebdae3",
-                                                                   "units/terran/marauder/stimpack/Marine_Stimpack5.ogg?v=5067b340",
-                                                                   "units/terran/marauder/stimpack/Marine_Stimpack6.ogg?v=cf6710b9",
-                                                                   "units/terran/marauder/stimpack/Marine_Stimpack7.ogg?v=3baf62e7"
+                                                                   "units/terran/marauder/stimpack/Marine_Stimpack0.ogg?v=2c086cdd-14840",
+                                                                   "units/terran/marauder/stimpack/Marine_Stimpack1.ogg?v=f035613f-12793",
+                                                                   "units/terran/marauder/stimpack/Marine_Stimpack2.ogg?v=e7240909-15841",
+                                                                   "units/terran/marauder/stimpack/Marine_Stimpack3.ogg?v=fe24f65b-15424",
+                                                                   "units/terran/marauder/stimpack/Marine_Stimpack4.ogg?v=6bebdae3-14497",
+                                                                   "units/terran/marauder/stimpack/Marine_Stimpack5.ogg?v=5067b340-16075",
+                                                                   "units/terran/marauder/stimpack/Marine_Stimpack6.ogg?v=cf6710b9-14543",
+                                                                   "units/terran/marauder/stimpack/Marine_Stimpack7.ogg?v=3baf62e7-14994"
                                                                ],
                                                   "stimpackVO":  [
-                                                                     "units/terran/marauder/stimpackVO/Marauder_Attack02.ogg?v=671e72ea",
-                                                                     "units/terran/marauder/stimpackVO/Marauder_Yes03.ogg?v=2b0df711",
-                                                                     "units/terran/marauder/stimpackVO/Marauder_Yes10.ogg?v=f2ff69df"
+                                                                     "units/terran/marauder/stimpackVO/Marauder_Attack02.ogg?v=671e72ea-23687",
+                                                                     "units/terran/marauder/stimpackVO/Marauder_Yes03.ogg?v=2b0df711-19997",
+                                                                     "units/terran/marauder/stimpackVO/Marauder_Yes10.ogg?v=f2ff69df-13264"
                                                                  ]
                                               },
                                  "marine":  {
                                                 "attack":  [
-                                                               "units/terran/marine/attack/Marine_AttackLaunch0.ogg?v=c67c0e60",
-                                                               "units/terran/marine/attack/Marine_AttackLaunch1.ogg?v=3abe65f2",
-                                                               "units/terran/marine/attack/Marine_AttackLaunch2.ogg?v=a4c0ab4e",
-                                                               "units/terran/marine/attack/Marine_AttackLaunch3.ogg?v=703af395",
-                                                               "units/terran/marine/attack/Marine_AttackLaunch4.ogg?v=70d4c8be",
-                                                               "units/terran/marine/attack/Marine_AttackLaunch5.ogg?v=64926437",
-                                                               "units/terran/marine/attack/Marine_AttackLaunch6.ogg?v=d2a684b4",
-                                                               "units/terran/marine/attack/Marine_AttackLaunch7.ogg?v=1fbf3af7",
-                                                               "units/terran/marine/attack/Marine_AttackLaunch8.ogg?v=f3e9cca9"
+                                                               "units/terran/marine/attack/Marine_AttackLaunch0.ogg?v=c67c0e60-17830",
+                                                               "units/terran/marine/attack/Marine_AttackLaunch1.ogg?v=3abe65f2-17383",
+                                                               "units/terran/marine/attack/Marine_AttackLaunch2.ogg?v=a4c0ab4e-16839",
+                                                               "units/terran/marine/attack/Marine_AttackLaunch3.ogg?v=703af395-16045",
+                                                               "units/terran/marine/attack/Marine_AttackLaunch4.ogg?v=70d4c8be-15554",
+                                                               "units/terran/marine/attack/Marine_AttackLaunch5.ogg?v=64926437-13971",
+                                                               "units/terran/marine/attack/Marine_AttackLaunch6.ogg?v=d2a684b4-16598",
+                                                               "units/terran/marine/attack/Marine_AttackLaunch7.ogg?v=1fbf3af7-16677",
+                                                               "units/terran/marine/attack/Marine_AttackLaunch8.ogg?v=f3e9cca9-18761"
                                                            ],
                                                 "death":  [
-                                                              "units/terran/marine/death/Marine_Death00.ogg?v=e2ad8592",
-                                                              "units/terran/marine/death/Marine_Death01.ogg?v=fc9643c4",
-                                                              "units/terran/marine/death/Marine_Death02.ogg?v=4df258dd",
-                                                              "units/terran/marine/death/Marine_Death03.ogg?v=a1b67c9e",
-                                                              "units/terran/marine/death/Marine_Death04.ogg?v=fc43a498",
-                                                              "units/terran/marine/death/Marine_Death05.ogg?v=dbb22a3f",
-                                                              "units/terran/marine/death/Marine_Death06.ogg?v=2df979f9",
-                                                              "units/terran/marine/death/Marine_Death07.ogg?v=44965b56"
+                                                              "units/terran/marine/death/Marine_Death00.ogg?v=e2ad8592-15676",
+                                                              "units/terran/marine/death/Marine_Death01.ogg?v=fc9643c4-22552",
+                                                              "units/terran/marine/death/Marine_Death02.ogg?v=4df258dd-16192",
+                                                              "units/terran/marine/death/Marine_Death03.ogg?v=a1b67c9e-10203",
+                                                              "units/terran/marine/death/Marine_Death04.ogg?v=fc43a498-11533",
+                                                              "units/terran/marine/death/Marine_Death05.ogg?v=dbb22a3f-10300",
+                                                              "units/terran/marine/death/Marine_Death06.ogg?v=2df979f9-13026",
+                                                              "units/terran/marine/death/Marine_Death07.ogg?v=44965b56-14297"
                                                           ],
                                                 "deploy":  [
-                                                               "units/terran/marine/deploy/Marine_Ready00.ogg?v=7b950e10"
+                                                               "units/terran/marine/deploy/Marine_Ready00.ogg?v=7b950e10-30381"
                                                            ],
                                                 "move":  [
-                                                             "units/terran/marine/move/Marine_Yes00.ogg?v=277c4f7c",
-                                                             "units/terran/marine/move/Marine_Yes01.ogg?v=d803a728",
-                                                             "units/terran/marine/move/Marine_Yes02.ogg?v=d5d7612a",
-                                                             "units/terran/marine/move/Marine_Yes03.ogg?v=f0777321",
-                                                             "units/terran/marine/move/Marine_Yes04.ogg?v=bc5d4653",
-                                                             "units/terran/marine/move/Marine_Yes05.ogg?v=ed428935",
-                                                             "units/terran/marine/move/Marine_Yes06.ogg?v=0713e3dd",
-                                                             "units/terran/marine/move/Marine_Yes07.ogg?v=ec4ab094",
-                                                             "units/terran/marine/move/Marine_Yes08.ogg?v=c154d3bc",
-                                                             "units/terran/marine/move/Marine_Yes09.ogg?v=5bbcc74d",
-                                                             "units/terran/marine/move/Marine_Yes10.ogg?v=2fb9291e",
-                                                             "units/terran/marine/move/Marine_Yes11.ogg?v=5dcebd33",
-                                                             "units/terran/marine/move/Marine_Yes12.ogg?v=7f0b297a",
-                                                             "units/terran/marine/move/Marine_Yes13.ogg?v=c2405bd8",
-                                                             "units/terran/marine/move/Marine_Yes14.ogg?v=c1a54336",
-                                                             "units/terran/marine/move/Marine_Yes15.ogg?v=22c93fff",
-                                                             "units/terran/marine/move/Marine_Yes16.ogg?v=3930f720",
-                                                             "units/terran/marine/move/Marine_Yes17.ogg?v=350767ca",
-                                                             "units/terran/marine/move/Marine_Yes18.ogg?v=9a2bebe4",
-                                                             "units/terran/marine/move/Marine_Yes19.ogg?v=ef93fbd4",
-                                                             "units/terran/marine/move/Marine_Yes20.ogg?v=ee8cd646",
-                                                             "units/terran/marine/move/Marine_Yes21.ogg?v=e6300c1f",
-                                                             "units/terran/marine/move/Marine_Yes22.ogg?v=020f40fc"
+                                                             "units/terran/marine/move/Marine_Yes00.ogg?v=277c4f7c-21745",
+                                                             "units/terran/marine/move/Marine_Yes01.ogg?v=d803a728-20678",
+                                                             "units/terran/marine/move/Marine_Yes02.ogg?v=d5d7612a-28987",
+                                                             "units/terran/marine/move/Marine_Yes03.ogg?v=f0777321-34166",
+                                                             "units/terran/marine/move/Marine_Yes04.ogg?v=bc5d4653-23373",
+                                                             "units/terran/marine/move/Marine_Yes05.ogg?v=ed428935-26154",
+                                                             "units/terran/marine/move/Marine_Yes06.ogg?v=0713e3dd-26244",
+                                                             "units/terran/marine/move/Marine_Yes07.ogg?v=ec4ab094-19737",
+                                                             "units/terran/marine/move/Marine_Yes08.ogg?v=c154d3bc-19349",
+                                                             "units/terran/marine/move/Marine_Yes09.ogg?v=5bbcc74d-22064",
+                                                             "units/terran/marine/move/Marine_Yes10.ogg?v=2fb9291e-19421",
+                                                             "units/terran/marine/move/Marine_Yes11.ogg?v=5dcebd33-20203",
+                                                             "units/terran/marine/move/Marine_Yes12.ogg?v=7f0b297a-32446",
+                                                             "units/terran/marine/move/Marine_Yes13.ogg?v=c2405bd8-22063",
+                                                             "units/terran/marine/move/Marine_Yes14.ogg?v=c1a54336-22263",
+                                                             "units/terran/marine/move/Marine_Yes15.ogg?v=22c93fff-26841",
+                                                             "units/terran/marine/move/Marine_Yes16.ogg?v=3930f720-24497",
+                                                             "units/terran/marine/move/Marine_Yes17.ogg?v=350767ca-25315",
+                                                             "units/terran/marine/move/Marine_Yes18.ogg?v=9a2bebe4-19132",
+                                                             "units/terran/marine/move/Marine_Yes19.ogg?v=ef93fbd4-27563",
+                                                             "units/terran/marine/move/Marine_Yes20.ogg?v=ee8cd646-18078",
+                                                             "units/terran/marine/move/Marine_Yes21.ogg?v=e6300c1f-20023",
+                                                             "units/terran/marine/move/Marine_Yes22.ogg?v=020f40fc-23995"
                                                          ],
                                                 "rocket_launcher":  [
-                                                                        "units/terran/marine/rocket_launcher/Nova_Xanthos_RocketBarrage_Launch_01.ogg?v=ef3900a4",
-                                                                        "units/terran/marine/rocket_launcher/Nova_Xanthos_RocketBarrage_Launch_02.ogg?v=fcc264a3",
-                                                                        "units/terran/marine/rocket_launcher/Nova_Xanthos_RocketBarrage_Launch_03.ogg?v=9f3e4cd5",
-                                                                        "units/terran/marine/rocket_launcher/Nova_Xanthos_RocketBarrage_Launch_04.ogg?v=fc3b9ba7"
+                                                                        "units/terran/marine/rocket_launcher/Nova_Xanthos_RocketBarrage_Launch_01.ogg?v=ef3900a4-35629",
+                                                                        "units/terran/marine/rocket_launcher/Nova_Xanthos_RocketBarrage_Launch_02.ogg?v=fcc264a3-35211",
+                                                                        "units/terran/marine/rocket_launcher/Nova_Xanthos_RocketBarrage_Launch_03.ogg?v=9f3e4cd5-35460",
+                                                                        "units/terran/marine/rocket_launcher/Nova_Xanthos_RocketBarrage_Launch_04.ogg?v=fc3b9ba7-35704"
                                                                     ],
                                                 "stimpack":  [
-                                                                 "units/terran/marine/stimpack/Marine_Stimpack0.ogg?v=2cf7d6f9",
-                                                                 "units/terran/marine/stimpack/Marine_Stimpack1.ogg?v=696ca01f",
-                                                                 "units/terran/marine/stimpack/Marine_Stimpack2.ogg?v=e7f509ea",
-                                                                 "units/terran/marine/stimpack/Marine_Stimpack3.ogg?v=d3b9aaaf",
-                                                                 "units/terran/marine/stimpack/Marine_Stimpack4.ogg?v=bdb3bc35",
-                                                                 "units/terran/marine/stimpack/Marine_Stimpack5.ogg?v=d21a3cbc",
-                                                                 "units/terran/marine/stimpack/Marine_Stimpack6.ogg?v=656780b3",
-                                                                 "units/terran/marine/stimpack/Marine_Stimpack7.ogg?v=c872f6b0"
+                                                                 "units/terran/marine/stimpack/Marine_Stimpack0.ogg?v=2cf7d6f9-14840",
+                                                                 "units/terran/marine/stimpack/Marine_Stimpack1.ogg?v=696ca01f-12793",
+                                                                 "units/terran/marine/stimpack/Marine_Stimpack2.ogg?v=e7f509ea-15841",
+                                                                 "units/terran/marine/stimpack/Marine_Stimpack3.ogg?v=d3b9aaaf-15424",
+                                                                 "units/terran/marine/stimpack/Marine_Stimpack4.ogg?v=bdb3bc35-14497",
+                                                                 "units/terran/marine/stimpack/Marine_Stimpack5.ogg?v=d21a3cbc-16075",
+                                                                 "units/terran/marine/stimpack/Marine_Stimpack6.ogg?v=656780b3-14543",
+                                                                 "units/terran/marine/stimpack/Marine_Stimpack7.ogg?v=c872f6b0-14994"
                                                              ],
                                                 "stimpackVO":  [
-                                                                   "units/terran/marine/stimpackVO/Marine_Attack04.ogg?v=f56c4420",
-                                                                   "units/terran/marine/stimpackVO/Marine_Attack06.ogg?v=0f7ae871",
-                                                                   "units/terran/marine/stimpackVO/Marine_Yes06.ogg?v=0713e3dd"
+                                                                   "units/terran/marine/stimpackVO/Marine_Attack04.ogg?v=f56c4420-21104",
+                                                                   "units/terran/marine/stimpackVO/Marine_Attack06.ogg?v=0f7ae871-23168",
+                                                                   "units/terran/marine/stimpackVO/Marine_Yes06.ogg?v=0713e3dd-26244"
                                                                ]
                                             },
                                  "medic":  {
                                                "death":  [
-                                                             "units/terran/medic/death/Medic_Death00.ogg?v=332d643d",
-                                                             "units/terran/medic/death/Medic_Death01.ogg?v=5f82a876",
-                                                             "units/terran/medic/death/Medic_Death02.ogg?v=583a4c11",
-                                                             "units/terran/medic/death/Medic_Death03.ogg?v=57272056",
-                                                             "units/terran/medic/death/Medic_Death04.ogg?v=06e1a94a",
-                                                             "units/terran/medic/death/Medic_Death05.ogg?v=4b84b436"
+                                                             "units/terran/medic/death/Medic_Death00.ogg?v=332d643d-17459",
+                                                             "units/terran/medic/death/Medic_Death01.ogg?v=5f82a876-10880",
+                                                             "units/terran/medic/death/Medic_Death02.ogg?v=583a4c11-9231",
+                                                             "units/terran/medic/death/Medic_Death03.ogg?v=57272056-10390",
+                                                             "units/terran/medic/death/Medic_Death04.ogg?v=06e1a94a-9613",
+                                                             "units/terran/medic/death/Medic_Death05.ogg?v=4b84b436-21985"
                                                          ],
                                                "deploy":  [
-                                                              "units/terran/medic/deploy/Medic_Ready00.ogg?v=0f86700b"
+                                                              "units/terran/medic/deploy/Medic_Ready00.ogg?v=0f86700b-14194"
                                                           ],
                                                "heal":  [
-                                                            "units/terran/medic/heal/heal.ogg?v=ae7de98b"
+                                                            "units/terran/medic/heal/heal.ogg?v=ae7de98b-89196"
                                                         ],
                                                "move":  [
-                                                            "units/terran/medic/move/Medic_Yes00.ogg?v=f466a99a",
-                                                            "units/terran/medic/move/Medic_Yes01.ogg?v=a1fb0448",
-                                                            "units/terran/medic/move/Medic_Yes02.ogg?v=ea8e0ae8",
-                                                            "units/terran/medic/move/Medic_Yes03.ogg?v=832b3eab",
-                                                            "units/terran/medic/move/Medic_Yes04.ogg?v=74fa3ac4",
-                                                            "units/terran/medic/move/Medic_Yes05.ogg?v=b51e299b"
+                                                            "units/terran/medic/move/Medic_Yes00.ogg?v=f466a99a-15374",
+                                                            "units/terran/medic/move/Medic_Yes01.ogg?v=a1fb0448-15341",
+                                                            "units/terran/medic/move/Medic_Yes02.ogg?v=ea8e0ae8-16953",
+                                                            "units/terran/medic/move/Medic_Yes03.ogg?v=832b3eab-26584",
+                                                            "units/terran/medic/move/Medic_Yes04.ogg?v=74fa3ac4-26708",
+                                                            "units/terran/medic/move/Medic_Yes05.ogg?v=b51e299b-22819"
                                                         ]
                                            },
                                  "nova_assault_mode":  {
                                                            "attack":  [
-                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack00.ogg?v=b7aae8dd",
-                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack01.ogg?v=966810d9",
-                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack02.ogg?v=c30e491e",
-                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack03.ogg?v=e6a653fc",
-                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack04.ogg?v=7e27a188",
-                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack05.ogg?v=4027f07e",
-                                                                          "units/terran/nova_assault_mode/attack/heronovamp3_visor_attack00.ogg?v=1c0198cc",
-                                                                          "units/terran/nova_assault_mode/attack/heronovamp3_visor_attack01.ogg?v=6df4487c"
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack00.ogg?v=b7aae8dd-16309",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack01.ogg?v=966810d9-15230",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack02.ogg?v=c30e491e-16122",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack03.ogg?v=e6a653fc-16059",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack04.ogg?v=7e27a188-20402",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp1_attack05.ogg?v=4027f07e-18375",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp3_visor_attack00.ogg?v=1c0198cc-15693",
+                                                                          "units/terran/nova_assault_mode/attack/heronovamp3_visor_attack01.ogg?v=6df4487c-15169"
                                                                       ],
                                                            "death":  [
-                                                                         "units/terran/nova_assault_mode/death/heronovamp1_death00.ogg?v=6aa564bf",
-                                                                         "units/terran/nova_assault_mode/death/heronovamp1_death01.ogg?v=b7f4e5c8",
-                                                                         "units/terran/nova_assault_mode/death/heronovamp3_visor_death00.ogg?v=a5471651"
+                                                                         "units/terran/nova_assault_mode/death/heronovamp1_death00.ogg?v=6aa564bf-26653",
+                                                                         "units/terran/nova_assault_mode/death/heronovamp1_death01.ogg?v=b7f4e5c8-35824",
+                                                                         "units/terran/nova_assault_mode/death/heronovamp3_visor_death00.ogg?v=a5471651-18810"
                                                                      ],
                                                            "deploy":  [
-                                                                          "units/terran/nova_assault_mode/deploy/heronovamp1_ready_n100.ogg?v=d64e3492",
-                                                                          "units/terran/nova_assault_mode/deploy/heronovamp1_ready_n200.ogg?v=1b58e2ef",
-                                                                          "units/terran/nova_assault_mode/deploy/heronovamp1_ready_n300.ogg?v=b64fc03a",
-                                                                          "units/terran/nova_assault_mode/deploy/heronovamp2_ready00.ogg?v=8d3c3129",
-                                                                          "units/terran/nova_assault_mode/deploy/heronovamp3_visor_ready00.ogg?v=0e1b6547",
-                                                                          "units/terran/nova_assault_mode/deploy/novacommander_assaultmode00.ogg?v=197dd35e",
-                                                                          "units/terran/nova_assault_mode/deploy/novacommander_assaultmode01.ogg?v=3de409d1",
-                                                                          "units/terran/nova_assault_mode/deploy/novacommander_assaultmode02.ogg?v=7a24e032",
-                                                                          "units/terran/nova_assault_mode/deploy/novacommander_assaultmode03.ogg?v=65a98ef8"
+                                                                          "units/terran/nova_assault_mode/deploy/heronovamp1_ready_n100.ogg?v=d64e3492-18179",
+                                                                          "units/terran/nova_assault_mode/deploy/heronovamp1_ready_n200.ogg?v=1b58e2ef-16434",
+                                                                          "units/terran/nova_assault_mode/deploy/heronovamp1_ready_n300.ogg?v=b64fc03a-16392",
+                                                                          "units/terran/nova_assault_mode/deploy/heronovamp2_ready00.ogg?v=8d3c3129-31302",
+                                                                          "units/terran/nova_assault_mode/deploy/heronovamp3_visor_ready00.ogg?v=0e1b6547-17620",
+                                                                          "units/terran/nova_assault_mode/deploy/novacommander_assaultmode00.ogg?v=197dd35e-21482",
+                                                                          "units/terran/nova_assault_mode/deploy/novacommander_assaultmode01.ogg?v=3de409d1-25343",
+                                                                          "units/terran/nova_assault_mode/deploy/novacommander_assaultmode02.ogg?v=7a24e032-20379",
+                                                                          "units/terran/nova_assault_mode/deploy/novacommander_assaultmode03.ogg?v=65a98ef8-21277"
                                                                       ],
                                                            "holo_decoy":  [
-                                                                              "units/terran/nova_assault_mode/holo_decoy/novacommander_holodecoy00.ogg?v=c0f0b288",
-                                                                              "units/terran/nova_assault_mode/holo_decoy/novacommander_holodecoy01.ogg?v=be564d70",
-                                                                              "units/terran/nova_assault_mode/holo_decoy/novacommander_holodecoy02.ogg?v=2d0b2e69",
-                                                                              "units/terran/nova_assault_mode/holo_decoy/novacommander_holodecoy03.ogg?v=1b6cb835",
-                                                                              "units/terran/nova_assault_mode/holo_decoy/novacommander_holodecoy04.ogg?v=ea8e28e4"
+                                                                              "units/terran/nova_assault_mode/holo_decoy/novacommander_holodecoy00.ogg?v=c0f0b288-28845",
+                                                                              "units/terran/nova_assault_mode/holo_decoy/novacommander_holodecoy01.ogg?v=be564d70-26803",
+                                                                              "units/terran/nova_assault_mode/holo_decoy/novacommander_holodecoy02.ogg?v=2d0b2e69-30838",
+                                                                              "units/terran/nova_assault_mode/holo_decoy/novacommander_holodecoy03.ogg?v=1b6cb835-29372",
+                                                                              "units/terran/nova_assault_mode/holo_decoy/novacommander_holodecoy04.ogg?v=ea8e28e4-19454"
                                                                           ],
                                                            "move":  [
-                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes00.ogg?v=5365656c",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes01.ogg?v=1f15e333",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes02.ogg?v=e8d3778d",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes03.ogg?v=00cf0733",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n100.ogg?v=5371be5b",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n101.ogg?v=418913e4",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n102.ogg?v=b4a2b5e4",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n103.ogg?v=de1ef16b",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n104.ogg?v=97d75904",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n200.ogg?v=db6e7d5d",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n201.ogg?v=2215d3ac",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n202.ogg?v=713ecbf0",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n203.ogg?v=b217b25d",
-                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n204.ogg?v=8ece5de7"
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes00.ogg?v=5365656c-12718",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes01.ogg?v=1f15e333-15238",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes02.ogg?v=e8d3778d-15587",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes03.ogg?v=00cf0733-13337",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n100.ogg?v=5371be5b-15101",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n101.ogg?v=418913e4-19637",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n102.ogg?v=b4a2b5e4-14048",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n103.ogg?v=de1ef16b-17110",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n104.ogg?v=97d75904-16722",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n200.ogg?v=db6e7d5d-17106",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n201.ogg?v=2215d3ac-19099",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n202.ogg?v=713ecbf0-15310",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n203.ogg?v=b217b25d-15007",
+                                                                        "units/terran/nova_assault_mode/move/heronovamp1_yes_n204.ogg?v=8ece5de7-16910"
                                                                     ],
                                                            "phase_reactor_suit":  [
-                                                                                      "units/terran/nova_assault_mode/phase_reactor_suit/Stalker_Blink0.ogg?v=09ee2742"
+                                                                                      "units/terran/nova_assault_mode/phase_reactor_suit/Stalker_Blink0.ogg?v=09ee2742-17409"
                                                                                   ]
                                                        },
                                  "nova_stealth_mode":  {
                                                            "attack":  [
-                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack00.ogg?v=b7aae8dd",
-                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack01.ogg?v=966810d9",
-                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack02.ogg?v=c30e491e",
-                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack03.ogg?v=e6a653fc",
-                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack04.ogg?v=7e27a188",
-                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack05.ogg?v=4027f07e",
-                                                                          "units/terran/nova_stealth_mode/attack/heronovamp3_visor_attack00.ogg?v=1c0198cc",
-                                                                          "units/terran/nova_stealth_mode/attack/heronovamp3_visor_attack01.ogg?v=6df4487c"
+                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack00.ogg?v=b7aae8dd-16309",
+                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack01.ogg?v=966810d9-15230",
+                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack02.ogg?v=c30e491e-16122",
+                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack03.ogg?v=e6a653fc-16059",
+                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack04.ogg?v=7e27a188-20402",
+                                                                          "units/terran/nova_stealth_mode/attack/heronovamp1_attack05.ogg?v=4027f07e-18375",
+                                                                          "units/terran/nova_stealth_mode/attack/heronovamp3_visor_attack00.ogg?v=1c0198cc-15693",
+                                                                          "units/terran/nova_stealth_mode/attack/heronovamp3_visor_attack01.ogg?v=6df4487c-15169"
                                                                       ],
                                                            "attackFX":  [
-                                                                            "units/terran/nova_stealth_mode/attackFX/Ghost_AttackLaunch0.ogg?v=0be15f1a",
-                                                                            "units/terran/nova_stealth_mode/attackFX/Ghost_AttackLaunch1.ogg?v=2542514b",
-                                                                            "units/terran/nova_stealth_mode/attackFX/Ghost_AttackLaunch2.ogg?v=6a4bf2b6"
+                                                                            "units/terran/nova_stealth_mode/attackFX/Ghost_AttackLaunch0.ogg?v=0be15f1a-16067",
+                                                                            "units/terran/nova_stealth_mode/attackFX/Ghost_AttackLaunch1.ogg?v=2542514b-14633",
+                                                                            "units/terran/nova_stealth_mode/attackFX/Ghost_AttackLaunch2.ogg?v=6a4bf2b6-17905"
                                                                         ],
                                                            "death":  [
-                                                                         "units/terran/nova_stealth_mode/death/heronovamp1_death00.ogg?v=dce0b56a",
-                                                                         "units/terran/nova_stealth_mode/death/heronovamp1_death01.ogg?v=03de0ebe",
-                                                                         "units/terran/nova_stealth_mode/death/heronovamp3_visor_death00.ogg?v=a5ee0a32"
+                                                                         "units/terran/nova_stealth_mode/death/heronovamp1_death00.ogg?v=dce0b56a-26653",
+                                                                         "units/terran/nova_stealth_mode/death/heronovamp1_death01.ogg?v=03de0ebe-35824",
+                                                                         "units/terran/nova_stealth_mode/death/heronovamp3_visor_death00.ogg?v=a5ee0a32-18810"
                                                                      ],
                                                            "deploy":  [
-                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp1_cloak00.ogg?v=c5ebea8f",
-                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp1_ready_n100.ogg?v=d64e3492",
-                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp1_ready_n200.ogg?v=1b58e2ef",
-                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp1_ready_n300.ogg?v=b64fc03a",
-                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp2_ready00.ogg?v=8d3c3129",
-                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp3_visor_ready00.ogg?v=0e1b6547",
-                                                                          "units/terran/nova_stealth_mode/deploy/novacommander_stealthmode00.ogg?v=b624a472",
-                                                                          "units/terran/nova_stealth_mode/deploy/novacommander_stealthmode01.ogg?v=b87d985f",
-                                                                          "units/terran/nova_stealth_mode/deploy/novacommander_stealthmode02.ogg?v=979a22b7",
-                                                                          "units/terran/nova_stealth_mode/deploy/novacommander_stealthmode03.ogg?v=e0dd5c69"
+                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp1_cloak00.ogg?v=c5ebea8f-19416",
+                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp1_ready_n100.ogg?v=d64e3492-18179",
+                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp1_ready_n200.ogg?v=1b58e2ef-16434",
+                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp1_ready_n300.ogg?v=b64fc03a-16392",
+                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp2_ready00.ogg?v=8d3c3129-31302",
+                                                                          "units/terran/nova_stealth_mode/deploy/heronovamp3_visor_ready00.ogg?v=0e1b6547-17620",
+                                                                          "units/terran/nova_stealth_mode/deploy/novacommander_stealthmode00.ogg?v=b624a472-24945",
+                                                                          "units/terran/nova_stealth_mode/deploy/novacommander_stealthmode01.ogg?v=b87d985f-26538",
+                                                                          "units/terran/nova_stealth_mode/deploy/novacommander_stealthmode02.ogg?v=979a22b7-24488",
+                                                                          "units/terran/nova_stealth_mode/deploy/novacommander_stealthmode03.ogg?v=e0dd5c69-26216"
                                                                       ],
                                                            "holo_decoy":  [
-                                                                              "units/terran/nova_stealth_mode/holo_decoy/novacommander_holodecoy00.ogg?v=c0f0b288",
-                                                                              "units/terran/nova_stealth_mode/holo_decoy/novacommander_holodecoy01.ogg?v=be564d70",
-                                                                              "units/terran/nova_stealth_mode/holo_decoy/novacommander_holodecoy02.ogg?v=2d0b2e69",
-                                                                              "units/terran/nova_stealth_mode/holo_decoy/novacommander_holodecoy03.ogg?v=1b6cb835",
-                                                                              "units/terran/nova_stealth_mode/holo_decoy/novacommander_holodecoy04.ogg?v=ea8e28e4"
+                                                                              "units/terran/nova_stealth_mode/holo_decoy/novacommander_holodecoy00.ogg?v=c0f0b288-28845",
+                                                                              "units/terran/nova_stealth_mode/holo_decoy/novacommander_holodecoy01.ogg?v=be564d70-26803",
+                                                                              "units/terran/nova_stealth_mode/holo_decoy/novacommander_holodecoy02.ogg?v=2d0b2e69-30838",
+                                                                              "units/terran/nova_stealth_mode/holo_decoy/novacommander_holodecoy03.ogg?v=1b6cb835-29372",
+                                                                              "units/terran/nova_stealth_mode/holo_decoy/novacommander_holodecoy04.ogg?v=ea8e28e4-19454"
                                                                           ],
                                                            "move":  [
-                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes00.ogg?v=5365656c",
-                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes01.ogg?v=1f15e333",
-                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes02.ogg?v=e8d3778d",
-                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes03.ogg?v=00cf0733",
-                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n100.ogg?v=5371be5b",
-                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n101.ogg?v=418913e4",
-                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n102.ogg?v=b4a2b5e4",
-                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n103.ogg?v=de1ef16b",
-                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n104.ogg?v=97d75904",
-                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n200.ogg?v=db6e7d5d",
-                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n201.ogg?v=2215d3ac",
-                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n202.ogg?v=713ecbf0",
-                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n203.ogg?v=b217b25d",
-                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n204.ogg?v=8ece5de7"
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes00.ogg?v=5365656c-12718",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes01.ogg?v=1f15e333-15238",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes02.ogg?v=e8d3778d-15587",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes03.ogg?v=00cf0733-13337",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n100.ogg?v=5371be5b-15101",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n101.ogg?v=418913e4-19637",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n102.ogg?v=b4a2b5e4-14048",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n103.ogg?v=de1ef16b-17110",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n104.ogg?v=97d75904-16722",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n200.ogg?v=db6e7d5d-17106",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n201.ogg?v=2215d3ac-19099",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n202.ogg?v=713ecbf0-15310",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n203.ogg?v=b217b25d-15007",
+                                                                        "units/terran/nova_stealth_mode/move/heronovamp1_yes_n204.ogg?v=8ece5de7-16910"
                                                                     ]
                                                        },
                                  "raven":  {
                                                "anti_armour_missile":  [
-                                                                           "units/terran/raven/anti_armour_missile/raven_targetingdrone00.ogg?v=3999adb9"
+                                                                           "units/terran/raven/anti_armour_missile/raven_targetingdrone00.ogg?v=3999adb9-20455"
                                                                        ],
                                                "auto_turret":  [
-                                                                   "units/terran/raven/auto_turret/raven_autoturret00.ogg?v=bc6525e7"
+                                                                   "units/terran/raven/auto_turret/raven_autoturret00.ogg?v=bc6525e7-26171"
                                                                ],
                                                "auto_turretFX":  [
-                                                                     "units/terran/raven/auto_turretFX/Goliath_GroundAttackLaunch0.ogg?v=319d1ce7",
-                                                                     "units/terran/raven/auto_turretFX/Goliath_GroundAttackLaunch1.ogg?v=3f235eca",
-                                                                     "units/terran/raven/auto_turretFX/Goliath_GroundAttackLaunch2.ogg?v=3a3e249a"
+                                                                     "units/terran/raven/auto_turretFX/Goliath_GroundAttackLaunch0.ogg?v=319d1ce7-19028",
+                                                                     "units/terran/raven/auto_turretFX/Goliath_GroundAttackLaunch1.ogg?v=3f235eca-18681",
+                                                                     "units/terran/raven/auto_turretFX/Goliath_GroundAttackLaunch2.ogg?v=3a3e249a-19287"
                                                                  ],
                                                "death":  [
-                                                             "units/terran/raven/death/SiegeTank_Death0.ogg?v=05349e68"
+                                                             "units/terran/raven/death/SiegeTank_Death0.ogg?v=05349e68-29347"
                                                          ],
                                                "deploy":  [
-                                                              "units/terran/raven/deploy/raven_ready00.ogg?v=521fc241"
+                                                              "units/terran/raven/deploy/raven_ready00.ogg?v=521fc241-22512"
                                                           ],
                                                "move":  [
-                                                            "units/terran/raven/move/raven_yes00.ogg?v=0c809f49",
-                                                            "units/terran/raven/move/raven_yes01.ogg?v=c1ceddd0",
-                                                            "units/terran/raven/move/raven_yes02.ogg?v=3bca71b1",
-                                                            "units/terran/raven/move/raven_yes03.ogg?v=060aa326",
-                                                            "units/terran/raven/move/raven_yes04.ogg?v=c28056d4",
-                                                            "units/terran/raven/move/raven_yes05.ogg?v=f1efe742",
-                                                            "units/terran/raven/move/raven_yes06.ogg?v=452d8b34",
-                                                            "units/terran/raven/move/raven_yes07.ogg?v=b84086db",
-                                                            "units/terran/raven/move/raven_yes08.ogg?v=550b84fe",
-                                                            "units/terran/raven/move/raven_yes09.ogg?v=c31d4ba4",
-                                                            "units/terran/raven/move/raven_yes10.ogg?v=c6019a29"
+                                                            "units/terran/raven/move/raven_yes00.ogg?v=0c809f49-20324",
+                                                            "units/terran/raven/move/raven_yes01.ogg?v=c1ceddd0-22690",
+                                                            "units/terran/raven/move/raven_yes02.ogg?v=3bca71b1-15600",
+                                                            "units/terran/raven/move/raven_yes03.ogg?v=060aa326-27889",
+                                                            "units/terran/raven/move/raven_yes04.ogg?v=c28056d4-29255",
+                                                            "units/terran/raven/move/raven_yes05.ogg?v=f1efe742-20633",
+                                                            "units/terran/raven/move/raven_yes06.ogg?v=452d8b34-11773",
+                                                            "units/terran/raven/move/raven_yes07.ogg?v=b84086db-19337",
+                                                            "units/terran/raven/move/raven_yes08.ogg?v=550b84fe-19284",
+                                                            "units/terran/raven/move/raven_yes09.ogg?v=c31d4ba4-21207",
+                                                            "units/terran/raven/move/raven_yes10.ogg?v=c6019a29-14574"
                                                         ],
                                                "seeker_missile":  [
-                                                                      "units/terran/raven/seeker_missile/raven_hunterseeker00.ogg?v=b5077fb9"
+                                                                      "units/terran/raven/seeker_missile/raven_hunterseeker00.ogg?v=b5077fb9-22138"
                                                                   ]
                                            },
                                  "raynor":  {
                                                 "attack":  [
-                                                               "units/terran/raynor/attack/Marine_AttackLaunch0.ogg?v=08a3d222",
-                                                               "units/terran/raynor/attack/Marine_AttackLaunch1.ogg?v=44d16794",
-                                                               "units/terran/raynor/attack/Marine_AttackLaunch2.ogg?v=65c4daf1",
-                                                               "units/terran/raynor/attack/Marine_AttackLaunch3.ogg?v=9ae4a19a",
-                                                               "units/terran/raynor/attack/Marine_AttackLaunch4.ogg?v=0b5bf4b3",
-                                                               "units/terran/raynor/attack/Marine_AttackLaunch5.ogg?v=6eba7bbf",
-                                                               "units/terran/raynor/attack/Marine_AttackLaunch6.ogg?v=ee5bdc32",
-                                                               "units/terran/raynor/attack/Marine_AttackLaunch7.ogg?v=f9f5aca8",
-                                                               "units/terran/raynor/attack/Marine_AttackLaunch8.ogg?v=c15f1e17"
+                                                               "units/terran/raynor/attack/Marine_AttackLaunch0.ogg?v=08a3d222-17830",
+                                                               "units/terran/raynor/attack/Marine_AttackLaunch1.ogg?v=44d16794-17383",
+                                                               "units/terran/raynor/attack/Marine_AttackLaunch2.ogg?v=65c4daf1-16839",
+                                                               "units/terran/raynor/attack/Marine_AttackLaunch3.ogg?v=9ae4a19a-16045",
+                                                               "units/terran/raynor/attack/Marine_AttackLaunch4.ogg?v=0b5bf4b3-15554",
+                                                               "units/terran/raynor/attack/Marine_AttackLaunch5.ogg?v=6eba7bbf-13971",
+                                                               "units/terran/raynor/attack/Marine_AttackLaunch6.ogg?v=ee5bdc32-16598",
+                                                               "units/terran/raynor/attack/Marine_AttackLaunch7.ogg?v=f9f5aca8-16677",
+                                                               "units/terran/raynor/attack/Marine_AttackLaunch8.ogg?v=c15f1e17-18761"
                                                            ],
                                                 "death":  [
-                                                              "units/terran/raynor/death/Raynor_Death00.ogg?v=37176fc6",
-                                                              "units/terran/raynor/death/Raynor_Death01.ogg?v=07c17034",
-                                                              "units/terran/raynor/death/Raynor_Death02.ogg?v=9ab50dc8",
-                                                              "units/terran/raynor/death/Raynor_Death03.ogg?v=f56fbfa2",
-                                                              "units/terran/raynor/death/Raynor_Death04.ogg?v=b0cf0567",
-                                                              "units/terran/raynor/death/Raynor_Death05.ogg?v=7e1afef4",
-                                                              "units/terran/raynor/death/Raynor_Death06.ogg?v=6c81fcfe"
+                                                              "units/terran/raynor/death/Raynor_Death00.ogg?v=37176fc6-15441",
+                                                              "units/terran/raynor/death/Raynor_Death01.ogg?v=07c17034-18773",
+                                                              "units/terran/raynor/death/Raynor_Death02.ogg?v=9ab50dc8-9573",
+                                                              "units/terran/raynor/death/Raynor_Death03.ogg?v=f56fbfa2-9651",
+                                                              "units/terran/raynor/death/Raynor_Death04.ogg?v=b0cf0567-8960",
+                                                              "units/terran/raynor/death/Raynor_Death05.ogg?v=7e1afef4-9382",
+                                                              "units/terran/raynor/death/Raynor_Death06.ogg?v=6c81fcfe-12266"
                                                           ],
                                                 "deploy":  [
-                                                               "units/terran/raynor/deploy/Raynor_Ready00.ogg?v=e4ea4197"
+                                                               "units/terran/raynor/deploy/Raynor_Ready00.ogg?v=e4ea4197-17377"
                                                            ],
                                                 "move":  [
-                                                             "units/terran/raynor/move/Raynor_Yes00.ogg?v=65a26740",
-                                                             "units/terran/raynor/move/Raynor_Yes01.ogg?v=af2a82e5",
-                                                             "units/terran/raynor/move/Raynor_Yes02.ogg?v=8e85e950",
-                                                             "units/terran/raynor/move/Raynor_Yes03.ogg?v=2e373072",
-                                                             "units/terran/raynor/move/Raynor_Yes04.ogg?v=9289e6c9",
-                                                             "units/terran/raynor/move/Raynor_Yes05.ogg?v=bce3fac3",
-                                                             "units/terran/raynor/move/Raynor_Yes06.ogg?v=82311d87"
+                                                             "units/terran/raynor/move/Raynor_Yes00.ogg?v=65a26740-14906",
+                                                             "units/terran/raynor/move/Raynor_Yes01.ogg?v=af2a82e5-15056",
+                                                             "units/terran/raynor/move/Raynor_Yes02.ogg?v=8e85e950-20571",
+                                                             "units/terran/raynor/move/Raynor_Yes03.ogg?v=2e373072-18321",
+                                                             "units/terran/raynor/move/Raynor_Yes04.ogg?v=9289e6c9-17246",
+                                                             "units/terran/raynor/move/Raynor_Yes05.ogg?v=bce3fac3-17174",
+                                                             "units/terran/raynor/move/Raynor_Yes06.ogg?v=82311d87-17484"
                                                          ],
                                                 "revolver":  [
-                                                                 "units/terran/raynor/revolver/Ghost_AttackLaunch0.ogg?v=0be15f1a",
-                                                                 "units/terran/raynor/revolver/Ghost_AttackLaunch1.ogg?v=2542514b",
-                                                                 "units/terran/raynor/revolver/Ghost_AttackLaunch2.ogg?v=6a4bf2b6"
+                                                                 "units/terran/raynor/revolver/Ghost_AttackLaunch0.ogg?v=0be15f1a-16067",
+                                                                 "units/terran/raynor/revolver/Ghost_AttackLaunch1.ogg?v=2542514b-14633",
+                                                                 "units/terran/raynor/revolver/Ghost_AttackLaunch2.ogg?v=6a4bf2b6-17905"
                                                              ]
                                             },
                                  "tank":  {
                                               "attack_impact":  [
-                                                                    "units/terran/tank/attack_impact/SiegeTank_SiegeAttackImpact0.ogg?v=0a44dd2e",
-                                                                    "units/terran/tank/attack_impact/SiegeTank_SiegeAttackImpact1.ogg?v=8c14fed0",
-                                                                    "units/terran/tank/attack_impact/SiegeTank_SiegeAttackImpact2.ogg?v=1189c291",
-                                                                    "units/terran/tank/attack_impact/SiegeTank_SiegeAttackImpact3.ogg?v=8c6d2d87",
-                                                                    "units/terran/tank/attack_impact/SiegeTank_SiegeAttackImpact4.ogg?v=d475c11e"
+                                                                    "units/terran/tank/attack_impact/SiegeTank_SiegeAttackImpact0.ogg?v=0a44dd2e-15280",
+                                                                    "units/terran/tank/attack_impact/SiegeTank_SiegeAttackImpact1.ogg?v=8c14fed0-17621",
+                                                                    "units/terran/tank/attack_impact/SiegeTank_SiegeAttackImpact2.ogg?v=1189c291-17218",
+                                                                    "units/terran/tank/attack_impact/SiegeTank_SiegeAttackImpact3.ogg?v=8c6d2d87-19460",
+                                                                    "units/terran/tank/attack_impact/SiegeTank_SiegeAttackImpact4.ogg?v=d475c11e-21450"
                                                                 ],
                                               "attack_siege_mode":  [
-                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch0.ogg?v=a71438fd",
-                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch1.ogg?v=227bd590",
-                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch2.ogg?v=c8ef7aaa",
-                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch3.ogg?v=1e20de8d",
-                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch4.ogg?v=c5e9b729",
-                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch5.ogg?v=093ed45f",
-                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch6.ogg?v=fa5a582d",
-                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch7.ogg?v=0860260a",
-                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch8.ogg?v=09bcfe13",
-                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch9.ogg?v=b4734d89"
+                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch0.ogg?v=a71438fd-21303",
+                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch1.ogg?v=227bd590-24759",
+                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch2.ogg?v=c8ef7aaa-23803",
+                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch3.ogg?v=1e20de8d-22308",
+                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch4.ogg?v=c5e9b729-24484",
+                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch5.ogg?v=093ed45f-15832",
+                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch6.ogg?v=fa5a582d-24327",
+                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch7.ogg?v=0860260a-23917",
+                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch8.ogg?v=09bcfe13-24096",
+                                                                        "units/terran/tank/attack_siege_mode/SiegeTank_SiegeAttackLaunch9.ogg?v=b4734d89-23143"
                                                                     ],
                                               "attack_tank_mode":  [
-                                                                       "units/terran/tank/attack_tank_mode/SiegeTank_AttackLaunch0.ogg?v=c74a6726",
-                                                                       "units/terran/tank/attack_tank_mode/SiegeTank_AttackLaunch1.ogg?v=577f6324",
-                                                                       "units/terran/tank/attack_tank_mode/SiegeTank_AttackLaunch2.ogg?v=8040f8cc",
-                                                                       "units/terran/tank/attack_tank_mode/SiegeTank_AttackLaunch3.ogg?v=8ef52050"
+                                                                       "units/terran/tank/attack_tank_mode/SiegeTank_AttackLaunch0.ogg?v=c74a6726-10900",
+                                                                       "units/terran/tank/attack_tank_mode/SiegeTank_AttackLaunch1.ogg?v=577f6324-10017",
+                                                                       "units/terran/tank/attack_tank_mode/SiegeTank_AttackLaunch2.ogg?v=8040f8cc-9716",
+                                                                       "units/terran/tank/attack_tank_mode/SiegeTank_AttackLaunch3.ogg?v=8ef52050-9479"
                                                                    ],
                                               "death":  [
-                                                            "units/terran/tank/death/SiegeTank_Death0.ogg?v=05349e68"
+                                                            "units/terran/tank/death/SiegeTank_Death0.ogg?v=05349e68-29347"
                                                         ],
                                               "deploy":  [
-                                                             "units/terran/tank/deploy/SiegeTank_Ready00.ogg?v=56e2a178"
+                                                             "units/terran/tank/deploy/SiegeTank_Ready00.ogg?v=56e2a178-40541"
                                                          ],
                                               "move":  [
-                                                           "units/terran/tank/move/SiegeTank_Yes00.ogg?v=313ade29",
-                                                           "units/terran/tank/move/SiegeTank_Yes01.ogg?v=ee785662",
-                                                           "units/terran/tank/move/SiegeTank_Yes02.ogg?v=6d65115b",
-                                                           "units/terran/tank/move/SiegeTank_Yes03.ogg?v=28669455",
-                                                           "units/terran/tank/move/SiegeTank_Yes04.ogg?v=5ed3e6ee",
-                                                           "units/terran/tank/move/SiegeTank_Yes05.ogg?v=d7256b32",
-                                                           "units/terran/tank/move/SiegeTank_Yes06.ogg?v=c585bf51",
-                                                           "units/terran/tank/move/SiegeTank_Yes07.ogg?v=a74caded",
-                                                           "units/terran/tank/move/SiegeTank_Yes08.ogg?v=b0c80711",
-                                                           "units/terran/tank/move/SiegeTank_Yes09.ogg?v=e5f6756f",
-                                                           "units/terran/tank/move/SiegeTank_Yes10.ogg?v=caaa360c",
-                                                           "units/terran/tank/move/SiegeTank_Yes11.ogg?v=f0a34f09",
-                                                           "units/terran/tank/move/SiegeTank_Yes12.ogg?v=3d6ba6ca",
-                                                           "units/terran/tank/move/SiegeTank_Yes13.ogg?v=092d5d69",
-                                                           "units/terran/tank/move/SiegeTank_Yes14.ogg?v=3def6363",
-                                                           "units/terran/tank/move/SiegeTank_Yes15.ogg?v=719c1f73",
-                                                           "units/terran/tank/move/SiegeTank_Yes16.ogg?v=99ad6203"
+                                                           "units/terran/tank/move/SiegeTank_Yes00.ogg?v=313ade29-40719",
+                                                           "units/terran/tank/move/SiegeTank_Yes01.ogg?v=ee785662-47212",
+                                                           "units/terran/tank/move/SiegeTank_Yes02.ogg?v=6d65115b-44740",
+                                                           "units/terran/tank/move/SiegeTank_Yes03.ogg?v=28669455-36861",
+                                                           "units/terran/tank/move/SiegeTank_Yes04.ogg?v=5ed3e6ee-33494",
+                                                           "units/terran/tank/move/SiegeTank_Yes05.ogg?v=d7256b32-34441",
+                                                           "units/terran/tank/move/SiegeTank_Yes06.ogg?v=c585bf51-43630",
+                                                           "units/terran/tank/move/SiegeTank_Yes07.ogg?v=a74caded-48477",
+                                                           "units/terran/tank/move/SiegeTank_Yes08.ogg?v=b0c80711-47220",
+                                                           "units/terran/tank/move/SiegeTank_Yes09.ogg?v=e5f6756f-32678",
+                                                           "units/terran/tank/move/SiegeTank_Yes10.ogg?v=caaa360c-43728",
+                                                           "units/terran/tank/move/SiegeTank_Yes11.ogg?v=f0a34f09-43418",
+                                                           "units/terran/tank/move/SiegeTank_Yes12.ogg?v=3d6ba6ca-48540",
+                                                           "units/terran/tank/move/SiegeTank_Yes13.ogg?v=092d5d69-49041",
+                                                           "units/terran/tank/move/SiegeTank_Yes14.ogg?v=3def6363-36861",
+                                                           "units/terran/tank/move/SiegeTank_Yes15.ogg?v=719c1f73-42858",
+                                                           "units/terran/tank/move/SiegeTank_Yes16.ogg?v=99ad6203-41616"
                                                        ],
                                               "transform_to_siege":  [
-                                                                         "units/terran/tank/transform_to_siege/SiegeTank_MorphToSiege.ogg?v=5761e61a"
+                                                                         "units/terran/tank/transform_to_siege/SiegeTank_MorphToSiege.ogg?v=5761e61a-45699"
                                                                      ],
                                               "transform_to_tank":  [
-                                                                        "units/terran/tank/transform_to_tank/SiegeTank_MorphToTank.ogg?v=e4c3353d"
+                                                                        "units/terran/tank/transform_to_tank/SiegeTank_MorphToTank.ogg?v=e4c3353d-50792"
                                                                     ]
                                           }
                              },
                   "zerg":  {
                                "defiler":  {
                                                "burrow":  [
-                                                              "units/zerg/defiler/burrow/Zerg_BurrowSmall0.ogg?v=6c6d6649",
-                                                              "units/zerg/defiler/burrow/Zerg_BurrowSmall1.ogg?v=5abed9de",
-                                                              "units/zerg/defiler/burrow/Zerg_BurrowSmall2.ogg?v=37db321b"
+                                                              "units/zerg/defiler/burrow/Zerg_BurrowSmall0.ogg?v=6c6d6649-21856",
+                                                              "units/zerg/defiler/burrow/Zerg_BurrowSmall1.ogg?v=5abed9de-17499",
+                                                              "units/zerg/defiler/burrow/Zerg_BurrowSmall2.ogg?v=37db321b-19212"
                                                           ],
                                                "combat":  [
-                                                              "units/zerg/defiler/combat/Roach_AttackLaunchMelee0.ogg?v=c5234870",
-                                                              "units/zerg/defiler/combat/Roach_AttackLaunchMelee1.ogg?v=7d7fd077",
-                                                              "units/zerg/defiler/combat/Roach_AttackLaunchMelee2.ogg?v=1b566f54",
-                                                              "units/zerg/defiler/combat/Roach_AttackLaunchMelee3.ogg?v=acb44ade",
-                                                              "units/zerg/defiler/combat/Roach_AttackLaunchMelee4.ogg?v=add8a710"
+                                                              "units/zerg/defiler/combat/Roach_AttackLaunchMelee0.ogg?v=c5234870-8277",
+                                                              "units/zerg/defiler/combat/Roach_AttackLaunchMelee1.ogg?v=7d7fd077-9371",
+                                                              "units/zerg/defiler/combat/Roach_AttackLaunchMelee2.ogg?v=1b566f54-9523",
+                                                              "units/zerg/defiler/combat/Roach_AttackLaunchMelee3.ogg?v=acb44ade-10001",
+                                                              "units/zerg/defiler/combat/Roach_AttackLaunchMelee4.ogg?v=add8a710-10156"
                                                           ],
                                                "combatVO":  [
-                                                                "units/zerg/defiler/sc1/combatVO/ZergDefilerPissed00SC1.ogg?v=c3af45e6",
-                                                                "units/zerg/defiler/sc1/combatVO/ZergDefilerPissed01SC1.ogg?v=da50dec0",
-                                                                "units/zerg/defiler/sc1/combatVO/ZergDefilerPissed02SC1.ogg?v=9e29890d",
-                                                                "units/zerg/defiler/sc1/combatVO/ZergDefilerPissed03SC1.ogg?v=9104d291"
+                                                                "units/zerg/defiler/sc1/combatVO/ZergDefilerPissed00SC1.ogg?v=c3af45e6-16187",
+                                                                "units/zerg/defiler/sc1/combatVO/ZergDefilerPissed01SC1.ogg?v=da50dec0-7318",
+                                                                "units/zerg/defiler/sc1/combatVO/ZergDefilerPissed02SC1.ogg?v=9e29890d-12330",
+                                                                "units/zerg/defiler/sc1/combatVO/ZergDefilerPissed03SC1.ogg?v=9104d291-15278"
                                                             ],
                                                "consume":  [
-                                                               "units/zerg/defiler/sc1/consume/ZergDefilerConsume00SC1.ogg?v=e2813526"
+                                                               "units/zerg/defiler/sc1/consume/ZergDefilerConsume00SC1.ogg?v=e2813526-9286"
                                                            ],
                                                "dark_swarm":  [
-                                                                  "units/zerg/defiler/sc1/dark_swarm/ZergDefilerPlague01SC1.ogg?v=d355cb0e"
+                                                                  "units/zerg/defiler/sc1/dark_swarm/ZergDefilerPlague01SC1.ogg?v=d355cb0e-33853"
                                                               ],
                                                "death":  [
-                                                             "units/zerg/defiler/sc1/death/ZergDefilerDeath00SC1.ogg?v=08e0dbbd"
+                                                             "units/zerg/defiler/sc1/death/ZergDefilerDeath00SC1.ogg?v=08e0dbbd-11112"
                                                          ],
                                                "deploy":  [
-                                                              "units/zerg/defiler/sc1/deploy/ZergDefilerReady00SC1.ogg?v=ee21413c",
-                                                              "units/zerg/defiler/sc1/deploy/ZergDefilerWhat00SC1.ogg?v=fc7efb99",
-                                                              "units/zerg/defiler/sc1/deploy/ZergDefilerWhat01SC1.ogg?v=9abaa0e2",
-                                                              "units/zerg/defiler/sc1/deploy/ZergDefilerWhat02SC1.ogg?v=0e4af90d",
-                                                              "units/zerg/defiler/sc1/deploy/ZergDefilerWhat03SC1.ogg?v=1a67cc4a"
+                                                              "units/zerg/defiler/sc1/deploy/ZergDefilerReady00SC1.ogg?v=ee21413c-9793",
+                                                              "units/zerg/defiler/sc1/deploy/ZergDefilerWhat00SC1.ogg?v=fc7efb99-11277",
+                                                              "units/zerg/defiler/sc1/deploy/ZergDefilerWhat01SC1.ogg?v=9abaa0e2-10028",
+                                                              "units/zerg/defiler/sc1/deploy/ZergDefilerWhat02SC1.ogg?v=0e4af90d-11764",
+                                                              "units/zerg/defiler/sc1/deploy/ZergDefilerWhat03SC1.ogg?v=1a67cc4a-11265"
                                                           ],
                                                "move":  [
-                                                            "units/zerg/defiler/sc1/move/ZergDefilerYes00SC1.ogg?v=f9ddfaae",
-                                                            "units/zerg/defiler/sc1/move/ZergDefilerYes01SC1.ogg?v=64305eb0",
-                                                            "units/zerg/defiler/sc1/move/ZergDefilerYes02SC1.ogg?v=12fb74a9",
-                                                            "units/zerg/defiler/sc1/move/ZergDefilerYes03SC1.ogg?v=e923f587"
+                                                            "units/zerg/defiler/sc1/move/ZergDefilerYes00SC1.ogg?v=f9ddfaae-8197",
+                                                            "units/zerg/defiler/sc1/move/ZergDefilerYes01SC1.ogg?v=64305eb0-11216",
+                                                            "units/zerg/defiler/sc1/move/ZergDefilerYes02SC1.ogg?v=12fb74a9-9230",
+                                                            "units/zerg/defiler/sc1/move/ZergDefilerYes03SC1.ogg?v=e923f587-9095"
                                                         ],
                                                "plague":  [
-                                                              "units/zerg/defiler/sc1/plague/ZergDefilerPlague00SC1.ogg?v=d2a2c45a"
+                                                              "units/zerg/defiler/sc1/plague/ZergDefilerPlague00SC1.ogg?v=d2a2c45a-32610"
                                                           ],
                                                "unburrow":  [
-                                                                "units/zerg/defiler/unburrow/Zerg_UnburrowSmall0.ogg?v=889945f2",
-                                                                "units/zerg/defiler/unburrow/Zerg_UnburrowSmall1.ogg?v=fb27bfeb",
-                                                                "units/zerg/defiler/unburrow/Zerg_UnburrowSmall2.ogg?v=20aaff48"
+                                                                "units/zerg/defiler/unburrow/Zerg_UnburrowSmall0.ogg?v=889945f2-29856",
+                                                                "units/zerg/defiler/unburrow/Zerg_UnburrowSmall1.ogg?v=fb27bfeb-27074",
+                                                                "units/zerg/defiler/unburrow/Zerg_UnburrowSmall2.ogg?v=20aaff48-30647"
                                                             ]
                                            },
                                "hydralisk":  {
                                                  "attack":  [
-                                                                "units/zerg/hydralisk/attack/Hydralisk_AttackLaunchRanged0.ogg?v=130b3387",
-                                                                "units/zerg/hydralisk/attack/Hydralisk_AttackLaunchRanged1.ogg?v=20d6c2ab",
-                                                                "units/zerg/hydralisk/attack/Hydralisk_AttackLaunchRanged2.ogg?v=27c83dcf",
-                                                                "units/zerg/hydralisk/attack/Hydralisk_AttackLaunchRanged3.ogg?v=9bb00095"
+                                                                "units/zerg/hydralisk/attack/Hydralisk_AttackLaunchRanged0.ogg?v=130b3387-10358",
+                                                                "units/zerg/hydralisk/attack/Hydralisk_AttackLaunchRanged1.ogg?v=20d6c2ab-12486",
+                                                                "units/zerg/hydralisk/attack/Hydralisk_AttackLaunchRanged2.ogg?v=27c83dcf-12511",
+                                                                "units/zerg/hydralisk/attack/Hydralisk_AttackLaunchRanged3.ogg?v=9bb00095-10557"
                                                             ],
                                                  "burrow":  [
-                                                                "units/zerg/hydralisk/burrow/Zerg_BurrowSmall0.ogg?v=6c6d6649",
-                                                                "units/zerg/hydralisk/burrow/Zerg_BurrowSmall1.ogg?v=5abed9de",
-                                                                "units/zerg/hydralisk/burrow/Zerg_BurrowSmall2.ogg?v=37db321b"
+                                                                "units/zerg/hydralisk/burrow/Zerg_BurrowSmall0.ogg?v=6c6d6649-21856",
+                                                                "units/zerg/hydralisk/burrow/Zerg_BurrowSmall1.ogg?v=5abed9de-17499",
+                                                                "units/zerg/hydralisk/burrow/Zerg_BurrowSmall2.ogg?v=37db321b-19212"
                                                             ],
                                                  "combat":  [
-                                                                "units/zerg/hydralisk/combat/Zerg_AttackLaunch_LargeSwingSingle_00.ogg?v=267fed9f",
-                                                                "units/zerg/hydralisk/combat/Zerg_AttackLaunch_LargeSwingSingle_01.ogg?v=47297815",
-                                                                "units/zerg/hydralisk/combat/Zerg_AttackLaunch_LargeSwingSingle_02.ogg?v=7b9b2f2f",
-                                                                "units/zerg/hydralisk/combat/Zerg_AttackLaunch_LargeSwingSingle_03.ogg?v=2f602743"
+                                                                "units/zerg/hydralisk/combat/Zerg_AttackLaunch_LargeSwingSingle_00.ogg?v=267fed9f-11409",
+                                                                "units/zerg/hydralisk/combat/Zerg_AttackLaunch_LargeSwingSingle_01.ogg?v=47297815-11813",
+                                                                "units/zerg/hydralisk/combat/Zerg_AttackLaunch_LargeSwingSingle_02.ogg?v=7b9b2f2f-13053",
+                                                                "units/zerg/hydralisk/combat/Zerg_AttackLaunch_LargeSwingSingle_03.ogg?v=2f602743-11550"
                                                             ],
                                                  "death":  [
-                                                               "units/zerg/hydralisk/death/Hydralisk_Death0.ogg?v=29831003",
-                                                               "units/zerg/hydralisk/death/Hydralisk_Death1.ogg?v=f1c7a331",
-                                                               "units/zerg/hydralisk/death/Hydralisk_Death2.ogg?v=074b887d",
-                                                               "units/zerg/hydralisk/death/Hydralisk_Death3.ogg?v=9c997ecc",
-                                                               "units/zerg/hydralisk/death/Hydralisk_Death4.ogg?v=0d5df420",
-                                                               "units/zerg/hydralisk/death/Hydralisk_Death5.ogg?v=c53c354c"
+                                                               "units/zerg/hydralisk/death/Hydralisk_Death0.ogg?v=29831003-40112",
+                                                               "units/zerg/hydralisk/death/Hydralisk_Death1.ogg?v=f1c7a331-39314",
+                                                               "units/zerg/hydralisk/death/Hydralisk_Death2.ogg?v=074b887d-43340",
+                                                               "units/zerg/hydralisk/death/Hydralisk_Death3.ogg?v=9c997ecc-40668",
+                                                               "units/zerg/hydralisk/death/Hydralisk_Death4.ogg?v=0d5df420-42004",
+                                                               "units/zerg/hydralisk/death/Hydralisk_Death5.ogg?v=c53c354c-40942"
                                                            ],
                                                  "deploy":  [
-                                                                "units/zerg/hydralisk/deploy/Hydralisk_Ready0.ogg?v=9ae6d20e",
-                                                                "units/zerg/hydralisk/deploy/Hydralisk_Ready1.ogg?v=827ab8e1",
-                                                                "units/zerg/hydralisk/deploy/Hydralisk_Ready2.ogg?v=66591cc1",
-                                                                "units/zerg/hydralisk/deploy/Hydralisk_Ready3.ogg?v=3f924db5"
+                                                                "units/zerg/hydralisk/deploy/Hydralisk_Ready0.ogg?v=9ae6d20e-30769",
+                                                                "units/zerg/hydralisk/deploy/Hydralisk_Ready1.ogg?v=827ab8e1-34761",
+                                                                "units/zerg/hydralisk/deploy/Hydralisk_Ready2.ogg?v=66591cc1-40428",
+                                                                "units/zerg/hydralisk/deploy/Hydralisk_Ready3.ogg?v=3f924db5-37862"
                                                             ],
                                                  "move":  [
-                                                              "units/zerg/hydralisk/move/Hydralisk_Yes0.ogg?v=7f4291ed",
-                                                              "units/zerg/hydralisk/move/Hydralisk_Yes1.ogg?v=26f7634f",
-                                                              "units/zerg/hydralisk/move/Hydralisk_Yes2.ogg?v=80c3da99",
-                                                              "units/zerg/hydralisk/move/Hydralisk_Yes3.ogg?v=19ef5f48",
-                                                              "units/zerg/hydralisk/move/Hydralisk_Yes4.ogg?v=ec14dbe0",
-                                                              "units/zerg/hydralisk/move/Hydralisk_Yes5.ogg?v=fe4e8731",
-                                                              "units/zerg/hydralisk/move/Hydralisk_Yes6.ogg?v=a8ffa346",
-                                                              "units/zerg/hydralisk/move/Hydralisk_Yes7.ogg?v=4ae6ca12"
+                                                              "units/zerg/hydralisk/move/Hydralisk_Yes0.ogg?v=7f4291ed-23054",
+                                                              "units/zerg/hydralisk/move/Hydralisk_Yes1.ogg?v=26f7634f-22041",
+                                                              "units/zerg/hydralisk/move/Hydralisk_Yes2.ogg?v=80c3da99-22271",
+                                                              "units/zerg/hydralisk/move/Hydralisk_Yes3.ogg?v=19ef5f48-22660",
+                                                              "units/zerg/hydralisk/move/Hydralisk_Yes4.ogg?v=ec14dbe0-20725",
+                                                              "units/zerg/hydralisk/move/Hydralisk_Yes5.ogg?v=fe4e8731-22842",
+                                                              "units/zerg/hydralisk/move/Hydralisk_Yes6.ogg?v=a8ffa346-22795",
+                                                              "units/zerg/hydralisk/move/Hydralisk_Yes7.ogg?v=4ae6ca12-22700"
                                                           ],
                                                  "unburrow":  [
-                                                                  "units/zerg/hydralisk/unburrow/Zerg_UnburrowSmall0.ogg?v=889945f2",
-                                                                  "units/zerg/hydralisk/unburrow/Zerg_UnburrowSmall1.ogg?v=fb27bfeb",
-                                                                  "units/zerg/hydralisk/unburrow/Zerg_UnburrowSmall2.ogg?v=20aaff48"
+                                                                  "units/zerg/hydralisk/unburrow/Zerg_UnburrowSmall0.ogg?v=889945f2-29856",
+                                                                  "units/zerg/hydralisk/unburrow/Zerg_UnburrowSmall1.ogg?v=fb27bfeb-27074",
+                                                                  "units/zerg/hydralisk/unburrow/Zerg_UnburrowSmall2.ogg?v=20aaff48-30647"
                                                               ]
                                              },
                                "kerrigan":  {
                                                 "attack":  [
-                                                               "units/zerg/kerrigan/attack/QueenOfBlades_RangedAttackLaunch0.ogg?v=8e08e650"
+                                                               "units/zerg/kerrigan/attack/QueenOfBlades_RangedAttackLaunch0.ogg?v=8e08e650-18923"
                                                            ],
                                                 "burrow":  [
-                                                               "units/zerg/kerrigan/burrow/Zerg_BurrowSmall0.ogg?v=bfd85574",
-                                                               "units/zerg/kerrigan/burrow/Zerg_BurrowSmall1.ogg?v=f16081c0",
-                                                               "units/zerg/kerrigan/burrow/Zerg_BurrowSmall2.ogg?v=0b7d3e44"
+                                                               "units/zerg/kerrigan/burrow/Zerg_BurrowSmall0.ogg?v=bfd85574-21856",
+                                                               "units/zerg/kerrigan/burrow/Zerg_BurrowSmall1.ogg?v=f16081c0-17499",
+                                                               "units/zerg/kerrigan/burrow/Zerg_BurrowSmall2.ogg?v=0b7d3e44-19212"
                                                            ],
                                                 "combat":  [
-                                                               "units/zerg/kerrigan/combat/Zerg_AttackLaunchLargeSwing0.ogg?v=d3158f88",
-                                                               "units/zerg/kerrigan/combat/Zerg_AttackLaunchLargeSwing1.ogg?v=212a9b25",
-                                                               "units/zerg/kerrigan/combat/Zerg_AttackLaunchLargeSwing2.ogg?v=a50d8023",
-                                                               "units/zerg/kerrigan/combat/Zerg_AttackLaunchLargeSwing3.ogg?v=adebd92e"
+                                                               "units/zerg/kerrigan/combat/Zerg_AttackLaunchLargeSwing0.ogg?v=d3158f88-12285",
+                                                               "units/zerg/kerrigan/combat/Zerg_AttackLaunchLargeSwing1.ogg?v=212a9b25-12931",
+                                                               "units/zerg/kerrigan/combat/Zerg_AttackLaunchLargeSwing2.ogg?v=a50d8023-12772",
+                                                               "units/zerg/kerrigan/combat/Zerg_AttackLaunchLargeSwing3.ogg?v=adebd92e-10309"
                                                            ],
                                                 "death":  [
-                                                              "units/zerg/kerrigan/death/Kerrigan_Death00.ogg?v=7ff57e22",
-                                                              "units/zerg/kerrigan/death/Kerrigan_Death01.ogg?v=c8dfa1fd"
+                                                              "units/zerg/kerrigan/death/Kerrigan_Death00.ogg?v=7ff57e22-81405",
+                                                              "units/zerg/kerrigan/death/Kerrigan_Death01.ogg?v=c8dfa1fd-88584"
                                                           ],
                                                 "move":  [
-                                                             "units/zerg/kerrigan/move/Kerrigan_Yes00.ogg?v=77f70806",
-                                                             "units/zerg/kerrigan/move/Kerrigan_Yes01.ogg?v=16d4e4e7",
-                                                             "units/zerg/kerrigan/move/Kerrigan_Yes02.ogg?v=147aee6f",
-                                                             "units/zerg/kerrigan/move/Kerrigan_Yes03.ogg?v=f6219067",
-                                                             "units/zerg/kerrigan/move/Kerrigan_Yes04.ogg?v=dacbb056"
+                                                             "units/zerg/kerrigan/move/Kerrigan_Yes00.ogg?v=77f70806-57831",
+                                                             "units/zerg/kerrigan/move/Kerrigan_Yes01.ogg?v=16d4e4e7-62772",
+                                                             "units/zerg/kerrigan/move/Kerrigan_Yes02.ogg?v=147aee6f-60155",
+                                                             "units/zerg/kerrigan/move/Kerrigan_Yes03.ogg?v=f6219067-65522",
+                                                             "units/zerg/kerrigan/move/Kerrigan_Yes04.ogg?v=dacbb056-63503"
                                                          ],
                                                 "ready":  [
-                                                              "units/zerg/kerrigan/ready/Kerrigan_Ready00.ogg?v=cf331a52"
+                                                              "units/zerg/kerrigan/ready/Kerrigan_Ready00.ogg?v=cf331a52-62380"
                                                           ],
                                                 "unburrow":  [
-                                                                 "units/zerg/kerrigan/unburrow/Zerg_UnburrowSmall0.ogg?v=a5eb7007",
-                                                                 "units/zerg/kerrigan/unburrow/Zerg_UnburrowSmall1.ogg?v=8fbb596a",
-                                                                 "units/zerg/kerrigan/unburrow/Zerg_UnburrowSmall2.ogg?v=0bc96a13"
+                                                                 "units/zerg/kerrigan/unburrow/Zerg_UnburrowSmall0.ogg?v=a5eb7007-29856",
+                                                                 "units/zerg/kerrigan/unburrow/Zerg_UnburrowSmall1.ogg?v=8fbb596a-27074",
+                                                                 "units/zerg/kerrigan/unburrow/Zerg_UnburrowSmall2.ogg?v=0bc96a13-30647"
                                                              ]
                                             },
                                "omega_worm":  {
                                                   "death":  [
-                                                                "units/zerg/omega_worm/death/NydusWorm_Death0.ogg?v=d1d914ea"
+                                                                "units/zerg/omega_worm/death/NydusWorm_Death0.ogg?v=d1d914ea-58876"
                                                             ],
                                                   "deploy":  [
-                                                                 "units/zerg/omega_worm/deploy/NydusWorm_Birth0.ogg?v=f9e7f6e0"
+                                                                 "units/zerg/omega_worm/deploy/NydusWorm_Birth0.ogg?v=f9e7f6e0-39394"
                                                              ]
                                               },
                                "queen":  {
                                              "attack":  [
-                                                            "units/zerg/queen/attack/Zerg_AttackImpactLargeSlice0.ogg?v=b3a3bd36",
-                                                            "units/zerg/queen/attack/Zerg_AttackImpactLargeSlice1.ogg?v=ac5b5a2c",
-                                                            "units/zerg/queen/attack/Zerg_AttackImpactLargeSlice2.ogg?v=90f4afad",
-                                                            "units/zerg/queen/attack/Zerg_AttackImpactLargeSlice3.ogg?v=01fc09af",
-                                                            "units/zerg/queen/attack/Zerg_AttackImpactLargeSlice4.ogg?v=1206d428"
+                                                            "units/zerg/queen/attack/Zerg_AttackImpactLargeSlice0.ogg?v=b3a3bd36-8939",
+                                                            "units/zerg/queen/attack/Zerg_AttackImpactLargeSlice1.ogg?v=ac5b5a2c-11634",
+                                                            "units/zerg/queen/attack/Zerg_AttackImpactLargeSlice2.ogg?v=90f4afad-9761",
+                                                            "units/zerg/queen/attack/Zerg_AttackImpactLargeSlice3.ogg?v=01fc09af-9826",
+                                                            "units/zerg/queen/attack/Zerg_AttackImpactLargeSlice4.ogg?v=1206d428-9215"
                                                         ],
                                              "burrow":  [
-                                                            "units/zerg/queen/burrow/Zerg_BurrowLarge0.ogg?v=bcab599e",
-                                                            "units/zerg/queen/burrow/Zerg_BurrowLarge1.ogg?v=bd171376",
-                                                            "units/zerg/queen/burrow/Zerg_BurrowLarge2.ogg?v=7b7fda0d",
-                                                            "units/zerg/queen/burrow/Zerg_BurrowLarge3.ogg?v=cd185687",
-                                                            "units/zerg/queen/burrow/Zerg_BurrowLarge4.ogg?v=1e0ef622"
+                                                            "units/zerg/queen/burrow/Zerg_BurrowLarge0.ogg?v=bcab599e-18616",
+                                                            "units/zerg/queen/burrow/Zerg_BurrowLarge1.ogg?v=bd171376-18397",
+                                                            "units/zerg/queen/burrow/Zerg_BurrowLarge2.ogg?v=7b7fda0d-20008",
+                                                            "units/zerg/queen/burrow/Zerg_BurrowLarge3.ogg?v=cd185687-19829",
+                                                            "units/zerg/queen/burrow/Zerg_BurrowLarge4.ogg?v=1e0ef622-19619"
                                                         ],
                                              "combat":  [
-                                                            "units/zerg/queen/combat/Zerg_AttackLaunchLargeSwing0.ogg?v=bf81cde5",
-                                                            "units/zerg/queen/combat/Zerg_AttackLaunchLargeSwing1.ogg?v=2e8e7be6",
-                                                            "units/zerg/queen/combat/Zerg_AttackLaunchLargeSwing2.ogg?v=936d8272",
-                                                            "units/zerg/queen/combat/Zerg_AttackLaunchLargeSwing3.ogg?v=8399fb51"
+                                                            "units/zerg/queen/combat/Zerg_AttackLaunchLargeSwing0.ogg?v=bf81cde5-12285",
+                                                            "units/zerg/queen/combat/Zerg_AttackLaunchLargeSwing1.ogg?v=2e8e7be6-12931",
+                                                            "units/zerg/queen/combat/Zerg_AttackLaunchLargeSwing2.ogg?v=936d8272-12772",
+                                                            "units/zerg/queen/combat/Zerg_AttackLaunchLargeSwing3.ogg?v=8399fb51-10309"
                                                         ],
                                              "death":  [
-                                                           "units/zerg/queen/death/Queen_Death0.ogg?v=26344737",
-                                                           "units/zerg/queen/death/Queen_Death1.ogg?v=431878e0",
-                                                           "units/zerg/queen/death/Queen_Death2.ogg?v=7b843894"
+                                                           "units/zerg/queen/death/Queen_Death0.ogg?v=26344737-21862",
+                                                           "units/zerg/queen/death/Queen_Death1.ogg?v=431878e0-19131",
+                                                           "units/zerg/queen/death/Queen_Death2.ogg?v=7b843894-20696"
                                                        ],
                                              "deathFX":  [
-                                                             "units/zerg/queen/deathFX/Zerg_ExplosionMedium0.ogg?v=87883660",
-                                                             "units/zerg/queen/deathFX/Zerg_ExplosionMedium1.ogg?v=b86e14b9",
-                                                             "units/zerg/queen/deathFX/Zerg_ExplosionMedium2.ogg?v=3fe1c349",
-                                                             "units/zerg/queen/deathFX/Zerg_ExplosionMedium3.ogg?v=3b9e6a8a",
-                                                             "units/zerg/queen/deathFX/Zerg_ExplosionMedium4.ogg?v=3e9b3862",
-                                                             "units/zerg/queen/deathFX/Zerg_ExplosionMedium5.ogg?v=912a9041",
-                                                             "units/zerg/queen/deathFX/Zerg_ExplosionMedium6.ogg?v=7dd7a1c9"
+                                                             "units/zerg/queen/deathFX/Zerg_ExplosionMedium0.ogg?v=87883660-26978",
+                                                             "units/zerg/queen/deathFX/Zerg_ExplosionMedium1.ogg?v=b86e14b9-22798",
+                                                             "units/zerg/queen/deathFX/Zerg_ExplosionMedium2.ogg?v=3fe1c349-21923",
+                                                             "units/zerg/queen/deathFX/Zerg_ExplosionMedium3.ogg?v=3b9e6a8a-24146",
+                                                             "units/zerg/queen/deathFX/Zerg_ExplosionMedium4.ogg?v=3e9b3862-22501",
+                                                             "units/zerg/queen/deathFX/Zerg_ExplosionMedium5.ogg?v=912a9041-21658",
+                                                             "units/zerg/queen/deathFX/Zerg_ExplosionMedium6.ogg?v=7dd7a1c9-23559"
                                                          ],
                                              "deploy":  [
-                                                            "units/zerg/queen/deploy/Queen_Ready0.ogg?v=6a0002b0"
+                                                            "units/zerg/queen/deploy/Queen_Ready0.ogg?v=6a0002b0-49392"
                                                         ],
                                              "move":  [
-                                                          "units/zerg/queen/move/Queen_Yes0.ogg?v=d66856a9",
-                                                          "units/zerg/queen/move/Queen_Yes1.ogg?v=7e8bb254",
-                                                          "units/zerg/queen/move/Queen_Yes2.ogg?v=8694b12f",
-                                                          "units/zerg/queen/move/Queen_Yes3.ogg?v=7ad86c73",
-                                                          "units/zerg/queen/move/Queen_Yes4.ogg?v=a51533b8",
-                                                          "units/zerg/queen/move/Queen_Yes5.ogg?v=0608c442",
-                                                          "units/zerg/queen/move/Queen_Yes6.ogg?v=5ee556fd",
-                                                          "units/zerg/queen/move/Queen_Yes7.ogg?v=10f3bc8f",
-                                                          "units/zerg/queen/move/Queen_Yes8.ogg?v=7cced4d1"
+                                                          "units/zerg/queen/move/Queen_Yes0.ogg?v=d66856a9-51360",
+                                                          "units/zerg/queen/move/Queen_Yes1.ogg?v=7e8bb254-43635",
+                                                          "units/zerg/queen/move/Queen_Yes2.ogg?v=8694b12f-46917",
+                                                          "units/zerg/queen/move/Queen_Yes3.ogg?v=7ad86c73-45411",
+                                                          "units/zerg/queen/move/Queen_Yes4.ogg?v=a51533b8-49029",
+                                                          "units/zerg/queen/move/Queen_Yes5.ogg?v=0608c442-46457",
+                                                          "units/zerg/queen/move/Queen_Yes6.ogg?v=5ee556fd-58113",
+                                                          "units/zerg/queen/move/Queen_Yes7.ogg?v=10f3bc8f-45499",
+                                                          "units/zerg/queen/move/Queen_Yes8.ogg?v=7cced4d1-50391"
                                                       ],
                                              "unburrow":  [
-                                                              "units/zerg/queen/unburrow/Zerg_UnburrowLarge0.ogg?v=d5823e48",
-                                                              "units/zerg/queen/unburrow/Zerg_UnburrowLarge1.ogg?v=577403a2",
-                                                              "units/zerg/queen/unburrow/Zerg_UnburrowLarge2.ogg?v=b2729422",
-                                                              "units/zerg/queen/unburrow/Zerg_UnburrowLarge3.ogg?v=0ad54bf1",
-                                                              "units/zerg/queen/unburrow/Zerg_UnburrowLarge4.ogg?v=997e4e23"
+                                                              "units/zerg/queen/unburrow/Zerg_UnburrowLarge0.ogg?v=d5823e48-37725",
+                                                              "units/zerg/queen/unburrow/Zerg_UnburrowLarge1.ogg?v=577403a2-33287",
+                                                              "units/zerg/queen/unburrow/Zerg_UnburrowLarge2.ogg?v=b2729422-32640",
+                                                              "units/zerg/queen/unburrow/Zerg_UnburrowLarge3.ogg?v=0ad54bf1-35966",
+                                                              "units/zerg/queen/unburrow/Zerg_UnburrowLarge4.ogg?v=997e4e23-31826"
                                                           ]
                                          },
                                "ravager":  {
                                                "attack":  [
-                                                              "units/zerg/ravager/attack/Ravager_Vox_Attack_Comp01.ogg?v=45a48f75",
-                                                              "units/zerg/ravager/attack/Ravager_Vox_Attack_Comp02.ogg?v=34365955",
-                                                              "units/zerg/ravager/attack/Ravager_Vox_Attack_Comp03.ogg?v=4be35f6b",
-                                                              "units/zerg/ravager/attack/Ravager_Vox_Attack_Comp04.ogg?v=a011b77a",
-                                                              "units/zerg/ravager/attack/Ravager_Vox_Attack_Comp05.ogg?v=aaaee2c1",
-                                                              "units/zerg/ravager/attack/Ravager_Vox_Attack_Comp06.ogg?v=5cabb190"
+                                                              "units/zerg/ravager/attack/Ravager_Vox_Attack_Comp01.ogg?v=45a48f75-14331",
+                                                              "units/zerg/ravager/attack/Ravager_Vox_Attack_Comp02.ogg?v=34365955-14470",
+                                                              "units/zerg/ravager/attack/Ravager_Vox_Attack_Comp03.ogg?v=4be35f6b-15713",
+                                                              "units/zerg/ravager/attack/Ravager_Vox_Attack_Comp04.ogg?v=a011b77a-15534",
+                                                              "units/zerg/ravager/attack/Ravager_Vox_Attack_Comp05.ogg?v=aaaee2c1-16994",
+                                                              "units/zerg/ravager/attack/Ravager_Vox_Attack_Comp06.ogg?v=5cabb190-17515"
                                                           ],
                                                "bile":  [
-                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch01.ogg?v=377ea36d",
-                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch02.ogg?v=054b87e5",
-                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch03.ogg?v=fe333b4f",
-                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch04.ogg?v=af141923",
-                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch05.ogg?v=3edefb22",
-                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch06.ogg?v=c71f31f9",
-                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch07.ogg?v=c8341c8e",
-                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch08.ogg?v=f5592a85",
-                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch09.ogg?v=64e7528c",
-                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch10.ogg?v=979ccec1"
+                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch01.ogg?v=377ea36d-28702",
+                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch02.ogg?v=054b87e5-28705",
+                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch03.ogg?v=fe333b4f-30774",
+                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch04.ogg?v=af141923-30300",
+                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch05.ogg?v=3edefb22-32606",
+                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch06.ogg?v=c71f31f9-32782",
+                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch07.ogg?v=c8341c8e-31646",
+                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch08.ogg?v=f5592a85-28646",
+                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch09.ogg?v=64e7528c-28600",
+                                                            "units/zerg/ravager/bile/Ravager_CorrosiveBile_AttackLaunch10.ogg?v=979ccec1-30014"
                                                         ],
                                                "bileFX":  [
-                                                              "units/zerg/ravager/bileFX/Ravager_CorrosiveBile_Explosion01.ogg?v=50b344ea"
+                                                              "units/zerg/ravager/bileFX/Ravager_CorrosiveBile_Explosion01.ogg?v=50b344ea-23408"
                                                           ],
                                                "death":  [
-                                                             "units/zerg/ravager/death/Ravager_Vox_Death01.ogg?v=3c4b6c3b",
-                                                             "units/zerg/ravager/death/Ravager_Vox_Death02.ogg?v=d627d257",
-                                                             "units/zerg/ravager/death/Ravager_Vox_Death03.ogg?v=785f95db",
-                                                             "units/zerg/ravager/death/Ravager_Vox_Death04.ogg?v=22a21939",
-                                                             "units/zerg/ravager/death/Ravager_Vox_Death05.ogg?v=d9aba4c6",
-                                                             "units/zerg/ravager/death/Ravager_Vox_Death06.ogg?v=c592d981",
-                                                             "units/zerg/ravager/death/Ravager_Vox_Death07.ogg?v=04d018fc"
+                                                             "units/zerg/ravager/death/Ravager_Vox_Death01.ogg?v=3c4b6c3b-22701",
+                                                             "units/zerg/ravager/death/Ravager_Vox_Death02.ogg?v=d627d257-16495",
+                                                             "units/zerg/ravager/death/Ravager_Vox_Death03.ogg?v=785f95db-21056",
+                                                             "units/zerg/ravager/death/Ravager_Vox_Death04.ogg?v=22a21939-13442",
+                                                             "units/zerg/ravager/death/Ravager_Vox_Death05.ogg?v=d9aba4c6-18847",
+                                                             "units/zerg/ravager/death/Ravager_Vox_Death06.ogg?v=c592d981-17835",
+                                                             "units/zerg/ravager/death/Ravager_Vox_Death07.ogg?v=04d018fc-17639"
                                                          ],
                                                "deathFX":  [
-                                                               "units/zerg/ravager/deathFX/Zerg_ExplosionMedium0.ogg?v=87883660",
-                                                               "units/zerg/ravager/deathFX/Zerg_ExplosionMedium1.ogg?v=b86e14b9",
-                                                               "units/zerg/ravager/deathFX/Zerg_ExplosionMedium2.ogg?v=3fe1c349",
-                                                               "units/zerg/ravager/deathFX/Zerg_ExplosionMedium3.ogg?v=3b9e6a8a",
-                                                               "units/zerg/ravager/deathFX/Zerg_ExplosionMedium4.ogg?v=3e9b3862",
-                                                               "units/zerg/ravager/deathFX/Zerg_ExplosionMedium5.ogg?v=912a9041",
-                                                               "units/zerg/ravager/deathFX/Zerg_ExplosionMedium6.ogg?v=7dd7a1c9"
+                                                               "units/zerg/ravager/deathFX/Zerg_ExplosionMedium0.ogg?v=87883660-26978",
+                                                               "units/zerg/ravager/deathFX/Zerg_ExplosionMedium1.ogg?v=b86e14b9-22798",
+                                                               "units/zerg/ravager/deathFX/Zerg_ExplosionMedium2.ogg?v=3fe1c349-21923",
+                                                               "units/zerg/ravager/deathFX/Zerg_ExplosionMedium3.ogg?v=3b9e6a8a-24146",
+                                                               "units/zerg/ravager/deathFX/Zerg_ExplosionMedium4.ogg?v=3e9b3862-22501",
+                                                               "units/zerg/ravager/deathFX/Zerg_ExplosionMedium5.ogg?v=912a9041-21658",
+                                                               "units/zerg/ravager/deathFX/Zerg_ExplosionMedium6.ogg?v=7dd7a1c9-23559"
                                                            ],
                                                "deploy":  [
-                                                              "units/zerg/ravager/deploy/Ravager_Vox_Ready01.ogg?v=61ad944c",
-                                                              "units/zerg/ravager/deploy/Ravager_Vox_Ready02.ogg?v=7272b0eb",
-                                                              "units/zerg/ravager/deploy/Ravager_Vox_Ready03.ogg?v=54fa020a",
-                                                              "units/zerg/ravager/deploy/Ravager_Vox_Ready04.ogg?v=142bcfd4",
-                                                              "units/zerg/ravager/deploy/Ravager_Vox_Ready05.ogg?v=2922ac0c",
-                                                              "units/zerg/ravager/deploy/Ravager_Vox_Ready06.ogg?v=ebde78eb"
+                                                              "units/zerg/ravager/deploy/Ravager_Vox_Ready01.ogg?v=61ad944c-19915",
+                                                              "units/zerg/ravager/deploy/Ravager_Vox_Ready02.ogg?v=7272b0eb-26245",
+                                                              "units/zerg/ravager/deploy/Ravager_Vox_Ready03.ogg?v=54fa020a-18853",
+                                                              "units/zerg/ravager/deploy/Ravager_Vox_Ready04.ogg?v=142bcfd4-20014",
+                                                              "units/zerg/ravager/deploy/Ravager_Vox_Ready05.ogg?v=2922ac0c-21058",
+                                                              "units/zerg/ravager/deploy/Ravager_Vox_Ready06.ogg?v=ebde78eb-20854"
                                                           ],
                                                "move":  [
-                                                            "units/zerg/ravager/move/Ravager_Vox_Ok01.ogg?v=5651e8ad",
-                                                            "units/zerg/ravager/move/Ravager_Vox_Ok02.ogg?v=cf504e7a",
-                                                            "units/zerg/ravager/move/Ravager_Vox_Ok03.ogg?v=cf7ae28c",
-                                                            "units/zerg/ravager/move/Ravager_Vox_Ok04.ogg?v=7fafb2ce",
-                                                            "units/zerg/ravager/move/Ravager_Vox_Ok05.ogg?v=2cab2bc9",
-                                                            "units/zerg/ravager/move/Ravager_Vox_Ok06.ogg?v=9b7f7e7a",
-                                                            "units/zerg/ravager/move/Ravager_Vox_Ok07.ogg?v=a58178d5",
-                                                            "units/zerg/ravager/move/Ravager_Vox_Ok08.ogg?v=1fa29770"
+                                                            "units/zerg/ravager/move/Ravager_Vox_Ok01.ogg?v=5651e8ad-17032",
+                                                            "units/zerg/ravager/move/Ravager_Vox_Ok02.ogg?v=cf504e7a-20094",
+                                                            "units/zerg/ravager/move/Ravager_Vox_Ok03.ogg?v=cf7ae28c-18773",
+                                                            "units/zerg/ravager/move/Ravager_Vox_Ok04.ogg?v=7fafb2ce-22285",
+                                                            "units/zerg/ravager/move/Ravager_Vox_Ok05.ogg?v=2cab2bc9-22029",
+                                                            "units/zerg/ravager/move/Ravager_Vox_Ok06.ogg?v=9b7f7e7a-21999",
+                                                            "units/zerg/ravager/move/Ravager_Vox_Ok07.ogg?v=a58178d5-18781",
+                                                            "units/zerg/ravager/move/Ravager_Vox_Ok08.ogg?v=1fa29770-18823"
                                                         ]
                                            },
                                "roach":  {
                                              "attack":  [
-                                                            "units/zerg/roach/attack/Roach_AttackLaunchRanged0.ogg?v=ae3af0e3",
-                                                            "units/zerg/roach/attack/Roach_AttackLaunchRanged1.ogg?v=a608f7d3",
-                                                            "units/zerg/roach/attack/Roach_AttackLaunchRanged2.ogg?v=eb472bdc",
-                                                            "units/zerg/roach/attack/Roach_AttackLaunchRanged3.ogg?v=2cadf762",
-                                                            "units/zerg/roach/attack/Roach_AttackLaunchRanged4.ogg?v=85bfea9f",
-                                                            "units/zerg/roach/attack/Roach_AttackLaunchRanged5.ogg?v=6a7441e9"
+                                                            "units/zerg/roach/attack/Roach_AttackLaunchRanged0.ogg?v=ae3af0e3-17661",
+                                                            "units/zerg/roach/attack/Roach_AttackLaunchRanged1.ogg?v=a608f7d3-15917",
+                                                            "units/zerg/roach/attack/Roach_AttackLaunchRanged2.ogg?v=eb472bdc-16770",
+                                                            "units/zerg/roach/attack/Roach_AttackLaunchRanged3.ogg?v=2cadf762-15439",
+                                                            "units/zerg/roach/attack/Roach_AttackLaunchRanged4.ogg?v=85bfea9f-15843",
+                                                            "units/zerg/roach/attack/Roach_AttackLaunchRanged5.ogg?v=6a7441e9-16401"
                                                         ],
                                              "burrow":  [
-                                                            "units/zerg/roach/burrow/Zerg_BurrowSmall0.ogg?v=1a16a4a9",
-                                                            "units/zerg/roach/burrow/Zerg_BurrowSmall1.ogg?v=25e3b64a",
-                                                            "units/zerg/roach/burrow/Zerg_BurrowSmall2.ogg?v=030a1038"
+                                                            "units/zerg/roach/burrow/Zerg_BurrowSmall0.ogg?v=1a16a4a9-21856",
+                                                            "units/zerg/roach/burrow/Zerg_BurrowSmall1.ogg?v=25e3b64a-17499",
+                                                            "units/zerg/roach/burrow/Zerg_BurrowSmall2.ogg?v=030a1038-19212"
                                                         ],
                                              "combat":  [
-                                                            "units/zerg/roach/combat/Roach_AttackLaunchMelee0.ogg?v=c5234870",
-                                                            "units/zerg/roach/combat/Roach_AttackLaunchMelee1.ogg?v=7d7fd077",
-                                                            "units/zerg/roach/combat/Roach_AttackLaunchMelee2.ogg?v=1b566f54",
-                                                            "units/zerg/roach/combat/Roach_AttackLaunchMelee3.ogg?v=acb44ade",
-                                                            "units/zerg/roach/combat/Roach_AttackLaunchMelee4.ogg?v=add8a710"
+                                                            "units/zerg/roach/combat/Roach_AttackLaunchMelee0.ogg?v=c5234870-8277",
+                                                            "units/zerg/roach/combat/Roach_AttackLaunchMelee1.ogg?v=7d7fd077-9371",
+                                                            "units/zerg/roach/combat/Roach_AttackLaunchMelee2.ogg?v=1b566f54-9523",
+                                                            "units/zerg/roach/combat/Roach_AttackLaunchMelee3.ogg?v=acb44ade-10001",
+                                                            "units/zerg/roach/combat/Roach_AttackLaunchMelee4.ogg?v=add8a710-10156"
                                                         ],
                                              "death":  [
-                                                           "units/zerg/roach/death/Roach_Death0.ogg?v=da35e6fc",
-                                                           "units/zerg/roach/death/Roach_Death1.ogg?v=596ad224",
-                                                           "units/zerg/roach/death/Roach_Death2.ogg?v=196a937d",
-                                                           "units/zerg/roach/death/Roach_Death3.ogg?v=cc699dbe"
+                                                           "units/zerg/roach/death/Roach_Death0.ogg?v=da35e6fc-12109",
+                                                           "units/zerg/roach/death/Roach_Death1.ogg?v=596ad224-11263",
+                                                           "units/zerg/roach/death/Roach_Death2.ogg?v=196a937d-9430",
+                                                           "units/zerg/roach/death/Roach_Death3.ogg?v=cc699dbe-7603"
                                                        ],
                                              "deathFX":  [
-                                                             "units/zerg/roach/deathFX/Zerg_ExplosionMedium0.ogg?v=d598fb1e",
-                                                             "units/zerg/roach/deathFX/Zerg_ExplosionMedium1.ogg?v=9df5eecf",
-                                                             "units/zerg/roach/deathFX/Zerg_ExplosionMedium2.ogg?v=a2db4420",
-                                                             "units/zerg/roach/deathFX/Zerg_ExplosionMedium3.ogg?v=0d900f49",
-                                                             "units/zerg/roach/deathFX/Zerg_ExplosionMedium4.ogg?v=21f59459",
-                                                             "units/zerg/roach/deathFX/Zerg_ExplosionMedium5.ogg?v=dda08b3d",
-                                                             "units/zerg/roach/deathFX/Zerg_ExplosionMedium6.ogg?v=679feba0"
+                                                             "units/zerg/roach/deathFX/Zerg_ExplosionMedium0.ogg?v=d598fb1e-26978",
+                                                             "units/zerg/roach/deathFX/Zerg_ExplosionMedium1.ogg?v=9df5eecf-22798",
+                                                             "units/zerg/roach/deathFX/Zerg_ExplosionMedium2.ogg?v=a2db4420-21923",
+                                                             "units/zerg/roach/deathFX/Zerg_ExplosionMedium3.ogg?v=0d900f49-24146",
+                                                             "units/zerg/roach/deathFX/Zerg_ExplosionMedium4.ogg?v=21f59459-22501",
+                                                             "units/zerg/roach/deathFX/Zerg_ExplosionMedium5.ogg?v=dda08b3d-21658",
+                                                             "units/zerg/roach/deathFX/Zerg_ExplosionMedium6.ogg?v=679feba0-23559"
                                                          ],
                                              "deploy":  [
-                                                            "units/zerg/roach/deploy/Roach_Ready0.ogg?v=b6b96757",
-                                                            "units/zerg/roach/deploy/Roach_Ready1.ogg?v=f1b2cde6",
-                                                            "units/zerg/roach/deploy/Roach_Ready2.ogg?v=33aeb2a6"
+                                                            "units/zerg/roach/deploy/Roach_Ready0.ogg?v=b6b96757-31244",
+                                                            "units/zerg/roach/deploy/Roach_Ready1.ogg?v=f1b2cde6-26406",
+                                                            "units/zerg/roach/deploy/Roach_Ready2.ogg?v=33aeb2a6-32299"
                                                         ],
                                              "move":  [
-                                                          "units/zerg/roach/move/Roach_Yes0.ogg?v=6de1fe26",
-                                                          "units/zerg/roach/move/Roach_Yes1.ogg?v=b6776212",
-                                                          "units/zerg/roach/move/Roach_Yes2.ogg?v=4ac2c0b2",
-                                                          "units/zerg/roach/move/Roach_Yes3.ogg?v=a7b40041",
-                                                          "units/zerg/roach/move/Roach_Yes4.ogg?v=de7173bd"
+                                                          "units/zerg/roach/move/Roach_Yes0.ogg?v=6de1fe26-33058",
+                                                          "units/zerg/roach/move/Roach_Yes1.ogg?v=b6776212-31264",
+                                                          "units/zerg/roach/move/Roach_Yes2.ogg?v=4ac2c0b2-29726",
+                                                          "units/zerg/roach/move/Roach_Yes3.ogg?v=a7b40041-43661",
+                                                          "units/zerg/roach/move/Roach_Yes4.ogg?v=de7173bd-28010"
                                                       ],
                                              "unburrow":  [
-                                                              "units/zerg/roach/unburrow/Zerg_UnburrowSmall0.ogg?v=95fa6a2f",
-                                                              "units/zerg/roach/unburrow/Zerg_UnburrowSmall1.ogg?v=9e553d55",
-                                                              "units/zerg/roach/unburrow/Zerg_UnburrowSmall2.ogg?v=9969fc03"
+                                                              "units/zerg/roach/unburrow/Zerg_UnburrowSmall0.ogg?v=95fa6a2f-29856",
+                                                              "units/zerg/roach/unburrow/Zerg_UnburrowSmall1.ogg?v=9e553d55-27074",
+                                                              "units/zerg/roach/unburrow/Zerg_UnburrowSmall2.ogg?v=9969fc03-30647"
                                                           ]
                                          },
                                "zagara":  {
                                               "attack":  [
-                                                             "units/zerg/zagara/attack/zagarahero_attack00.ogg?v=c0bb9503",
-                                                             "units/zerg/zagara/attack/zagarahero_attack01.ogg?v=f5f90468",
-                                                             "units/zerg/zagara/attack/zagarahero_attack02.ogg?v=1a2673db",
-                                                             "units/zerg/zagara/attack/zagarahero_attack03.ogg?v=e6b65504",
-                                                             "units/zerg/zagara/attack/zagarahero_attack04.ogg?v=b9e7647d",
-                                                             "units/zerg/zagara/attack/zagarahero_attack05.ogg?v=b8fff7f1",
-                                                             "units/zerg/zagara/attack/zagarahero_attack06.ogg?v=08e16ca6"
+                                                             "units/zerg/zagara/attack/zagarahero_attack00.ogg?v=c0bb9503-30528",
+                                                             "units/zerg/zagara/attack/zagarahero_attack01.ogg?v=f5f90468-24019",
+                                                             "units/zerg/zagara/attack/zagarahero_attack02.ogg?v=1a2673db-19164",
+                                                             "units/zerg/zagara/attack/zagarahero_attack03.ogg?v=e6b65504-27289",
+                                                             "units/zerg/zagara/attack/zagarahero_attack04.ogg?v=b9e7647d-31304",
+                                                             "units/zerg/zagara/attack/zagarahero_attack05.ogg?v=b8fff7f1-28277",
+                                                             "units/zerg/zagara/attack/zagarahero_attack06.ogg?v=08e16ca6-16701"
                                                          ],
                                               "attackFX":  [
-                                                               "units/zerg/zagara/attackFX/Zerg_AttackImpactLargeSlice0.ogg?v=b3a3bd36",
-                                                               "units/zerg/zagara/attackFX/Zerg_AttackImpactLargeSlice1.ogg?v=ac5b5a2c",
-                                                               "units/zerg/zagara/attackFX/Zerg_AttackImpactLargeSlice2.ogg?v=90f4afad",
-                                                               "units/zerg/zagara/attackFX/Zerg_AttackImpactLargeSlice3.ogg?v=01fc09af",
-                                                               "units/zerg/zagara/attackFX/Zerg_AttackImpactLargeSlice4.ogg?v=1206d428"
+                                                               "units/zerg/zagara/attackFX/Zerg_AttackImpactLargeSlice0.ogg?v=b3a3bd36-8939",
+                                                               "units/zerg/zagara/attackFX/Zerg_AttackImpactLargeSlice1.ogg?v=ac5b5a2c-11634",
+                                                               "units/zerg/zagara/attackFX/Zerg_AttackImpactLargeSlice2.ogg?v=90f4afad-9761",
+                                                               "units/zerg/zagara/attackFX/Zerg_AttackImpactLargeSlice3.ogg?v=01fc09af-9826",
+                                                               "units/zerg/zagara/attackFX/Zerg_AttackImpactLargeSlice4.ogg?v=1206d428-9215"
                                                            ],
                                               "combat":  [
-                                                             "units/zerg/zagara/combat/Zerg_AttackLaunchLargeSwing0.ogg?v=bf81cde5",
-                                                             "units/zerg/zagara/combat/Zerg_AttackLaunchLargeSwing1.ogg?v=2e8e7be6",
-                                                             "units/zerg/zagara/combat/Zerg_AttackLaunchLargeSwing2.ogg?v=936d8272",
-                                                             "units/zerg/zagara/combat/Zerg_AttackLaunchLargeSwing3.ogg?v=8399fb51"
+                                                             "units/zerg/zagara/combat/Zerg_AttackLaunchLargeSwing0.ogg?v=bf81cde5-12285",
+                                                             "units/zerg/zagara/combat/Zerg_AttackLaunchLargeSwing1.ogg?v=2e8e7be6-12931",
+                                                             "units/zerg/zagara/combat/Zerg_AttackLaunchLargeSwing2.ogg?v=936d8272-12772",
+                                                             "units/zerg/zagara/combat/Zerg_AttackLaunchLargeSwing3.ogg?v=8399fb51-10309"
                                                          ],
                                               "death":  [
-                                                            "units/zerg/zagara/death/zagarahero_death00.ogg?v=beb14b2e",
-                                                            "units/zerg/zagara/death/zagarahero_death01.ogg?v=8cfac85b"
+                                                            "units/zerg/zagara/death/zagarahero_death00.ogg?v=beb14b2e-39552",
+                                                            "units/zerg/zagara/death/zagarahero_death01.ogg?v=8cfac85b-38012"
                                                         ],
                                               "deathFX":  [
-                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium0.ogg?v=87883660",
-                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium1.ogg?v=b86e14b9",
-                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium2.ogg?v=3fe1c349",
-                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium3.ogg?v=3b9e6a8a",
-                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium4.ogg?v=3e9b3862",
-                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium5.ogg?v=912a9041",
-                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium6.ogg?v=7dd7a1c9"
+                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium0.ogg?v=87883660-26978",
+                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium1.ogg?v=b86e14b9-22798",
+                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium2.ogg?v=3fe1c349-21923",
+                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium3.ogg?v=3b9e6a8a-24146",
+                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium4.ogg?v=3e9b3862-22501",
+                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium5.ogg?v=912a9041-21658",
+                                                              "units/zerg/zagara/deathFX/Zerg_ExplosionMedium6.ogg?v=7dd7a1c9-23559"
                                                           ],
                                               "deploy":  [
-                                                             "units/zerg/zagara/deploy/zagarahero_ready00.ogg?v=93bca137",
-                                                             "units/zerg/zagara/deploy/zagarahero_ready01.ogg?v=2a1d1aee"
+                                                             "units/zerg/zagara/deploy/zagarahero_ready00.ogg?v=93bca137-26751",
+                                                             "units/zerg/zagara/deploy/zagarahero_ready01.ogg?v=2a1d1aee-24735"
                                                          ],
                                               "move":  [
-                                                           "units/zerg/zagara/move/zagarahero_yes00.ogg?v=0c561fd4",
-                                                           "units/zerg/zagara/move/zagarahero_yes01.ogg?v=7dd65d93",
-                                                           "units/zerg/zagara/move/zagarahero_yes02.ogg?v=7b59bda8",
-                                                           "units/zerg/zagara/move/zagarahero_yes03.ogg?v=00b345cd",
-                                                           "units/zerg/zagara/move/zagarahero_yes04.ogg?v=c7458754",
-                                                           "units/zerg/zagara/move/zagarahero_yes05.ogg?v=30e904e9",
-                                                           "units/zerg/zagara/move/zagarahero_yes06.ogg?v=135fcc1f"
+                                                           "units/zerg/zagara/move/zagarahero_yes00.ogg?v=0c561fd4-16659",
+                                                           "units/zerg/zagara/move/zagarahero_yes01.ogg?v=7dd65d93-15846",
+                                                           "units/zerg/zagara/move/zagarahero_yes02.ogg?v=7b59bda8-30075",
+                                                           "units/zerg/zagara/move/zagarahero_yes03.ogg?v=00b345cd-18851",
+                                                           "units/zerg/zagara/move/zagarahero_yes04.ogg?v=c7458754-27637",
+                                                           "units/zerg/zagara/move/zagarahero_yes05.ogg?v=30e904e9-31238",
+                                                           "units/zerg/zagara/move/zagarahero_yes06.ogg?v=135fcc1f-22120"
                                                        ]
                                           },
                                "zergling":  {
                                                 "attack":  [
-                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch0.ogg?v=78a277d3",
-                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch1.ogg?v=3873feff",
-                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch10.ogg?v=f9f172aa",
-                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch11.ogg?v=9e4701c0",
-                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch12.ogg?v=d4689510",
-                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch13.ogg?v=8826b7ea",
-                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch14.ogg?v=0a64ac49",
-                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch15.ogg?v=2d92e72b",
-                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch2.ogg?v=a8816f71",
-                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch3.ogg?v=bfec1fd7",
-                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch4.ogg?v=ca507587",
-                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch5.ogg?v=31bf45ca",
-                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch6.ogg?v=2ea89bf8",
-                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch7.ogg?v=2e4ef348",
-                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch8.ogg?v=b22089f9",
-                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch9.ogg?v=6402f28d"
+                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch0.ogg?v=78a277d3-11443",
+                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch1.ogg?v=3873feff-12319",
+                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch10.ogg?v=f9f172aa-12306",
+                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch11.ogg?v=9e4701c0-12042",
+                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch12.ogg?v=d4689510-10475",
+                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch13.ogg?v=8826b7ea-9794",
+                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch14.ogg?v=0a64ac49-11393",
+                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch15.ogg?v=2d92e72b-11514",
+                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch2.ogg?v=a8816f71-12051",
+                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch3.ogg?v=bfec1fd7-12130",
+                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch4.ogg?v=ca507587-10033",
+                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch5.ogg?v=31bf45ca-9787",
+                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch6.ogg?v=2ea89bf8-11607",
+                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch7.ogg?v=2e4ef348-11599",
+                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch8.ogg?v=b22089f9-11687",
+                                                               "units/zerg/zergling/attack/Zergling_AttackLaunch9.ogg?v=6402f28d-11554"
                                                            ],
                                                 "burrow":  [
-                                                               "units/zerg/zergling/burrow/Zerg_BurrowSmall0.ogg?v=d92cd225",
-                                                               "units/zerg/zergling/burrow/Zerg_BurrowSmall1.ogg?v=d8f43c7a",
-                                                               "units/zerg/zergling/burrow/Zerg_BurrowSmall2.ogg?v=f6e9adaf"
+                                                               "units/zerg/zergling/burrow/Zerg_BurrowSmall0.ogg?v=d92cd225-21856",
+                                                               "units/zerg/zergling/burrow/Zerg_BurrowSmall1.ogg?v=d8f43c7a-17499",
+                                                               "units/zerg/zergling/burrow/Zerg_BurrowSmall2.ogg?v=f6e9adaf-19212"
                                                            ],
                                                 "death":  [
-                                                              "units/zerg/zergling/death/Zergling_Death0.ogg?v=649ddf32",
-                                                              "units/zerg/zergling/death/Zergling_Death1.ogg?v=f87eb083",
-                                                              "units/zerg/zergling/death/Zergling_Death2.ogg?v=7a9219ba",
-                                                              "units/zerg/zergling/death/Zergling_Death3.ogg?v=36affffa",
-                                                              "units/zerg/zergling/death/Zergling_Death4.ogg?v=a52dd4bd"
+                                                              "units/zerg/zergling/death/Zergling_Death0.ogg?v=649ddf32-23093",
+                                                              "units/zerg/zergling/death/Zergling_Death1.ogg?v=f87eb083-18696",
+                                                              "units/zerg/zergling/death/Zergling_Death2.ogg?v=7a9219ba-19841",
+                                                              "units/zerg/zergling/death/Zergling_Death3.ogg?v=36affffa-19539",
+                                                              "units/zerg/zergling/death/Zergling_Death4.ogg?v=a52dd4bd-18217"
                                                           ],
                                                 "deploy":  [
-                                                               "units/zerg/zergling/deploy/Zergling_Ready0.ogg?v=8d952759",
-                                                               "units/zerg/zergling/deploy/Zergling_Ready1.ogg?v=b343a548",
-                                                               "units/zerg/zergling/deploy/Zergling_Ready2.ogg?v=f2dbbf69"
+                                                               "units/zerg/zergling/deploy/Zergling_Ready0.ogg?v=8d952759-59305",
+                                                               "units/zerg/zergling/deploy/Zergling_Ready1.ogg?v=b343a548-55368",
+                                                               "units/zerg/zergling/deploy/Zergling_Ready2.ogg?v=f2dbbf69-51720"
                                                            ],
                                                 "move":  [
-                                                             "units/zerg/zergling/move/Zergling_Yes0.ogg?v=14b4c4f2",
-                                                             "units/zerg/zergling/move/Zergling_Yes1.ogg?v=787e5e31",
-                                                             "units/zerg/zergling/move/Zergling_Yes2.ogg?v=5669ecbd",
-                                                             "units/zerg/zergling/move/Zergling_Yes3.ogg?v=4710ea77",
-                                                             "units/zerg/zergling/move/Zergling_Yes4.ogg?v=de3d0ac3",
-                                                             "units/zerg/zergling/move/Zergling_Yes5.ogg?v=49f16945",
-                                                             "units/zerg/zergling/move/Zergling_Yes6.ogg?v=7bc4df42"
+                                                             "units/zerg/zergling/move/Zergling_Yes0.ogg?v=14b4c4f2-29077",
+                                                             "units/zerg/zergling/move/Zergling_Yes1.ogg?v=787e5e31-28630",
+                                                             "units/zerg/zergling/move/Zergling_Yes2.ogg?v=5669ecbd-38152",
+                                                             "units/zerg/zergling/move/Zergling_Yes3.ogg?v=4710ea77-26076",
+                                                             "units/zerg/zergling/move/Zergling_Yes4.ogg?v=de3d0ac3-31004",
+                                                             "units/zerg/zergling/move/Zergling_Yes5.ogg?v=49f16945-34419",
+                                                             "units/zerg/zergling/move/Zergling_Yes6.ogg?v=7bc4df42-40329"
                                                          ],
                                                 "unburrow":  [
-                                                                 "units/zerg/zergling/unburrow/Zerg_UnburrowSmall0.ogg?v=d59141ed",
-                                                                 "units/zerg/zergling/unburrow/Zerg_UnburrowSmall1.ogg?v=040f9f78",
-                                                                 "units/zerg/zergling/unburrow/Zerg_UnburrowSmall2.ogg?v=7c06b500"
+                                                                 "units/zerg/zergling/unburrow/Zerg_UnburrowSmall0.ogg?v=d59141ed-29856",
+                                                                 "units/zerg/zergling/unburrow/Zerg_UnburrowSmall1.ogg?v=040f9f78-27074",
+                                                                 "units/zerg/zergling/unburrow/Zerg_UnburrowSmall2.ogg?v=7c06b500-30647"
                                                              ]
                                             }
                            }
@@ -1226,222 +1226,222 @@ window.AUDIO_REGISTRY = {
                      "protoss":  {
                                      "high_templar":  {
                                                           "attack":  [
-                                                                         "units/protoss/high_templar/sc1/attack/ProtossHighTemplarWhat01SC1.ogg?v=188d93dd"
+                                                                         "units/protoss/high_templar/sc1/attack/ProtossHighTemplarWhat01SC1.ogg?v=188d93dd-14862"
                                                                      ],
                                                           "death":  [
-                                                                        "units/protoss/high_templar/sc1/death/ProtossHighTemplarDeath00SC1.ogg?v=9696a83e"
+                                                                        "units/protoss/high_templar/sc1/death/ProtossHighTemplarDeath00SC1.ogg?v=9696a83e-20465"
                                                                     ],
                                                           "deploy":  [
-                                                                         "units/protoss/high_templar/sc1/deploy/ProtossHighTemplarReady00SC1.ogg?v=8be68fd7"
+                                                                         "units/protoss/high_templar/sc1/deploy/ProtossHighTemplarReady00SC1.ogg?v=8be68fd7-23123"
                                                                      ],
                                                           "move":  [
-                                                                       "units/protoss/high_templar/sc1/move/ProtossHighTemplarYes00SC1.ogg?v=e430b85b",
-                                                                       "units/protoss/high_templar/sc1/move/ProtossHighTemplarYes01SC1.ogg?v=fb040e9f",
-                                                                       "units/protoss/high_templar/sc1/move/ProtossHighTemplarYes02SC1.ogg?v=d5b024f9",
-                                                                       "units/protoss/high_templar/sc1/move/ProtossHighTemplarYes03SC1.ogg?v=05887aa3"
+                                                                       "units/protoss/high_templar/sc1/move/ProtossHighTemplarYes00SC1.ogg?v=e430b85b-17958",
+                                                                       "units/protoss/high_templar/sc1/move/ProtossHighTemplarYes01SC1.ogg?v=fb040e9f-18587",
+                                                                       "units/protoss/high_templar/sc1/move/ProtossHighTemplarYes02SC1.ogg?v=d5b024f9-18579",
+                                                                       "units/protoss/high_templar/sc1/move/ProtossHighTemplarYes03SC1.ogg?v=05887aa3-12838"
                                                                    ],
                                                           "psionic_storm":  [
-                                                                                "units/protoss/high_templar/sc1/psionic_storm/ProtossHighTemplarPsionicStorm00SC1.ogg?v=82cd6fcd",
-                                                                                "units/protoss/high_templar/sc1/psionic_storm/ProtossHighTemplarPsionicStorm01SC1.ogg?v=4cbcec4e"
+                                                                                "units/protoss/high_templar/sc1/psionic_storm/ProtossHighTemplarPsionicStorm00SC1.ogg?v=82cd6fcd-24169",
+                                                                                "units/protoss/high_templar/sc1/psionic_storm/ProtossHighTemplarPsionicStorm01SC1.ogg?v=4cbcec4e-30063"
                                                                             ]
                                                       },
                                      "zealot":  {
                                                     "combat":  [
-                                                                   "units/protoss/zealot/sc1/combat/ProtossZealotAttack00SC1.ogg?v=8dfcfb0d",
-                                                                   "units/protoss/zealot/sc1/combat/ProtossZealotAttack01SC1.ogg?v=5f0850b1",
-                                                                   "units/protoss/zealot/sc1/combat/psiblade.ogg?v=0cde1165"
+                                                                   "units/protoss/zealot/sc1/combat/ProtossZealotAttack00SC1.ogg?v=8dfcfb0d-11222",
+                                                                   "units/protoss/zealot/sc1/combat/ProtossZealotAttack01SC1.ogg?v=5f0850b1-12097",
+                                                                   "units/protoss/zealot/sc1/combat/psiblade.ogg?v=0cde1165-9400"
                                                                ],
                                                     "death":  [
-                                                                  "units/protoss/zealot/sc1/death/ProtossZealotDeath00SC1.ogg?v=47bdf1a2"
+                                                                  "units/protoss/zealot/sc1/death/ProtossZealotDeath00SC1.ogg?v=47bdf1a2-16048"
                                                               ],
                                                     "deploy":  [
-                                                                   "units/protoss/zealot/sc1/deploy/ProtossZealotReady00SC1.ogg?v=a920ef7f"
+                                                                   "units/protoss/zealot/sc1/deploy/ProtossZealotReady00SC1.ogg?v=a920ef7f-15008"
                                                                ],
                                                     "move":  [
-                                                                 "units/protoss/zealot/sc1/move/ProtossZealotYes00SC1.ogg?v=99f2d34e",
-                                                                 "units/protoss/zealot/sc1/move/ProtossZealotYes01SC1.ogg?v=fb062b09",
-                                                                 "units/protoss/zealot/sc1/move/ProtossZealotYes02SC1.ogg?v=ba455cf5",
-                                                                 "units/protoss/zealot/sc1/move/ProtossZealotYes03SC1.ogg?v=9ea12fa7"
+                                                                 "units/protoss/zealot/sc1/move/ProtossZealotYes00SC1.ogg?v=99f2d34e-10921",
+                                                                 "units/protoss/zealot/sc1/move/ProtossZealotYes01SC1.ogg?v=fb062b09-13785",
+                                                                 "units/protoss/zealot/sc1/move/ProtossZealotYes02SC1.ogg?v=ba455cf5-13374",
+                                                                 "units/protoss/zealot/sc1/move/ProtossZealotYes03SC1.ogg?v=9ea12fa7-12042"
                                                              ]
                                                 },
                                      "zeratul":  {
                                                      "attack":  [
-                                                                    "units/protoss/zeratul/sc1/attack/uzefir00.ogg?v=d4b4873e"
+                                                                    "units/protoss/zeratul/sc1/attack/uzefir00.ogg?v=d4b4873e-9016"
                                                                 ],
                                                      "death":  [
-                                                                   "units/protoss/zeratul/sc1/death/ProtossZeratulDeath00SC1.ogg?v=92f6effc"
+                                                                   "units/protoss/zeratul/sc1/death/ProtossZeratulDeath00SC1.ogg?v=92f6effc-20465"
                                                                ],
                                                      "deploy":  [
-                                                                    "units/protoss/zeratul/sc1/deploy/ProtossZeratulPissed02-03SC1.ogg?v=e283df87",
-                                                                    "units/protoss/zeratul/sc1/deploy/ProtossZeratulWhat03SC1.ogg?v=3ff66ee6"
+                                                                    "units/protoss/zeratul/sc1/deploy/ProtossZeratulPissed02-03SC1.ogg?v=e283df87-32568",
+                                                                    "units/protoss/zeratul/sc1/deploy/ProtossZeratulWhat03SC1.ogg?v=3ff66ee6-15877"
                                                                 ],
                                                      "move":  [
-                                                                  "units/protoss/zeratul/sc1/move/ProtossZeratulYes00SC1.ogg?v=c1030f16",
-                                                                  "units/protoss/zeratul/sc1/move/ProtossZeratulYes01SC1.ogg?v=ad9fde6d",
-                                                                  "units/protoss/zeratul/sc1/move/ProtossZeratulYes02SC1.ogg?v=28950aa0",
-                                                                  "units/protoss/zeratul/sc1/move/ProtossZeratulYes03SC1.ogg?v=98d969ba"
+                                                                  "units/protoss/zeratul/sc1/move/ProtossZeratulYes00SC1.ogg?v=c1030f16-18536",
+                                                                  "units/protoss/zeratul/sc1/move/ProtossZeratulYes01SC1.ogg?v=ad9fde6d-13340",
+                                                                  "units/protoss/zeratul/sc1/move/ProtossZeratulYes02SC1.ogg?v=28950aa0-13267",
+                                                                  "units/protoss/zeratul/sc1/move/ProtossZeratulYes03SC1.ogg?v=98d969ba-15546"
                                                               ]
                                                  }
                                  },
                      "terran":  {
                                     "goliath":  {
                                                     "attack":  [
-                                                                   "units/terran/goliath/sc1/attack/tgofir00.ogg?v=7d176ca0"
+                                                                   "units/terran/goliath/sc1/attack/tgofir00.ogg?v=7d176ca0-12081"
                                                                ],
                                                     "death":  [
-                                                                  "units/terran/goliath/sc1/death/TerranGoliathDeath00SC1.ogg?v=dba72706"
+                                                                  "units/terran/goliath/sc1/death/TerranGoliathDeath00SC1.ogg?v=dba72706-19281"
                                                               ],
                                                     "deploy":  [
-                                                                   "units/terran/goliath/sc1/deploy/TerranGoliathReady00SC1.ogg?v=6929408b"
+                                                                   "units/terran/goliath/sc1/deploy/TerranGoliathReady00SC1.ogg?v=6929408b-14010"
                                                                ],
                                                     "missles":  [
-                                                                    "units/terran/goliath/sc1/missles/hkmissle.ogg?v=a59c20d4",
-                                                                    "units/terran/goliath/sc1/missles/tgofi200.ogg?v=00933fc1"
+                                                                    "units/terran/goliath/sc1/missles/hkmissle.ogg?v=a59c20d4-13444",
+                                                                    "units/terran/goliath/sc1/missles/tgofi200.ogg?v=00933fc1-11649"
                                                                 ],
                                                     "move":  [
-                                                                 "units/terran/goliath/sc1/move/TerranGoliathYes00SC1.ogg?v=f5ffe7d0",
-                                                                 "units/terran/goliath/sc1/move/TerranGoliathYes01SC1.ogg?v=75fc3f46",
-                                                                 "units/terran/goliath/sc1/move/TerranGoliathYes02SC1.ogg?v=10935b77",
-                                                                 "units/terran/goliath/sc1/move/TerranGoliathYes03SC1.ogg?v=5a7591d5"
+                                                                 "units/terran/goliath/sc1/move/TerranGoliathYes00SC1.ogg?v=f5ffe7d0-20110",
+                                                                 "units/terran/goliath/sc1/move/TerranGoliathYes01SC1.ogg?v=75fc3f46-19046",
+                                                                 "units/terran/goliath/sc1/move/TerranGoliathYes02SC1.ogg?v=10935b77-17728",
+                                                                 "units/terran/goliath/sc1/move/TerranGoliathYes03SC1.ogg?v=5a7591d5-19523"
                                                              ]
                                                 },
                                     "marine":  {
                                                    "attack":  [
-                                                                  "units/terran/marine/sc1/attack/tmafir00.ogg?v=dcf603a4"
+                                                                  "units/terran/marine/sc1/attack/tmafir00.ogg?v=dcf603a4-10846"
                                                               ],
                                                    "death":  [
-                                                                 "units/terran/marine/sc1/death/TerranMarineDeath00SC1.ogg?v=582d25ed",
-                                                                 "units/terran/marine/sc1/death/TerranMarineDeath01SC1.ogg?v=eadc5f34"
+                                                                 "units/terran/marine/sc1/death/TerranMarineDeath00SC1.ogg?v=582d25ed-13661",
+                                                                 "units/terran/marine/sc1/death/TerranMarineDeath01SC1.ogg?v=eadc5f34-13725"
                                                              ],
                                                    "deploy":  [
-                                                                  "units/terran/marine/sc1/deploy/TerranMarineReady00SC1.ogg?v=5f1b393b"
+                                                                  "units/terran/marine/sc1/deploy/TerranMarineReady00SC1.ogg?v=5f1b393b-15940"
                                                               ],
                                                    "move":  [
-                                                                "units/terran/marine/sc1/move/TerranMarineYes00SC1.ogg?v=d29e0e30",
-                                                                "units/terran/marine/sc1/move/TerranMarineYes01SC1.ogg?v=b64194ce",
-                                                                "units/terran/marine/sc1/move/TerranMarineYes02SC1.ogg?v=e57c62d6",
-                                                                "units/terran/marine/sc1/move/TerranMarineYes03SC1.ogg?v=66f88647"
+                                                                "units/terran/marine/sc1/move/TerranMarineYes00SC1.ogg?v=d29e0e30-10969",
+                                                                "units/terran/marine/sc1/move/TerranMarineYes01SC1.ogg?v=b64194ce-12656",
+                                                                "units/terran/marine/sc1/move/TerranMarineYes02SC1.ogg?v=e57c62d6-12920",
+                                                                "units/terran/marine/sc1/move/TerranMarineYes03SC1.ogg?v=66f88647-14195"
                                                             ],
                                                    "stimpackVO":  [
-                                                                      "units/terran/marine/sc1/stimpackVO/TerranMarineStimPack00SC1.ogg?v=8fb44c82",
-                                                                      "units/terran/marine/sc1/stimpackVO/TerranMarineStimPack01SC1.ogg?v=4ffb8690"
+                                                                      "units/terran/marine/sc1/stimpackVO/TerranMarineStimPack00SC1.ogg?v=8fb44c82-17831",
+                                                                      "units/terran/marine/sc1/stimpackVO/TerranMarineStimPack01SC1.ogg?v=4ffb8690-15270"
                                                                   ]
                                                },
                                     "medic":  {
                                                   "death":  [
-                                                                "units/terran/medic/sc1/death/TerranMedicDeath00SC1.ogg?v=f717db31"
+                                                                "units/terran/medic/sc1/death/TerranMedicDeath00SC1.ogg?v=f717db31-16200"
                                                             ],
                                                   "deploy":  [
-                                                                 "units/terran/medic/sc1/deploy/TerranMedicReady00SC1.ogg?v=c464d2ea"
+                                                                 "units/terran/medic/sc1/deploy/TerranMedicReady00SC1.ogg?v=c464d2ea-10962"
                                                              ],
                                                   "heal":  [
-                                                               "units/terran/medic/sc1/heal/TerranMedicHeal00SC1.ogg?v=06507423",
-                                                               "units/terran/medic/sc1/heal/TerranMedicHeal01SC1.ogg?v=bce68867"
+                                                               "units/terran/medic/sc1/heal/TerranMedicHeal00SC1.ogg?v=06507423-12663",
+                                                               "units/terran/medic/sc1/heal/TerranMedicHeal01SC1.ogg?v=bce68867-13159"
                                                            ],
                                                   "move":  [
-                                                               "units/terran/medic/sc1/move/TerranMedicYes00SC1.ogg?v=9e88825a",
-                                                               "units/terran/medic/sc1/move/TerranMedicYes01SC1.ogg?v=d1e74226",
-                                                               "units/terran/medic/sc1/move/TerranMedicYes02SC1.ogg?v=a0445cd5",
-                                                               "units/terran/medic/sc1/move/TerranMedicYes03SC1.ogg?v=ae2921b7"
+                                                               "units/terran/medic/sc1/move/TerranMedicYes00SC1.ogg?v=9e88825a-10262",
+                                                               "units/terran/medic/sc1/move/TerranMedicYes01SC1.ogg?v=d1e74226-9954",
+                                                               "units/terran/medic/sc1/move/TerranMedicYes02SC1.ogg?v=a0445cd5-12919",
+                                                               "units/terran/medic/sc1/move/TerranMedicYes03SC1.ogg?v=ae2921b7-11422"
                                                            ]
                                               },
                                     "raynor":  {
                                                    "attack":  [
-                                                                  "units/terran/raynor/sc1/attack/tmafir00.ogg?v=3d70bcd3"
+                                                                  "units/terran/raynor/sc1/attack/tmafir00.ogg?v=3d70bcd3-10846"
                                                               ],
                                                    "death":  [
-                                                                 "units/terran/raynor/sc1/death/TerranRaynorMarineDeath00SC1.ogg?v=aca9dd65",
-                                                                 "units/terran/raynor/sc1/death/TerranRaynorMarineDeath01SC1.ogg?v=1b97d562"
+                                                                 "units/terran/raynor/sc1/death/TerranRaynorMarineDeath00SC1.ogg?v=aca9dd65-13661",
+                                                                 "units/terran/raynor/sc1/death/TerranRaynorMarineDeath01SC1.ogg?v=1b97d562-13725"
                                                              ],
                                                    "deploy":  [
-                                                                  "units/terran/raynor/sc1/deploy/TerranRaynorMarinePissed03SC1.ogg?v=10325790",
-                                                                  "units/terran/raynor/sc1/deploy/TerranRaynorMarineWhat00SC1.ogg?v=19a409f3",
-                                                                  "units/terran/raynor/sc1/deploy/TerranRaynorMarineWhat01SC1.ogg?v=5448c7ca",
-                                                                  "units/terran/raynor/sc1/deploy/TerranRaynorMarineWhat02SC1.ogg?v=e6087d6e"
+                                                                  "units/terran/raynor/sc1/deploy/TerranRaynorMarinePissed03SC1.ogg?v=10325790-18740",
+                                                                  "units/terran/raynor/sc1/deploy/TerranRaynorMarineWhat00SC1.ogg?v=19a409f3-9053",
+                                                                  "units/terran/raynor/sc1/deploy/TerranRaynorMarineWhat01SC1.ogg?v=5448c7ca-9806",
+                                                                  "units/terran/raynor/sc1/deploy/TerranRaynorMarineWhat02SC1.ogg?v=e6087d6e-13821"
                                                               ],
                                                    "move":  [
-                                                                "units/terran/raynor/sc1/move/TerranRaynorMarineYes00SC1.ogg?v=18fd7ad8",
-                                                                "units/terran/raynor/sc1/move/TerranRaynorMarineYes01SC1.ogg?v=63e84a21",
-                                                                "units/terran/raynor/sc1/move/TerranRaynorMarineYes02SC1.ogg?v=635ffe78",
-                                                                "units/terran/raynor/sc1/move/TerranRaynorMarineYes03SC1.ogg?v=afa15099"
+                                                                "units/terran/raynor/sc1/move/TerranRaynorMarineYes00SC1.ogg?v=18fd7ad8-12061",
+                                                                "units/terran/raynor/sc1/move/TerranRaynorMarineYes01SC1.ogg?v=63e84a21-10719",
+                                                                "units/terran/raynor/sc1/move/TerranRaynorMarineYes02SC1.ogg?v=635ffe78-11422",
+                                                                "units/terran/raynor/sc1/move/TerranRaynorMarineYes03SC1.ogg?v=afa15099-12010"
                                                             ]
                                                },
                                     "tank":  {
                                                  "attack_impact":  [
-                                                                       "units/terran/tank/sc1/attack_impact/ttahi200.ogg?v=b743c75e"
+                                                                       "units/terran/tank/sc1/attack_impact/ttahi200.ogg?v=b743c75e-17417"
                                                                    ],
                                                  "attack_siege_mode":  [
-                                                                           "units/terran/tank/sc1/attack_siege_mode/ttafi200.ogg?v=e4ca5dcc"
+                                                                           "units/terran/tank/sc1/attack_siege_mode/ttafi200.ogg?v=e4ca5dcc-13732"
                                                                        ],
                                                  "attack_tank_mode":  [
-                                                                          "units/terran/tank/sc1/attack_tank_mode/ttafir00.ogg?v=9d811f14"
+                                                                          "units/terran/tank/sc1/attack_tank_mode/ttafir00.ogg?v=9d811f14-12165"
                                                                       ],
                                                  "death":  [
-                                                               "units/terran/tank/sc1/death/TerranSiegeTankDeath00SC1.ogg?v=36768967"
+                                                               "units/terran/tank/sc1/death/TerranSiegeTankDeath00SC1.ogg?v=36768967-16621"
                                                            ],
                                                  "deploy":  [
-                                                                "units/terran/tank/sc1/deploy/TerranSiegeTankReady00SC1.ogg?v=183e4258"
+                                                                "units/terran/tank/sc1/deploy/TerranSiegeTankReady00SC1.ogg?v=183e4258-12286"
                                                             ],
                                                  "move":  [
-                                                              "units/terran/tank/sc1/move/TerranSiegeTankYes00SC1.ogg?v=6cd8814d",
-                                                              "units/terran/tank/sc1/move/TerranSiegeTankYes01SC1.ogg?v=af50a2bb",
-                                                              "units/terran/tank/sc1/move/TerranSiegeTankYes02SC1.ogg?v=6f17f360",
-                                                              "units/terran/tank/sc1/move/TerranSiegeTankYes03SC1.ogg?v=17e1b7bc"
+                                                              "units/terran/tank/sc1/move/TerranSiegeTankYes00SC1.ogg?v=6cd8814d-12653",
+                                                              "units/terran/tank/sc1/move/TerranSiegeTankYes01SC1.ogg?v=af50a2bb-16204",
+                                                              "units/terran/tank/sc1/move/TerranSiegeTankYes02SC1.ogg?v=6f17f360-20353",
+                                                              "units/terran/tank/sc1/move/TerranSiegeTankYes03SC1.ogg?v=17e1b7bc-18577"
                                                           ],
                                                  "transform_to_siege":  [
-                                                                            "units/terran/tank/sc1/transform_to_siege/TerranSiegeTankSiegeMode00SC1.ogg?v=6d43492a",
-                                                                            "units/terran/tank/sc1/transform_to_siege/TerranSiegeTankSiegeMode01SC1.ogg?v=ae72aa8c"
+                                                                            "units/terran/tank/sc1/transform_to_siege/TerranSiegeTankSiegeMode00SC1.ogg?v=6d43492a-14298",
+                                                                            "units/terran/tank/sc1/transform_to_siege/TerranSiegeTankSiegeMode01SC1.ogg?v=ae72aa8c-14168"
                                                                         ]
                                              }
                                 },
                      "zerg":  {
                                   "hydralisk":  {
                                                     "attack":  [
-                                                                   "units/zerg/hydralisk/sc1/attack/zhyfir00.ogg?v=314e1419"
+                                                                   "units/zerg/hydralisk/sc1/attack/zhyfir00.ogg?v=314e1419-8507"
                                                                ],
                                                     "death":  [
-                                                                  "units/zerg/hydralisk/sc1/death/ZergHydraliskDeath00SC1.ogg?v=0bc5d979"
+                                                                  "units/zerg/hydralisk/sc1/death/ZergHydraliskDeath00SC1.ogg?v=0bc5d979-12430"
                                                               ],
                                                     "deploy":  [
-                                                                   "units/zerg/hydralisk/sc1/deploy/ZergHydraliskReady00SC1.ogg?v=e43acb62"
+                                                                   "units/zerg/hydralisk/sc1/deploy/ZergHydraliskReady00SC1.ogg?v=e43acb62-14631"
                                                                ],
                                                     "move":  [
-                                                                 "units/zerg/hydralisk/sc1/move/ZergHydraliskYes00SC1.ogg?v=82e3e715",
-                                                                 "units/zerg/hydralisk/sc1/move/ZergHydraliskYes01SC1.ogg?v=b6fc60ef",
-                                                                 "units/zerg/hydralisk/sc1/move/ZergHydraliskYes02SC1.ogg?v=026c7a01",
-                                                                 "units/zerg/hydralisk/sc1/move/ZergHydraliskYes03SC1.ogg?v=327fb12c"
+                                                                 "units/zerg/hydralisk/sc1/move/ZergHydraliskYes00SC1.ogg?v=82e3e715-11485",
+                                                                 "units/zerg/hydralisk/sc1/move/ZergHydraliskYes01SC1.ogg?v=b6fc60ef-14338",
+                                                                 "units/zerg/hydralisk/sc1/move/ZergHydraliskYes02SC1.ogg?v=026c7a01-12958",
+                                                                 "units/zerg/hydralisk/sc1/move/ZergHydraliskYes03SC1.ogg?v=327fb12c-12178"
                                                              ]
                                                 },
                                   "kerrigan":  {
                                                    "attack":  [
-                                                                  "units/zerg/kerrigan/sc1/attack/ukifir00.ogg?v=63867e05"
+                                                                  "units/zerg/kerrigan/sc1/attack/ukifir00.ogg?v=63867e05-12699"
                                                               ],
                                                    "death":  [
-                                                                 "units/zerg/kerrigan/sc1/death/ZergInfestedKerriganDeath00SC1.ogg?v=ddbdad39"
+                                                                 "units/zerg/kerrigan/sc1/death/ZergInfestedKerriganDeath00SC1.ogg?v=ddbdad39-23282"
                                                              ],
                                                    "move":  [
-                                                                "units/zerg/kerrigan/sc1/move/ZergInfestedKerriganYes00SC1.ogg?v=e349def0",
-                                                                "units/zerg/kerrigan/sc1/move/ZergInfestedKerriganYes01SC1.ogg?v=27890398",
-                                                                "units/zerg/kerrigan/sc1/move/ZergInfestedKerriganYes02SC1.ogg?v=28e7e148",
-                                                                "units/zerg/kerrigan/sc1/move/ZergInfestedKerriganYes03SC1.ogg?v=5d517583"
+                                                                "units/zerg/kerrigan/sc1/move/ZergInfestedKerriganYes00SC1.ogg?v=e349def0-11438",
+                                                                "units/zerg/kerrigan/sc1/move/ZergInfestedKerriganYes01SC1.ogg?v=27890398-15856",
+                                                                "units/zerg/kerrigan/sc1/move/ZergInfestedKerriganYes02SC1.ogg?v=28e7e148-13569",
+                                                                "units/zerg/kerrigan/sc1/move/ZergInfestedKerriganYes03SC1.ogg?v=5d517583-13108"
                                                             ],
                                                    "ready":  [
-                                                                 "units/zerg/kerrigan/sc1/ready/ZergInfestedKerriganPissed00SC1.ogg?v=b78f8d73",
-                                                                 "units/zerg/kerrigan/sc1/ready/ZergInfestedKerriganWhat01SC1.ogg?v=739dd10b"
+                                                                 "units/zerg/kerrigan/sc1/ready/ZergInfestedKerriganPissed00SC1.ogg?v=b78f8d73-23954",
+                                                                 "units/zerg/kerrigan/sc1/ready/ZergInfestedKerriganWhat01SC1.ogg?v=739dd10b-12542"
                                                              ]
                                                },
                                   "zergling":  {
                                                    "death":  [
-                                                                 "units/zerg/zergling/sc1/death/ZergZerglingDeath00SC1.ogg?v=2db59766"
+                                                                 "units/zerg/zergling/sc1/death/ZergZerglingDeath00SC1.ogg?v=2db59766-11213"
                                                              ],
                                                    "deploy":  [
-                                                                  "units/zerg/zergling/sc1/deploy/ZergZerglingReady00SC1.ogg?v=0b0fbb16"
+                                                                  "units/zerg/zergling/sc1/deploy/ZergZerglingReady00SC1.ogg?v=0b0fbb16-14535"
                                                               ],
                                                    "move":  [
-                                                                "units/zerg/zergling/sc1/move/ZergZerglingYes00SC1.ogg?v=7a6f65f3",
-                                                                "units/zerg/zergling/sc1/move/ZergZerglingYes01SC1.ogg?v=4b9dfdde",
-                                                                "units/zerg/zergling/sc1/move/ZergZerglingYes02SC1.ogg?v=37857701",
-                                                                "units/zerg/zergling/sc1/move/ZergZerglingYes03SC1.ogg?v=56eebae8"
+                                                                "units/zerg/zergling/sc1/move/ZergZerglingYes00SC1.ogg?v=7a6f65f3-12258",
+                                                                "units/zerg/zergling/sc1/move/ZergZerglingYes01SC1.ogg?v=4b9dfdde-11805",
+                                                                "units/zerg/zergling/sc1/move/ZergZerglingYes02SC1.ogg?v=37857701-12799",
+                                                                "units/zerg/zergling/sc1/move/ZergZerglingYes03SC1.ogg?v=56eebae8-10013"
                                                             ]
                                                }
                               }

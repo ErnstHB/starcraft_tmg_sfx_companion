@@ -1298,10 +1298,12 @@ html, body {
     color: var(--hud-text-muted);
 }
 
-.hud-action-btn[hidden],
-.offline-hint[hidden],
 .offline-progress[hidden] {
     display: none;
+}
+
+.offline-card {
+    margin-top: 15px;
 }
 
 .offline-actions {
@@ -1325,13 +1327,6 @@ html, body {
 
 .offline-status.is-warning {
     color: var(--hud-accent-secondary);
-}
-
-.offline-hint {
-    margin-top: 10px;
-    font-size: 0.68rem;
-    line-height: 1.5;
-    color: var(--hud-text);
 }
 
 .offline-progress {
