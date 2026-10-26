@@ -1,5 +1,5 @@
 unit:
-  name: "immortal"
+  name: "Immortal"
   role: "Elite, Tank"
   weapon: "Photon Disruptor (Upgrade: Phase Disruptor)"
 regular_abilities:
