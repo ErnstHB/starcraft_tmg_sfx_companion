@@ -23,6 +23,9 @@ __pycache__/
 venv/
 env/
 
+# Staging folder for audio extracted from the user's own game install (never commit)
+tmp_assets/
+
 # Helper scripts
 process_logo.py
 process_icons.py
