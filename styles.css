@@ -366,7 +366,8 @@ html, body {
     font-size: 0.6rem;
 }
 
-.role-filter-dialog {
+.role-filter-dialog,
+.hud-dialog {
     position: fixed;
     inset: 0;
     margin: auto;
@@ -383,7 +384,8 @@ html, body {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.85), 0 0 18px var(--hud-accent-glow);
 }
 
-.role-filter-dialog::backdrop {
+.role-filter-dialog::backdrop,
+.hud-dialog::backdrop {
     background: rgba(0, 0, 0, 0.78);
     backdrop-filter: blur(3px);
 }
@@ -1257,4 +1259,187 @@ html, body {
 .hud-toast.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* ==========================================================================
+   INSTALL & OFFLINE CARD, CHANGE LOG DIALOG
+   ========================================================================== */
+.hud-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    padding: 0 14px;
+    border: 1px solid var(--hud-accent);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--hud-accent);
+    font-family: var(--hud-mono-font);
+    font-size: 0.72rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hud-action-btn:hover:not(:disabled) {
+    background: var(--hud-accent);
+    color: var(--hud-bg);
+    box-shadow: 0 0 10px var(--hud-accent-glow);
+}
+
+.hud-action-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.hud-action-btn-quiet {
+    border-color: var(--hud-border);
+    color: var(--hud-text-muted);
+}
+
+.hud-action-btn[hidden],
+.offline-hint[hidden],
+.offline-progress[hidden] {
+    display: none;
+}
+
+.offline-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.offline-status {
+    margin-top: 10px;
+    font-size: 0.68rem;
+    line-height: 1.5;
+    color: var(--hud-text-muted);
+    text-transform: uppercase;
+}
+
+.offline-status.is-ready {
+    color: var(--hud-accent);
+}
+
+.offline-status.is-warning {
+    color: var(--hud-accent-secondary);
+}
+
+.offline-hint {
+    margin-top: 10px;
+    font-size: 0.68rem;
+    line-height: 1.5;
+    color: var(--hud-text);
+}
+
+.offline-progress {
+    height: 8px;
+    margin-top: 12px;
+    border: 1px solid var(--hud-border);
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+}
+
+.offline-progress-bar {
+    width: 0;
+    height: 100%;
+    background: var(--hud-accent);
+    box-shadow: 0 0 8px var(--hud-accent-glow);
+    transition: width 0.2s ease;
+}
+
+.hud-changelog-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.hud-text-btn {
+    padding: 4px 8px;
+    border: none;
+    background: transparent;
+    color: var(--hud-text-muted);
+    font-family: var(--hud-mono-font);
+    font-size: 0.72rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.hud-text-btn:hover {
+    color: var(--hud-accent);
+}
+
+.hud-dialog {
+    width: min(92vw, 520px);
+}
+
+.hud-dialog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.hud-dialog-title {
+    margin: 0;
+    font-family: var(--hud-title-font);
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--hud-accent-secondary);
+    text-shadow: 0 0 5px rgba(0, 170, 255, 0.4);
+}
+
+.hud-dialog-close {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--hud-border);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--hud-text-muted);
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.hud-dialog-close:hover {
+    color: var(--hud-accent);
+    border-color: var(--hud-accent);
+}
+
+.changelog-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.changelog-entry {
+    display: flex;
+    gap: 12px;
+    padding: 9px 0;
+    border-top: 1px solid var(--hud-border);
+    font-size: 0.74rem;
+    line-height: 1.4;
+}
+
+.changelog-entry:first-child {
+    border-top: none;
+}
+
+.changelog-date {
+    flex: 0 0 auto;
+    color: var(--hud-accent-secondary);
+    font-weight: bold;
+}
+
+.changelog-title {
+    color: var(--hud-text);
 }
