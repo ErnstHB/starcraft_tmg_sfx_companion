@@ -800,6 +800,52 @@ html, body {
     100% { transform: scale(0.8); opacity: 0.5; }
 }
 
+.unit-header-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+/* SC1 / SC2 sound bank segmented control (only rendered for units with an SC1 bank) */
+.bank-toggle {
+    display: inline-flex;
+    border: 1px solid var(--hud-border);
+    border-radius: 3px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.bank-toggle-btn {
+    min-width: 40px;
+    min-height: 30px;
+    padding: 0 8px;
+    border: none;
+    background: transparent;
+    color: var(--hud-text-muted);
+    font-family: var(--hud-mono-font);
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.bank-toggle-btn + .bank-toggle-btn {
+    border-left: 1px solid var(--hud-border);
+}
+
+.bank-toggle-btn:hover {
+    color: var(--hud-accent);
+}
+
+.bank-toggle-btn.active {
+    background: var(--hud-accent);
+    color: var(--hud-bg);
+    text-shadow: none;
+    box-shadow: 0 0 8px var(--hud-accent-glow);
+}
+
 .chevron-icon {
     font-size: 0.75rem;
     color: var(--hud-text-muted);
