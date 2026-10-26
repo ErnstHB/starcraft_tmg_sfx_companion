@@ -11,7 +11,7 @@ An immersive, responsive, retro-futuristic sci-fi soundboard and soundtrack cons
 > Differences from the original project:
 > *   Optional StarCraft I sound bank per unit with an `SC1 | SC2` card switch (see "StarCraft I Sound Bank" below), including the `fetch-sc1-sounds.ps1` asset downloader.
 > *   Web app manifest and install icons (`manifest.webmanifest`, `pics/icons/`), so the app can be added to the home screen as "SC:TMG - SFX". The square icons are generated from the existing artwork by `generate-pwa-icons.ps1`. Offline support is planned as a follow-up.
-> *   TMG wave 3 units, added step by step. Done: High Templar (SC2 + SC1 banks), Raven (SC2 only; its destroyed sound is a placeholder borrowed from the Siege Tank). Nova (Stealth Mode and Assault Mode cards, SC2 only; the Assault Mode attack is voice only until a blade/shotgun effect is found). Zagara (SC2 only; her attack and death effects are placeholders borrowed from the Queen, and the Bile Launcher is not included yet). Planned: Defiler, Tassadar.
+> *   TMG wave 3 units, added step by step. Done: High Templar (SC2 + SC1 banks), Raven (SC2 only; its destroyed sound is a placeholder borrowed from the Siege Tank). Nova (one card with a Stealth / Assault mode toggle, SC2 only; the Assault Mode attack is voice only until a blade/shotgun effect is found). Zagara (SC2 only; her attack and death effects are placeholders borrowed from the Queen, and the Bile Launcher is not included yet). Planned: Defiler, Tassadar.
 
 ---
 
@@ -107,6 +107,8 @@ additional_abilities:
 ### StarCraft I Sound Bank (`sc1/` folders)
 
 A unit can carry an alternative StarCraft I bank in `units/<race>/<unit>/sc1/<action>/`. The action folder names are the same ones referenced by `sound_sources` in the unit's `config.yaml`; no config changes are needed. When a player switches a card to SC1, each action plays from `sc1/<action>/` if that folder has audio and from the regular `<action>/` folder otherwise, so partial banks are fine. The build warns about `sc1/` folders that no ability references. When an ability should behave differently on the SC1 bank (for example, not append an SC2-only effect), add `sc1_sound_sources: [...]` to that ability; the card then plays those sources instead of `sound_sources` while on SC1 (`playback` applies if it lists several).
+
+Some characters have several TMG cards, for example Nova with her Stealth Mode and Assault Mode cards. Give each card its own unit folder and config, and put the same `mode_group` (the card title, e.g. `"Nova"`) and a `mode_label` (the toggle text) in the `unit` block of each. The app then shows one card with a mode toggle in place of the SC1/SC2 switch, and each mode keeps its own weapon, abilities and sound folders. The optional `mode_order` (`1`, `2`, ...) sets the toggle order, and the first mode is the default. A mode card has no SC1 switch.
 
 The SC1 assets for the current units are fetched by script instead of being extracted by hand:
 ```powershell
