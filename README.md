@@ -10,7 +10,7 @@ An immersive, responsive, retro-futuristic sci-fi soundboard and soundtrack cons
 >
 > Differences from the original project:
 > *   Optional StarCraft I sound bank per unit with an `SC1 | SC2` card switch (see "StarCraft I Sound Bank" below), including the `fetch-sc1-sounds.ps1` asset downloader.
-> *   Web app manifest and install icons (`manifest.webmanifest`, `pics/icons/`), so the app can be added to the home screen as "SC:TMG - SFX". The square icons are generated from the existing artwork by `generate-pwa-icons.ps1`. Offline support is planned as a follow-up.
+> *   Web app manifest and install icons (`manifest.webmanifest`, `pics/icons/`), so the app can be added to the home screen as "SC:TMG - SFX". The square icons are generated from the existing artwork by `generate-pwa-icons.ps1`. A service worker (`sw.js`, registered by `pwa.js`) keeps the app shell available offline, in a cache that is replaced on every release, and holds a separate persistent cache for audio that survives releases. It is not registered on localhost (add `?sw=1` to test it there), and `?nosw=1` removes it anywhere. Downloading the sounds for offline use is planned as a follow-up.
 > *   TMG wave 3 units, added step by step. Done: High Templar (SC2 + SC1 banks), Raven (SC2 only; its destroyed sound is a placeholder borrowed from the Siege Tank). Nova (one card with a Stealth / Assault mode toggle, SC2 only; the Assault Mode attack is voice only until a blade/shotgun effect is found). Zagara (SC2 only; her attack and death effects are placeholders borrowed from the Queen, and the Bile Launcher is not included yet). Defiler and Tassadar (SC1 audio only. The Defiler uses all its voice lines (Selected quotes join Ready on deploy, Pissed quotes play before the Claws melee sound), plus Consume, Plague and the Hydralisk's burrow sounds; the Claws melee sound is a placeholder borrowed from the Roach, and Dark Swarm borrows Plague's second voice line until a better sound is found. Tassadar is voice only: Resonance Beam and the Force Wall abilities have no sound yet; Tassadar's deploy plays his Selected quotes and two chained Pissed pairs, as he has no Ready line).
 
 ---
@@ -147,6 +147,7 @@ powershell -ExecutionPolicy Bypass -File .\generate-registry.ps1
 ```
 *   **What it does**: Recursively scans audio files inside `units/` and `ost/` (including the optional `sc1/` banks), reads every unit's `config.yaml`, and writes the audio index, the SC1 index, and unit definitions to `audio-registry.js`. The build stops with a clear error if a unit config is missing, a configured sound folder has no audio, or a multi-folder ability has no playback mode.
 *   **Result**: The browser builds the unit cards, labels, button sizes, and simultaneous or sequential playback from the generated registry on next load.
+*   **Also writes `sw-config.js`**: the list of app shell files for the service worker (found by scanning `index.html`, `styles.css`, `app.js` and the manifest) plus a version hash of their contents. Run the script again after changing any of those files (and bump the `?v=` tokens in `index.html` as before), otherwise installed copies keep serving the old shell.
 
 ---
 
