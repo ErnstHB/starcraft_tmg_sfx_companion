@@ -846,6 +846,23 @@ html, body {
     box-shadow: 0 0 8px var(--hud-accent-glow);
 }
 
+/* Static marker for units that only have StarCraft I audio (no SC1/SC2 switch). */
+.bank-badge {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 0 8px;
+    border: 1px solid var(--hud-border);
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.35);
+    color: var(--hud-text-muted);
+    font-family: var(--hud-mono-font);
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: default;
+}
+
 .chevron-icon {
     font-size: 0.75rem;
     color: var(--hud-text-muted);
